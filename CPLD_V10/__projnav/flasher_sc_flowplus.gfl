@@ -1,0 +1,6 @@
+# XST flow : Creating project file
+flasher.prj
+# xst flow : RunXST
+flasher.prj
+__projnav/flasher.xst
+./xst

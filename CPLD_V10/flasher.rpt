@@ -1,0 +1,2085 @@
+ 
+cpldfit:  version G.26                              Xilinx Inc.
+                                  Fitter Report
+Design Name: flasher                             Date: 11-18-2004,  9:30AM
+Device Used: XCR3256XL-10-TQ144
+Fitting Status: Successful
+
+****************************  Resource Summary  ****************************
+
+Macrocells     Product Terms    Registers      Pins           Function Block 
+Used           Used             Used           Used           Inputs Used    
+110/256 ( 43%) 241 /896  ( 27%) 101/256 ( 39%) 60 /116 ( 52%) 262/640 ( 41%)
+
+PIN RESOURCES:
+
+Signal Type    Required     Mapped  |  Pin Type            Used   Remaining 
+------------------------------------|---------------------------------------
+Input         :   12          12    |  I/O              :    57       55
+Output        :   37          37    |  GCK/IO           :     3        1
+Bidirectional :    9           9    |  
+GCK           :    2           2    |  
+                 ----        ----
+        Total      60          60 
+
+MACROCELL RESOURCES:
+
+Total Macrocells Available                   256
+Registered Macrocells                        101
+Non-registered Macrocell driving I/O           1
+
+GLOBAL RESOURCES:
+
+Signal 'clock' mapped onto global clock net GCK0.
+Signal 'nwr' mapped onto global clock net GCK2.
+Universal Control Terms (Used/Total)                      : 2/4
+
+BLOCK RESOURCES:
+
+Total Function Block Local Control Terms (Used/Total)     : 2/128
+Total Foldback NANDs (Used/Total)                         : 0/128
+
+End of Resource Summary
+****************************  Errors and Warnings  *************************
+
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA5' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA5' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA5' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+*************** Summary of Required Resources ******************
+
+** LOGIC **
+Signal              Total Signals Loc     Slew Pin  Pin       Pin     Reg Init
+Name                Pt    Used            Rate #    Type      Use     State
+DCDCEN              3       10    FB7_5   FAST 78   I/O       O       RESET
+DCDCON              3       10    FB7_12  FAST 77   I/O       O       RESET
+DP<0>               3       10    FB14_12 FAST 25   I/O       O       RESET
+DP<1>               3       10    FB14_14 FAST 26   I/O       O       RESET
+DP<2>               3       10    FB14_15 FAST 27   I/O       O       RESET
+DP<3>               3       10    FB14_16 FAST 28   I/O       O       RESET
+DP<4>               3       10    FB16_3  FAST 29   I/O       O       RESET
+DP<5>               3       10    FB16_4  FAST 30   I/O       O       RESET
+DP<6>               3       10    FB16_5  FAST 31   I/O       O       RESET
+DP<7>               3       10    FB16_12 FAST 32   I/O       O       RESET
+ENMUXA              3       10    FB3_4   FAST 94   I/O       O       RESET
+ENMUXB              3       10    FB3_5   FAST 93   I/O       O       RESET
+ENMUXC              3       10    FB3_12  FAST 92   I/O       O       RESET
+ENMUXF              3       10    FB3_15  FAST 90   I/O       O       RESET
+L<0>                3       10    FB6_12  FAST 61   I/O       O       RESET
+L<10>               3       10    FB8_14  FAST 71   I/O       O       RESET
+L<11>               3       10    FB7_15  FAST 74   I/O       O       RESET
+L<1>                3       10    FB6_13  FAST 62   I/O       O       RESET
+L<2>                3       10    FB6_14  FAST 63   I/O       O       RESET
+L<3>                3       10    FB6_5   FAST 60   I/O       O       RESET
+L<4>                3       10    FB6_16  FAST 65   I/O       O       RESET
+L<5>                3       10    FB8_1   FAST 66   I/O       O       RESET
+L<6>                3       10    FB8_2   FAST 67   I/O       O       RESET
+L<7>                3       10    FB8_3   FAST 68   I/O       O       RESET
+L<8>                3       10    FB8_4   FAST 69   I/O       O       RESET
+L<9>                3       10    FB8_12  FAST 70   I/O       O       RESET
+LE_DP               4       10    FB16_14 FAST 34   I/O       O       SET
+MOSI                8       11    FB9_2   FAST 1    I/O       O       
+MUX0                3       10    FB3_1   FAST 98   I/O       O       RESET
+MUX1                3       10    FB3_2   FAST 97   I/O       O       RESET
+MUX2                3       10    FB5_3   FAST 88   I/O       O       RESET
+MUX3                3       10    FB5_4   FAST 87   I/O       O       RESET
+N_PZ_543            3       22    FB1_3        104  TDO/I/O   (b)     
+N_PZ_595            3       7     FB1_9             (b)       (b)     
+N_PZ_612            2       3     FB5_14       83   I/O       (b)     
+N_PZ_622            2       7     FB3_3        96   I/O       (b)     
+N_PZ_660            1       8     FB6_1             (b)       (b)     
+N_PZ_692            1       6     FB2_15       112  I/O       I       
+OneW                3       11    FB15_3  FAST 42   I/O       I/O     RESET
+SCLK                2       3     FB9_1   FAST 2    I/O       O       RESET
+SDMUX               3       10    FB5_5   FAST 86   I/O       O       RESET
+TRIGGER             2       3     FB7_1   FAST 81   I/O       O       RESET
+XLXI_10/XLXN_14     2       2     FB5_6             (b)       (b)     RESET
+XLXI_10/XLXN_15     2       3     FB5_2             (b)       (b)     RESET
+XLXI_10/XLXN_33     2       4     FB5_15       82   I/O       I       RESET
+XLXI_160/XLXN_2     2       11    FB3_6             (b)       (b)     RESET
+XLXI_160/XLXN_31    2       7     FB6_10            (b)       (b)     RESET
+XLXI_160/XLXN_36    1       5     FB6_7             (b)       (b)     RESET
+XLXI_160/XLXN_39    2       2     FB6_15            (b)       (b)     RESET
+XLXI_160/XLXN_59    2       10    FB1_10            (b)       (b)     
+XLXI_160/XLXN_6     2       2     FB6_11            (b)       (b)     RESET
+XLXI_160/XLXN_64    3       7     FB6_8             (b)       (b)     RESET
+XLXI_160/XLXN_65    3       7     FB6_9             (b)       (b)     RESET
+XLXI_163/count<0>   3       12    FB2_14            (b)       (b)     RESET
+XLXI_163/count<10>  7       15    FB1_11            (b)       (b)     RESET
+XLXI_163/count<11>  8       16    FB1_15            (b)       (b)     RESET
+XLXI_163/count<12>  9       18    FB1_16            (b)       (b)     RESET
+XLXI_163/count<13>  3       11    FB3_9             (b)       (b)     RESET
+XLXI_163/count<14>  4       12    FB3_8             (b)       (b)     RESET
+XLXI_163/count<15>  5       13    FB3_7             (b)       (b)     RESET
+XLXI_163/count<1>   3       11    FB2_11            (b)       (b)     RESET
+XLXI_163/count<2>   4       12    FB2_10            (b)       (b)     RESET
+XLXI_163/count<3>   5       13    FB2_9             (b)       (b)     RESET
+XLXI_163/count<4>   6       14    FB2_8             (b)       (b)     RESET
+XLXI_163/count<5>   7       16    FB2_7             (b)       (b)     RESET
+XLXI_163/count<6>   3       11    FB2_16       113  I/O       I       RESET
+XLXI_163/count<7>   4       12    FB2_3             (b)       (b)     RESET
+XLXI_163/count<8>   5       13    FB2_4             (b)       (b)     RESET
+XLXI_163/count<9>   6       14    FB2_6             (b)       (b)     RESET
+XLXI_66_ARM_STATE_MACHINE
+                    3       11    FB3_16            (b)       (b)     RESET
+XLXI_66_CMD0        3       11    FB3_13            (b)       (b)     RESET
+XLXI_66_CMD1        3       11    FB3_11            (b)       (b)     RESET
+XLXI_66_CMD2        3       11    FB3_10            (b)       (b)     RESET
+XLXI_66_StartTimer  2       3     FB6_6             (b)       (b)     RESET
+XLXI_66_XLXI_1/q<0> 2       1     FB4_15            (b)       (b)     RESET
+XLXI_66_XLXI_1/q<10>
+                    2       11    FB4_13       120  I/O       (b)     RESET
+XLXI_66_XLXI_1/q<11>
+                    2       12    FB4_12       119  I/O       (b)     RESET
+XLXI_66_XLXI_1/q<12>
+                    2       13    FB4_5        118  I/O       I       RESET
+XLXI_66_XLXI_1/q<13>
+                    2       14    FB4_3        117  I/O       I       RESET
+XLXI_66_XLXI_1/q<14>
+                    2       15    FB4_2        116  I/O       I       RESET
+XLXI_66_XLXI_1/q<15>
+                    2       16    FB4_1        114  I/O       I       RESET
+XLXI_66_XLXI_1/q<1> 2       2     FB4_11            (b)       (b)     RESET
+XLXI_66_XLXI_1/q<2> 2       3     FB4_10            (b)       (b)     RESET
+XLXI_66_XLXI_1/q<3> 2       4     FB4_9             (b)       (b)     RESET
+XLXI_66_XLXI_1/q<4> 2       5     FB4_8             (b)       (b)     RESET
+XLXI_66_XLXI_1/q<5> 2       6     FB4_7             (b)       (b)     RESET
+XLXI_66_XLXI_1/q<6> 2       7     FB4_6             (b)       (b)     RESET
+XLXI_66_XLXI_1/q<7> 2       8     FB4_4             (b)       (b)     RESET
+XLXI_66_XLXI_1/q<8> 2       9     FB4_16       122  I/O       (b)     RESET
+XLXI_66_XLXI_1/q<9> 2       10    FB4_14       121  I/O       (b)     RESET
+XLXI_66_XLXN_633    3       12    FB3_14       91   I/O       (b)     RESET
+XLXI_66_XLXN_655    3       27    FB5_1        89   TCK/I/O   (b)     RESET
+XLXI_66_XLXN_675    1       16    FB5_10            (b)       (b)     
+XLXI_66_assert_0    2       2     FB6_4             (b)       (b)     RESET
+XLXI_66_assert_timer_stop
+                    5       29    FB5_16            (b)       (b)     RESET
+XLXI_66_release_1w  8       29    FB5_13            (b)       (b)     RESET
+XLXI_66_sample      2       19    FB5_11            (b)       (b)     RESET
+XLXN_387            1       1     FB5_9             (b)       (b)     RESET
+XLXN_390            1       1     FB5_8             (b)       (b)     RESET
+attn                1       1     FB9_16  FAST 139  I/O       O       RESET
+data<0>             8       14    FB2_2   FAST 108  I/O       I/O     RESET
+data<1>             7       13    FB2_1   FAST 107  I/O       I/O     RESET
+data<2>             8       13    FB1_1   FAST 106  I/O       I/O     RESET
+data<3>             6       13    FB1_4   FAST 103  I/O       I/O     RESET
+data<4>             8       14    FB1_5   FAST 102  I/O       I/O     RESET
+data<5>             8       14    FB1_12  FAST 101  I/O       I/O     RESET
+data<6>             8       14    FB1_13  FAST 100  I/O       I/O     RESET
+data<7>             7       12    FB1_14  FAST 99   I/O       I/O     RESET
+lkdsfj              1       1     FB5_7             (b)       (b)     RESET
+nCS                 2       7     FB10_3  FAST 5    I/O       O       SET
+
+** INPUTS **
+Signal                            Loc          Pin  Pin       Pin      I/O 
+Name                                           #    Type      Use     Style
+AuxReset                          FB7_4        79   I/O       I                  
+ID0                               FB4_2        116  I/O       I         PU       
+ID1                               FB4_3        117  I/O       I         PU       
+ID2                               FB4_5        118  I/O       I         PU       
+addr<0>                           FB2_5        109  I/O       I                  
+addr<1>                           FB2_12       110  I/O       I                  
+addr<2>                           FB2_13       111  I/O       I                  
+addr<3>                           FB2_15       112  I/O       I                  
+addr<4>                           FB2_16       113  I/O       I                  
+addr<5>                           FB4_1        114  I/O       I                  
+clock                                          128  GCK/I     GCK                
+nrd                                            127  GCK/I     I                  
+nwr                                            126  GCK/I     GCK                
+trig                              FB5_15       82   I/O       I                  
+
+End of Resources
+
+Legend: PU  - Pull Up
+*********************Function Block Resource Summary***********************
+Function    # of        FB Inputs   Signals     Total       O/IO      IO    
+Block       Macrocells  Used        Used        Pt Used     Req       Avail 
+FB1          12          35          35           48         0/6        6   
+FB2          13          25          25           48         0/2        7   
+FB3          16          27          27           32         6/0        8   
+FB4          16          16          16           18         0/0        8   
+FB5          15          38          38           30         3/0        6   
+FB6          14          33          33           21         5/0        7   
+FB7           4          15          15            8         4/0        7   
+FB8           6          13          13            7         6/0        7   
+FB9           3          15          15           11         3/0        7   
+FB10          1           7           7            2         1/0        7   
+FB11          0           0           0            0         0/0        7   
+FB12          0           0           0            0         0/0        6   
+FB13          0           0           0            0         0/0        7   
+FB14          4          13          13            5         4/0        7   
+FB15          1          11          11            3         0/1        8   
+FB16          5          14          14            8         5/0        7   
+            ----                                -----       -----     ----- 
+            110                                  241        37/9      112   
+*********************************** FB1 ***********************************
+Number of signals used by logic mapping into function block:  35
+Number of function block inputs used/remaining:               35/5
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  3/5
+Number of PLA product terms used/remaining:                   48/0
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+data<2>                             8    FB1_1     106   I/O   I/O
+(unused)                            0    FB1_2           (b)      
+N_PZ_543                            3    FB1_3     104TDO/I/O   (b)
+data<3>                             6    FB1_4     103   I/O   I/O
+data<4>                             8    FB1_5     102   I/O   I/O
+(unused)                            0    FB1_6           (b)      
+(unused)                            0    FB1_7           (b)      
+(unused)                            0    FB1_8           (b)      
+N_PZ_595                            3    FB1_9           (b)   (b)
+XLXI_160/XLXN_59                    2    FB1_10          (b)   (b)
+XLXI_163/count<10>                  7    FB1_11          (b)   (b)
+data<5>                             8    FB1_12    101   I/O   I/O
+data<6>                             8    FB1_13    100   I/O   I/O
+data<7>                             7    FB1_14     99   I/O   I/O
+XLXI_163/count<11>                  8    FB1_15          (b)   (b)
+XLXI_163/count<12>                  9    FB1_16          (b)   (b)
+
+Signals Used by Logic in Function Block
+  1: ID2               13: XLXI_163/count<14> 
+                                             25: XLXI_66_XLXN_633 
+  2: N_PZ_595          14: XLXI_163/count<15> 
+                                             26: XLXN_387 
+  3: N_PZ_622          15: XLXI_163/count<1> 27: XLXN_390 
+  4: N_PZ_660          16: XLXI_163/count<2> 28: addr<0> 
+  5: N_PZ_692          17: XLXI_163/count<3> 29: addr<1> 
+  6: OneW              18: XLXI_163/count<4> 30: addr<2> 
+  7: XLXI_160/XLXN_36  19: XLXI_163/count<5> 31: addr<3> 
+  8: XLXI_163/count<0> 20: XLXI_163/count<6> 32: addr<4> 
+  9: XLXI_163/count<10> 
+                       21: XLXI_163/count<7> 33: addr<5> 
+ 10: XLXI_163/count<11> 
+                       22: XLXI_163/count<8> 34: lkdsfj 
+ 11: XLXI_163/count<12> 
+                       23: XLXI_163/count<9> 35: nrd 
+ 12: XLXI_163/count<13> 
+                       24: XLXI_66_StartTimer 
+                                            
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+data<2>           X.......X......X.........XXXXXXXXXX..... 13      13
+N_PZ_543          .......XXXXXXXXXXXXXXXX....XXX.XX.X..... 22      22
+data<3>           .XX......X......X........XXXXXXXXX...... 13      13
+data<4>           ..X.......X......X......XXXXXXXXXXX..... 14      14
+N_PZ_595          ...........................XXXXXX.X..... 7       7
+XLXI_160/XLXN_59  ......X..................XXXXXXXXX...... 10      10
+XLXI_163/count<10> 
+                  ....X...X..........XXXX..XXXXXXXXX...... 15      15
+data<5>           ..X........X......X....X.XXXXXXXXXX..... 14      14
+data<6>           ..X..X......X......X.....XXXXXXXXXX..... 14      14
+data<7>           .............X......X....XXXXXXXXXX..... 12      12
+XLXI_163/count<11> 
+                  ....X...XX.........XXXX..XXXXXXXXX...... 16      16
+XLXI_163/count<12> 
+                  ...XX...XXX........XXXX..XXXXXXXXX...... 18      18
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB2 ***********************************
+Number of signals used by logic mapping into function block:  25
+Number of function block inputs used/remaining:               25/15
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  2/6
+Number of PLA product terms used/remaining:                   48/0
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+data<1>                             7    FB2_1     107   I/O   I/O
+data<0>                             8    FB2_2     108   I/O   I/O
+XLXI_163/count<7>                   4    FB2_3           (b)   (b)
+XLXI_163/count<8>                   5    FB2_4           (b)   (b)
+(unused)                            0    FB2_5     109   I/O     I
+XLXI_163/count<9>                   6    FB2_6           (b)   (b)
+XLXI_163/count<5>                   7    FB2_7           (b)   (b)
+XLXI_163/count<4>                   6    FB2_8           (b)   (b)
+XLXI_163/count<3>                   5    FB2_9           (b)   (b)
+XLXI_163/count<2>                   4    FB2_10          (b)   (b)
+XLXI_163/count<1>                   3    FB2_11          (b)   (b)
+(unused)                            0    FB2_12    110   I/O     I
+(unused)                            0    FB2_13    111   I/O     I
+XLXI_163/count<0>                   3    FB2_14          (b)   (b)
+N_PZ_692                            1    FB2_15    112   I/O     I
+XLXI_163/count<6>                   3    FB2_16    113   I/O     I
+
+Signals Used by Logic in Function Block
+  1: DCDCEN            10: XLXI_163/count<4> 18: addr<0> 
+  2: ID0               11: XLXI_163/count<5> 19: addr<1> 
+  3: ID1               12: XLXI_163/count<6> 20: addr<2> 
+  4: N_PZ_543          13: XLXI_163/count<7> 21: addr<3> 
+  5: N_PZ_692          14: XLXI_163/count<8> 22: addr<4> 
+  6: XLXI_163/count<0> 15: XLXI_163/count<9> 23: addr<5> 
+  7: XLXI_163/count<1> 16: XLXN_387          24: lkdsfj 
+  8: XLXI_163/count<2> 17: XLXN_390          25: nrd 
+  9: XLXI_163/count<3>
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+data<1>           ..X...X.......XXXXXXXXXXX............... 13      13
+data<0>           XX...X.......X.XXXXXXXXXX............... 14      14
+XLXI_163/count<7> 
+                  ....X......XX..XXXXXXXXX................ 12      12
+XLXI_163/count<8> 
+                  ....X......XXX.XXXXXXXXX................ 13      13
+XLXI_163/count<9> 
+                  ....X......XXXXXXXXXXXXX................ 14      14
+XLXI_163/count<5> 
+                  ...XX.XXXXX....XXXXXXXXX................ 16      16
+XLXI_163/count<4> 
+                  ...X..XXXX.....XXXXXXXXX................ 14      14
+XLXI_163/count<3> 
+                  ...X..XXX......XXXXXXXXX................ 13      13
+XLXI_163/count<2> 
+                  ...X..XX.......XXXXXXXXX................ 12      12
+XLXI_163/count<1> 
+                  ...X..X........XXXXXXXXX................ 11      11
+XLXI_163/count<0> 
+                  ...X.X.........XXXXXXXXXX............... 12      12
+N_PZ_692          ...X..XXXXX............................. 6       6
+XLXI_163/count<6> 
+                  ....X......X...XXXXXXXXX................ 11      11
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB3 ***********************************
+Number of signals used by logic mapping into function block:  27
+Number of function block inputs used/remaining:               27/13
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  7/1
+Number of PLA product terms used/remaining:                   32/16
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+MUX0                                3    FB3_1      98   I/O     O
+MUX1                                3    FB3_2      97   I/O     O
+N_PZ_622                            2    FB3_3      96   I/O   (b)
+ENMUXA                              3    FB3_4      94   I/O     O
+ENMUXB                              3    FB3_5      93   I/O     O
+XLXI_160/XLXN_2                     2    FB3_6           (b)   (b)
+XLXI_163/count<15>                  5    FB3_7           (b)   (b)
+XLXI_163/count<14>                  4    FB3_8           (b)   (b)
+XLXI_163/count<13>                  3    FB3_9           (b)   (b)
+XLXI_66_CMD2                        3    FB3_10          (b)   (b)
+XLXI_66_CMD1                        3    FB3_11          (b)   (b)
+ENMUXC                              3    FB3_12     92   I/O     O
+XLXI_66_CMD0                        3    FB3_13          (b)   (b)
+XLXI_66_XLXN_633                    3    FB3_14     91   I/O   (b)
+ENMUXF                              3    FB3_15     90   I/O     O
+XLXI_66_ARM_STATE_MACHINE           3    FB3_16          (b)   (b)
+
+Signals Used by Logic in Function Block
+  1: N_PZ_595          10: XLXI_66_XLXN_655  19: addr<5> 
+  2: N_PZ_660          11: XLXI_66_assert_timer_stop 
+                                             20: data<0>.PIN 
+  3: OneW.PIN          12: XLXN_387          21: data<1>.PIN 
+  4: XLXI_160/XLXN_2   13: XLXN_390          22: data<2>.PIN 
+  5: XLXI_160/XLXN_59  14: addr<0>           23: data<3>.PIN 
+  6: XLXI_163/count<13> 
+                       15: addr<1>           24: data<4>.PIN 
+  7: XLXI_163/count<14> 
+                       16: addr<2>           25: data<6>.PIN 
+  8: XLXI_163/count<15> 
+                       17: addr<3>           26: lkdsfj 
+  9: XLXI_66_XLXN_633  18: addr<4>           27: nrd 
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+MUX0              ...........XXXXXXXXX.....X.............. 10      10
+MUX1              ...........XXXXXXXX.X....X.............. 10      10
+N_PZ_622          X............XX.XXX.......X............. 7       7
+ENMUXA            ...........XXXXXXXX..X...X.............. 10      10
+ENMUXB            ...........XXXXXXXX...X..X.............. 10      10
+XLXI_160/XLXN_2   ...XX......XXXXXXXX......X.............. 11      11
+XLXI_163/count<15> 
+                  .X...XXX...XXXXXXXX......X.............. 13      13
+XLXI_163/count<14> 
+                  .X...XX....XXXXXXXX......X.............. 12      12
+XLXI_163/count<13> 
+                  .X...X.....XXXXXXXX......X.............. 11      11
+XLXI_66_CMD2      ..........XXXXXXXXX..X...X.............. 11      11
+XLXI_66_CMD1      ..........XXXXXXXXX.X....X.............. 11      11
+ENMUXC            ...........XXXXXXXX....X.X.............. 10      10
+XLXI_66_CMD0      ..........XXXXXXXXXX.....X.............. 11      11
+XLXI_66_XLXN_633  ..X.....XX.XXXXXXXX......X.............. 12      12
+ENMUXF            ...........XXXXXXXX.....XX.............. 10      10
+XLXI_66_ARM_STATE_MACHINE 
+                  ..........XXXXXXXXX...X..X.............. 11      11
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB4 ***********************************
+Number of signals used by logic mapping into function block:  16
+Number of function block inputs used/remaining:               16/24
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  2/6
+Number of PLA product terms used/remaining:                   18/30
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+XLXI_66_XLXI_1/q<15>                2    FB4_1     114   I/O     I
+XLXI_66_XLXI_1/q<14>                2    FB4_2     116   I/O     I
+XLXI_66_XLXI_1/q<13>                2    FB4_3     117   I/O     I
+XLXI_66_XLXI_1/q<7>                 2    FB4_4           (b)   (b)
+XLXI_66_XLXI_1/q<12>                2    FB4_5     118   I/O     I
+XLXI_66_XLXI_1/q<6>                 2    FB4_6           (b)   (b)
+XLXI_66_XLXI_1/q<5>                 2    FB4_7           (b)   (b)
+XLXI_66_XLXI_1/q<4>                 2    FB4_8           (b)   (b)
+XLXI_66_XLXI_1/q<3>                 2    FB4_9           (b)   (b)
+XLXI_66_XLXI_1/q<2>                 2    FB4_10          (b)   (b)
+XLXI_66_XLXI_1/q<1>                 2    FB4_11          (b)   (b)
+XLXI_66_XLXI_1/q<11>                2    FB4_12    119   I/O   (b)
+XLXI_66_XLXI_1/q<10>                2    FB4_13    120   I/O   (b)
+XLXI_66_XLXI_1/q<9>                 2    FB4_14    121   I/O   (b)
+XLXI_66_XLXI_1/q<0>                 2    FB4_15          (b)   (b)
+XLXI_66_XLXI_1/q<8>                 2    FB4_16    122   I/O   (b)
+
+Signals Used by Logic in Function Block
+  1: XLXI_66_StartTimer 
+                        7: XLXI_66_XLXI_1/q<14> 
+                                             12: XLXI_66_XLXI_1/q<5> 
+  2: XLXI_66_XLXI_1/q<0> 
+                        8: XLXI_66_XLXI_1/q<1> 
+                                             13: XLXI_66_XLXI_1/q<6> 
+  3: XLXI_66_XLXI_1/q<10> 
+                        9: XLXI_66_XLXI_1/q<2> 
+                                             14: XLXI_66_XLXI_1/q<7> 
+  4: XLXI_66_XLXI_1/q<11> 
+                       10: XLXI_66_XLXI_1/q<3> 
+                                             15: XLXI_66_XLXI_1/q<8> 
+  5: XLXI_66_XLXI_1/q<12> 
+                       11: XLXI_66_XLXI_1/q<4> 
+                                             16: XLXI_66_XLXI_1/q<9> 
+  6: XLXI_66_XLXI_1/q<13> 
+                      
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+XLXI_66_XLXI_1/q<15> 
+                  XXXXXXXXXXXXXXXX........................ 16      16
+XLXI_66_XLXI_1/q<14> 
+                  XXXXXX.XXXXXXXXX........................ 15      15
+XLXI_66_XLXI_1/q<13> 
+                  XXXXX..XXXXXXXXX........................ 14      14
+XLXI_66_XLXI_1/q<7> 
+                  XX.....XXXXXX........................... 8       8
+XLXI_66_XLXI_1/q<12> 
+                  XXXX...XXXXXXXXX........................ 13      13
+XLXI_66_XLXI_1/q<6> 
+                  XX.....XXXXX............................ 7       7
+XLXI_66_XLXI_1/q<5> 
+                  XX.....XXXX............................. 6       6
+XLXI_66_XLXI_1/q<4> 
+                  XX.....XXX.............................. 5       5
+XLXI_66_XLXI_1/q<3> 
+                  XX.....XX............................... 4       4
+XLXI_66_XLXI_1/q<2> 
+                  XX.....X................................ 3       3
+XLXI_66_XLXI_1/q<1> 
+                  XX...................................... 2       2
+XLXI_66_XLXI_1/q<11> 
+                  XXX....XXXXXXXXX........................ 12      12
+XLXI_66_XLXI_1/q<10> 
+                  XX.....XXXXXXXXX........................ 11      11
+XLXI_66_XLXI_1/q<9> 
+                  XX.....XXXXXXXX......................... 10      10
+XLXI_66_XLXI_1/q<0> 
+                  X....................................... 1       1
+XLXI_66_XLXI_1/q<8> 
+                  XX.....XXXXXXX.......................... 9       9
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB5 ***********************************
+Number of signals used by logic mapping into function block:  38
+Number of function block inputs used/remaining:               38/2
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  5/3
+Number of PLA product terms used/remaining:                   30/18
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+XLXI_66_XLXN_655                    3    FB5_1      89TCK/I/O   (b)
+XLXI_10/XLXN_15                     2    FB5_2           (b)   (b)
+MUX2                                3    FB5_3      88   I/O     O
+MUX3                                3    FB5_4      87   I/O     O
+SDMUX                               3    FB5_5      86   I/O     O
+XLXI_10/XLXN_14                     2    FB5_6           (b)   (b)
+lkdsfj                              1    FB5_7           (b)   (b)
+XLXN_390                            1    FB5_8           (b)   (b)
+XLXN_387                            1    FB5_9           (b)   (b)
+XLXI_66_XLXN_675                    1    FB5_10          (b)   (b)
+XLXI_66_sample                      2    FB5_11          (b)   (b)
+(unused)                            0    FB5_12     84   I/O      
+XLXI_66_release_1w                  8    FB5_13          (b)   (b)
+N_PZ_612                            2    FB5_14     83   I/O   (b)
+XLXI_10/XLXN_33                     2    FB5_15     82   I/O     I
+XLXI_66_assert_timer_stop           5    FB5_16          (b)   (b)
+
+Signals Used by Logic in Function Block
+  1: N_PZ_612          14: XLXI_66_XLXI_1/q<14> 
+                                             27: XLXN_387 
+  2: TRIGGER           15: XLXI_66_XLXI_1/q<15> 
+                                             28: XLXN_390 
+  3: XLXI_10/XLXN_14   16: XLXI_66_XLXI_1/q<1> 
+                                             29: addr<0> 
+  4: XLXI_10/XLXN_15   17: XLXI_66_XLXI_1/q<2> 
+                                             30: addr<1> 
+  5: XLXI_10/XLXN_33   18: XLXI_66_XLXI_1/q<3> 
+                                             31: addr<2> 
+  6: XLXI_66_CMD0      19: XLXI_66_XLXI_1/q<4> 
+                                             32: addr<3> 
+  7: XLXI_66_CMD1      20: XLXI_66_XLXI_1/q<5> 
+                                             33: addr<4> 
+  8: XLXI_66_CMD2      21: XLXI_66_XLXI_1/q<6> 
+                                             34: addr<5> 
+  9: XLXI_66_XLXI_1/q<0> 
+                       22: XLXI_66_XLXI_1/q<7> 
+                                             35: data<2>.PIN 
+ 10: XLXI_66_XLXI_1/q<10> 
+                       23: XLXI_66_XLXI_1/q<8> 
+                                             36: data<3>.PIN 
+ 11: XLXI_66_XLXI_1/q<11> 
+                       24: XLXI_66_XLXI_1/q<9> 
+                                             37: data<7>.PIN 
+ 12: XLXI_66_XLXI_1/q<12> 
+                       25: XLXI_66_XLXN_655  38: lkdsfj 
+ 13: XLXI_66_XLXI_1/q<13> 
+                       26: XLXI_66_XLXN_675 
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+XLXI_66_XLXN_655  ........XXXXXXXXXXXXXXXXXXXXXXXXXX...X.. 27      27
+XLXI_10/XLXN_15   XXX..................................... 3       3
+MUX2              ..........................XXXXXXXXX..X.. 10      10
+MUX3              ..........................XXXXXXXX.X.X.. 10      10
+SDMUX             ..........................XXXXXXXX..XX.. 10      10
+XLXI_10/XLXN_14   XX...................................... 2       2
+lkdsfj            ..........................X............. 1       1
+XLXN_390          .....................................X.. 1       1
+XLXN_387          ...........................X............ 1       1
+XLXI_66_XLXN_675  ........XXXXXXXXXXXXXXXX................ 16      16
+XLXI_66_sample    .....XXXXXXXXXXXXXXXXXXX................ 19      19
+XLXI_66_release_1w 
+                  .....XXXXXXXXXXXXXXXXXXX.XXXXXXXXX...X.. 29      29
+N_PZ_612          ..XXX................................... 3       3
+XLXI_10/XLXN_33   XXXX.................................... 4       4
+XLXI_66_assert_timer_stop 
+                  .....XXXXXXXXXXXXXXXXXXX.XXXXXXXXX...X.. 29      29
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB6 ***********************************
+Number of signals used by logic mapping into function block:  33
+Number of function block inputs used/remaining:               33/7
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  6/2
+Number of PLA product terms used/remaining:                   21/27
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+N_PZ_660                            1    FB6_1           (b)   (b)
+(unused)                            0    FB6_2      55   I/O      
+(unused)                            0    FB6_3      56   I/O      
+XLXI_66_assert_0                    2    FB6_4           (b)   (b)
+L<3>                                3    FB6_5      60   I/O     O
+XLXI_66_StartTimer                  2    FB6_6           (b)   (b)
+XLXI_160/XLXN_36                    1    FB6_7           (b)   (b)
+XLXI_160/XLXN_64                    3    FB6_8           (b)   (b)
+XLXI_160/XLXN_65                    3    FB6_9           (b)   (b)
+XLXI_160/XLXN_31                    2    FB6_10          (b)   (b)
+XLXI_160/XLXN_6                     2    FB6_11          (b)   (b)
+L<0>                                3    FB6_12     61   I/O     O
+L<1>                                3    FB6_13     62   I/O     O
+L<2>                                3    FB6_14     63   I/O     O
+XLXI_160/XLXN_39                    2    FB6_15          (b)   (b)
+L<4>                                3    FB6_16     65   I/O     O
+
+Signals Used by Logic in Function Block
+  1: N_PZ_692          12: XLXI_163/count<6> 23: addr<1> 
+  2: XLXI_160/XLXN_2   13: XLXI_163/count<7> 24: addr<2> 
+  3: XLXI_160/XLXN_31  14: XLXI_163/count<8> 25: addr<3> 
+  4: XLXI_160/XLXN_39  15: XLXI_163/count<9> 26: addr<4> 
+  5: XLXI_160/XLXN_59  16: XLXI_66_ARM_STATE_MACHINE 
+                                             27: addr<5> 
+  6: XLXI_160/XLXN_6   17: XLXI_66_StartTimer 
+                                             28: data<0>.PIN 
+  7: XLXI_160/XLXN_64  18: XLXI_66_assert_timer_stop 
+                                             29: data<1>.PIN 
+  8: XLXI_160/XLXN_65  19: XLXI_66_release_1w 
+                                             30: data<2>.PIN 
+  9: XLXI_163/count<10> 
+                       20: XLXN_387          31: data<3>.PIN 
+ 10: XLXI_163/count<11> 
+                       21: XLXN_390          32: lkdsfj 
+ 11: XLXI_163/count<12> 
+                       22: addr<0>           33: nCS 
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+N_PZ_660          X.......XXXXXXX......................... 8       8
+XLXI_66_assert_0  ................X.X..................... 2       2
+L<3>              ...................XXXXXXXX...XX........ 10      10
+XLXI_66_StartTimer 
+                  ...............XXX...................... 3       3
+XLXI_160/XLXN_36  ..XX.XXX................................ 5       5
+XLXI_160/XLXN_64  ..XXXXXX........................X....... 7       7
+XLXI_160/XLXN_65  ..XXXXXX........................X....... 7       7
+XLXI_160/XLXN_31  ..XXXXXX........................X....... 7       7
+XLXI_160/XLXN_6   ...XX................................... 2       2
+L<0>              ...................XXXXXXXXX...X........ 10      10
+L<1>              ...................XXXXXXXX.X..X........ 10      10
+L<2>              ...................XXXXXXXX..X.X........ 10      10
+XLXI_160/XLXN_39  .X..X................................... 2       2
+L<4>              ...................XXXXXXXXX...X........ 10      10
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB7 ***********************************
+Number of signals used by logic mapping into function block:  15
+Number of function block inputs used/remaining:               15/25
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  4/4
+Number of PLA product terms used/remaining:                   8/40
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+TRIGGER                             2    FB7_1      81   I/O     O
+(unused)                            0    FB7_2           (b)      
+(unused)                            0    FB7_3      80   I/O      
+(unused)                            0    FB7_4      79   I/O     I
+DCDCEN                              3    FB7_5      78   I/O     O
+(unused)                            0    FB7_6           (b)      
+(unused)                            0    FB7_7           (b)      
+(unused)                            0    FB7_8           (b)      
+(unused)                            0    FB7_9           (b)      
+(unused)                            0    FB7_10          (b)      
+(unused)                            0    FB7_11          (b)      
+DCDCON                              3    FB7_12     77   I/O     O
+(unused)                            0    FB7_13          (b)      
+(unused)                            0    FB7_14     75   I/O      
+L<11>                               3    FB7_15     74   I/O     O
+(unused)                            0    FB7_16          (b)      
+
+Signals Used by Logic in Function Block
+  1: AuxReset           6: addr<1>           11: data<0>.PIN 
+  2: N_PZ_612           7: addr<2>           12: data<1>.PIN 
+  3: XLXN_387           8: addr<3>           13: data<3>.PIN 
+  4: XLXN_390           9: addr<4>           14: lkdsfj 
+  5: addr<0>           10: addr<5>           15: trig 
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+TRIGGER           XX............X......................... 3       3
+DCDCEN            ..XXXXXXXXX..X.......................... 10      10
+DCDCON            ..XXXXXXXX.X.X.......................... 10      10
+L<11>             ..XXXXXXXX..XX.......................... 10      10
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB8 ***********************************
+Number of signals used by logic mapping into function block:  13
+Number of function block inputs used/remaining:               13/27
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  2/6
+Number of PLA product terms used/remaining:                   7/41
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+L<5>                                3    FB8_1      66   I/O     O
+L<6>                                3    FB8_2      67   I/O     O
+L<7>                                3    FB8_3      68   I/O     O
+L<8>                                3    FB8_4      69   I/O     O
+(unused)                            0    FB8_5           (b)      
+(unused)                            0    FB8_6           (b)      
+(unused)                            0    FB8_7           (b)      
+(unused)                            0    FB8_8           (b)      
+(unused)                            0    FB8_9           (b)      
+(unused)                            0    FB8_10          (b)      
+(unused)                            0    FB8_11          (b)      
+L<9>                                3    FB8_12     70   I/O     O
+(unused)                            0    FB8_13          (b)      
+L<10>                               3    FB8_14     71   I/O     O
+(unused)                            0    FB8_15          (b)      
+(unused)                            0    FB8_16     72   I/O      
+
+Signals Used by Logic in Function Block
+  1: XLXN_387           6: addr<3>           10: data<1>.PIN 
+  2: XLXN_390           7: addr<4>           11: data<2>.PIN 
+  3: addr<0>            8: addr<5>           12: data<3>.PIN 
+  4: addr<1>            9: data<0>.PIN       13: lkdsfj 
+  5: addr<2>          
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+L<5>              XXXXXXXX.X..X........................... 10      10
+L<6>              XXXXXXXX..X.X........................... 10      10
+L<7>              XXXXXXXX...XX........................... 10      10
+L<8>              XXXXXXXXX...X........................... 10      10
+L<9>              XXXXXXXX.X..X........................... 10      10
+L<10>             XXXXXXXX..X.X........................... 10      10
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB9 ***********************************
+Number of signals used by logic mapping into function block:  15
+Number of function block inputs used/remaining:               15/25
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  2/6
+Number of PLA product terms used/remaining:                   11/37
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+SCLK                                2    FB9_1       2   I/O     O
+MOSI                                8    FB9_2       1   I/O     O
+(unused)                            0    FB9_3           (b)      
+(unused)                            0    FB9_4           (b)      
+(unused)                            0    FB9_5     143   I/O      
+(unused)                            0    FB9_6           (b)      
+(unused)                            0    FB9_7           (b)      
+(unused)                            0    FB9_8           (b)      
+(unused)                            0    FB9_9           (b)      
+(unused)                            0    FB9_10          (b)      
+(unused)                            0    FB9_11          (b)      
+(unused)                            0    FB9_12          (b)      
+(unused)                            0    FB9_13    142   I/O      
+(unused)                            0    FB9_14    141   I/O      
+(unused)                            0    FB9_15    140   I/O      
+attn                                1    FB9_16    139   I/O     O
+
+Signals Used by Logic in Function Block
+  1: AuxReset           6: XLXI_160/XLXN_65  11: data<4> 
+  2: XLXI_160/XLXN_31   7: data<0>           12: data<5> 
+  3: XLXI_160/XLXN_39   8: data<1>           13: data<6> 
+  4: XLXI_160/XLXN_59   9: data<2>           14: data<7> 
+  5: XLXI_160/XLXN_64  10: data<3>           15: nCS 
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+SCLK              ..XX..........X......................... 3       3
+MOSI              .X..XXXXXXXXXX.......................... 11      11
+attn              X....................................... 1       1
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB10 ***********************************
+Number of signals used by logic mapping into function block:  7
+Number of function block inputs used/remaining:               7/33
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  1/7
+Number of PLA product terms used/remaining:                   2/46
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+(unused)                            0    FB10_1      4TDI/I/O      
+(unused)                            0    FB10_2          (b)      
+nCS                                 2    FB10_3      5   I/O     O
+(unused)                            0    FB10_4      6   I/O      
+(unused)                            0    FB10_5      7   I/O      
+(unused)                            0    FB10_6          (b)      
+(unused)                            0    FB10_7          (b)      
+(unused)                            0    FB10_8          (b)      
+(unused)                            0    FB10_9          (b)      
+(unused)                            0    FB10_10         (b)      
+(unused)                            0    FB10_11         (b)      
+(unused)                            0    FB10_12     8   I/O      
+(unused)                            0    FB10_13         (b)      
+(unused)                            0    FB10_14     9   I/O      
+(unused)                            0    FB10_15    10   I/O      
+(unused)                            0    FB10_16    11   I/O      
+
+Signals Used by Logic in Function Block
+  1: XLXI_160/XLXN_31   4: XLXI_160/XLXN_6    6: XLXI_160/XLXN_65 
+  2: XLXI_160/XLXN_39   5: XLXI_160/XLXN_64   7: nCS 
+  3: XLXI_160/XLXN_59 
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+nCS               XXXXXXX................................. 7       7
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB11 ***********************************
+Number of signals used by logic mapping into function block:  0
+Number of function block inputs used/remaining:               0/40
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  0/8
+Number of PLA product terms used/remaining:                   0/48
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+(unused)                            0    FB11_1          (b)      
+(unused)                            0    FB11_2          (b)      
+(unused)                            0    FB11_3    138   I/O      
+(unused)                            0    FB11_4          (b)      
+(unused)                            0    FB11_5    137   I/O      
+(unused)                            0    FB11_6          (b)      
+(unused)                            0    FB11_7          (b)      
+(unused)                            0    FB11_8          (b)      
+(unused)                            0    FB11_9          (b)      
+(unused)                            0    FB11_10         (b)      
+(unused)                            0    FB11_11         (b)      
+(unused)                            0    FB11_12   136   I/O      
+(unused)                            0    FB11_13   134   I/O      
+(unused)                            0    FB11_14   133   I/O      
+(unused)                            0    FB11_15   132   I/O      
+(unused)                            0    FB11_16   131   I/O      
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB12 ***********************************
+Number of signals used by logic mapping into function block:  0
+Number of function block inputs used/remaining:               0/40
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  0/8
+Number of PLA product terms used/remaining:                   0/48
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+(unused)                            0    FB12_1          (b)      
+(unused)                            0    FB12_2          (b)      
+(unused)                            0    FB12_3     12   I/O      
+(unused)                            0    FB12_4     14   I/O      
+(unused)                            0    FB12_5     15   I/O      
+(unused)                            0    FB12_6          (b)      
+(unused)                            0    FB12_7          (b)      
+(unused)                            0    FB12_8          (b)      
+(unused)                            0    FB12_9          (b)      
+(unused)                            0    FB12_10         (b)      
+(unused)                            0    FB12_11         (b)      
+(unused)                            0    FB12_12    16   I/O      
+(unused)                            0    FB12_13         (b)      
+(unused)                            0    FB12_14    18   I/O      
+(unused)                            0    FB12_15    19   I/O      
+(unused)                            0    FB12_16         (b)      
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB13 ***********************************
+Number of signals used by logic mapping into function block:  0
+Number of function block inputs used/remaining:               0/40
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  0/8
+Number of PLA product terms used/remaining:                   0/48
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+(unused)                            0    FB13_1          (b)      
+(unused)                            0    FB13_2     54   I/O      
+(unused)                            0    FB13_3     53   I/O      
+(unused)                            0    FB13_4          (b)      
+(unused)                            0    FB13_5     49   I/O      
+(unused)                            0    FB13_6          (b)      
+(unused)                            0    FB13_7          (b)      
+(unused)                            0    FB13_8          (b)      
+(unused)                            0    FB13_9          (b)      
+(unused)                            0    FB13_10         (b)      
+(unused)                            0    FB13_11         (b)      
+(unused)                            0    FB13_12    48   I/O      
+(unused)                            0    FB13_13    47   I/O      
+(unused)                            0    FB13_14    46   I/O      
+(unused)                            0    FB13_15         (b)      
+(unused)                            0    FB13_16    45   I/O      
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB14 ***********************************
+Number of signals used by logic mapping into function block:  13
+Number of function block inputs used/remaining:               13/27
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  0/8
+Number of PLA product terms used/remaining:                   5/43
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+(unused)                            0    FB14_1     20TMS/I/O      
+(unused)                            0    FB14_2          (b)      
+(unused)                            0    FB14_3     21   I/O      
+(unused)                            0    FB14_4     22   I/O      
+(unused)                            0    FB14_5     23   I/O      
+(unused)                            0    FB14_6          (b)      
+(unused)                            0    FB14_7          (b)      
+(unused)                            0    FB14_8          (b)      
+(unused)                            0    FB14_9          (b)      
+(unused)                            0    FB14_10         (b)      
+(unused)                            0    FB14_11         (b)      
+DP<0>                               3    FB14_12    25   I/O     O
+(unused)                            0    FB14_13         (b)      
+DP<1>                               3    FB14_14    26   I/O     O
+DP<2>                               3    FB14_15    27   I/O     O
+DP<3>                               3    FB14_16    28   I/O     O
+
+Signals Used by Logic in Function Block
+  1: XLXN_387           6: addr<3>           10: data<1>.PIN 
+  2: XLXN_390           7: addr<4>           11: data<2>.PIN 
+  3: addr<0>            8: addr<5>           12: data<3>.PIN 
+  4: addr<1>            9: data<0>.PIN       13: lkdsfj 
+  5: addr<2>          
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+DP<0>             XXXXXXXXX...X........................... 10      10
+DP<1>             XXXXXXXX.X..X........................... 10      10
+DP<2>             XXXXXXXX..X.X........................... 10      10
+DP<3>             XXXXXXXX...XX........................... 10      10
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB15 ***********************************
+Number of signals used by logic mapping into function block:  11
+Number of function block inputs used/remaining:               11/29
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  3/5
+Number of PLA product terms used/remaining:                   3/45
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+(unused)                            0    FB15_1     44   I/O      
+(unused)                            0    FB15_2     43   I/O      
+OneW                                3    FB15_3     42   I/O   I/O
+(unused)                            0    FB15_4     41   I/O      
+(unused)                            0    FB15_5     40   I/O      
+(unused)                            0    FB15_6          (b)      
+(unused)                            0    FB15_7          (b)      
+(unused)                            0    FB15_8          (b)      
+(unused)                            0    FB15_9          (b)      
+(unused)                            0    FB15_10         (b)      
+(unused)                            0    FB15_11         (b)      
+(unused)                            0    FB15_12         (b)      
+(unused)                            0    FB15_13    39   I/O      
+(unused)                            0    FB15_14    38   I/O      
+(unused)                            0    FB15_15         (b)      
+(unused)                            0    FB15_16    37   I/O      
+
+Signals Used by Logic in Function Block
+  1: XLXI_66_assert_0   5: addr<0>            9: addr<4> 
+  2: XLXI_66_sample     6: addr<1>           10: addr<5> 
+  3: XLXN_387           7: addr<2>           11: lkdsfj 
+  4: XLXN_390           8: addr<3>          
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+OneW              XXXXXXXXXXX............................. 11      11
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+*********************************** FB16 ***********************************
+Number of signals used by logic mapping into function block:  14
+Number of function block inputs used/remaining:               14/26
+Number of foldback NANDs used/remaining:                      0/8
+Number of function block local control terms used/remaining:  2/6
+Number of PLA product terms used/remaining:                   8/40
+Signal                            Total   Loc     Pin    Pin   Pin        
+Name                              Pt               #     Type  Use        
+(unused)                            0    FB16_1          (b)      
+(unused)                            0    FB16_2          (b)      
+DP<4>                               3    FB16_3     29   I/O     O
+DP<5>                               3    FB16_4     30   I/O     O
+DP<6>                               3    FB16_5     31   I/O     O
+(unused)                            0    FB16_6          (b)      
+(unused)                            0    FB16_7          (b)      
+(unused)                            0    FB16_8          (b)      
+(unused)                            0    FB16_9          (b)      
+(unused)                            0    FB16_10         (b)      
+(unused)                            0    FB16_11         (b)      
+DP<7>                               3    FB16_12    32   I/O     O
+(unused)                            0    FB16_13         (b)      
+LE_DP                               4    FB16_14    34   I/O     O
+(unused)                            0    FB16_15    35   I/O      
+(unused)                            0    FB16_16    36   I/O      
+
+Signals Used by Logic in Function Block
+  1: XLXN_387           6: addr<3>           11: data<5>.PIN 
+  2: XLXN_390           7: addr<4>           12: data<6>.PIN 
+  3: addr<0>            8: addr<5>           13: data<7>.PIN 
+  4: addr<1>            9: data<1>.PIN       14: lkdsfj 
+  5: addr<2>           10: data<4>.PIN      
+
+Signal                     1         2         3         4 Signals FB
+Name             0----+----0----+----0----+----0----+----0 Used    Inputs
+DP<4>             XXXXXXXX.X...X.......................... 10      10
+DP<5>             XXXXXXXX..X..X.......................... 10      10
+DP<6>             XXXXXXXX...X.X.......................... 10      10
+DP<7>             XXXXXXXX....XX.......................... 10      10
+LE_DP             XXXXXXXXX....X.......................... 10      10
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input            GCK - Global clock
+               O  - Output           (b) - Buried macrocell
+;;-----------------------------------------------------------------;;
+; Implemented Equations.
+
+!DCDCEN := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DCDCEN.CLK = !(!addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+XLXN_390 := Vcc;
+   XLXN_390.CLK  =  !nwr;	// GCK
+    XLXN_390.AR = lkdsfj;
+
+lkdsfj := XLXN_387;
+   lkdsfj.CLK  =  clock;	// GCK
+
+XLXN_387 := XLXN_390;
+   XLXN_387.CLK  =  clock;	// GCK
+
+!DCDCON := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DCDCON.CLK = !(!addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!DP<0> := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<0>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!DP<1> := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<1>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!DP<2> := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<2>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!DP<3> := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<3>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!DP<4> := !data<4>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<4>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!DP<5> := !data<5>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<5>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!DP<6> := !data<6>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<6>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!DP<7> := !data<7>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<7>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!ENMUXA := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    ENMUXA.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!ENMUXB := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    ENMUXB.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!ENMUXC := !data<4>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    ENMUXC.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!ENMUXF := !data<6>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    ENMUXF.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<0> := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<0>.CLK = !(addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<10> := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<10>.CLK = !(addr<3> * !addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<11> := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<11>.CLK = !(addr<3> * !addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<1> := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<1>.CLK = !(addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<2> := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<2>.CLK = !(addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<3> := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<3>.CLK = !(addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<4> := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<4>.CLK = !(addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<5> := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<5>.CLK = !(addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<6> := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<6>.CLK = !(addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<7> := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<7>.CLK = !(addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<8> := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<8>.CLK = !(addr<3> * !addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!L<9> := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<9>.CLK = !(addr<3> * !addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+LE_DP := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    LE_DP.CLK = !(addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!MOSI = XLXI_160/XLXN_64 * XLXI_160/XLXN_65 * 
+	XLXI_160/XLXN_31 * !XLXI_160/ld<0>
+	# XLXI_160/XLXN_64 * XLXI_160/XLXN_65 * 
+	!XLXI_160/XLXN_31 * !XLXI_160/ld<4>
+	# XLXI_160/XLXN_64 * !XLXI_160/XLXN_65 * 
+	XLXI_160/XLXN_31 * !XLXI_160/ld<2>
+	# XLXI_160/XLXN_64 * !XLXI_160/XLXN_65 * 
+	!XLXI_160/XLXN_31 * !XLXI_160/ld<6>
+	# !XLXI_160/XLXN_64 * XLXI_160/XLXN_65 * 
+	XLXI_160/XLXN_31 * !XLXI_160/ld<1>
+	# !XLXI_160/XLXN_64 * XLXI_160/XLXN_65 * 
+	!XLXI_160/XLXN_31 * !XLXI_160/ld<5>
+	# !XLXI_160/XLXN_64 * !XLXI_160/XLXN_65 * 
+	XLXI_160/XLXN_31 * !XLXI_160/ld<3>
+	# !XLXI_160/XLXN_64 * !XLXI_160/XLXN_65 * 
+	!XLXI_160/XLXN_31 * !XLXI_160/ld<7>;
+
+XLXI_160/XLXN_64.T := !nCS * !XLXI_160/XLXN_39 * !XLXI_160/XLXN_6
+	$ XLXI_160/XLXN_64 * !nCS * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * XLXI_160/XLXN_65 * XLXI_160/XLXN_31;
+   XLXI_160/XLXN_64.CLK  =  clock;	// GCK
+    XLXI_160/XLXN_64.AR = XLXI_160/XLXN_59;
+
+nCS.T := !XLXI_160/XLXN_64 * nCS * XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * !XLXI_160/XLXN_65 * !XLXI_160/XLXN_31;
+   nCS.CLK  =  clock;	// GCK
+    nCS.AP = XLXI_160/XLXN_59;
+
+XLXI_160/XLXN_39.T := XLXI_160/XLXN_2;
+   XLXI_160/XLXN_39.CLK  =  clock;	// GCK
+    XLXI_160/XLXN_39.AR = XLXI_160/XLXN_59;
+
+XLXI_160/XLXN_2.T := !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387 * 
+	!XLXI_160/XLXN_2;
+   XLXI_160/XLXN_2.CLK  =  clock;	// GCK
+    XLXI_160/XLXN_2.AR = XLXI_160/XLXN_59;
+
+XLXI_160/XLXN_59 = XLXI_160/XLXN_36
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+XLXI_160/XLXN_36 := XLXI_160/XLXN_64 * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * XLXI_160/XLXN_65 * XLXI_160/XLXN_31;
+   XLXI_160/XLXN_36.CLK  =  clock;	// GCK
+
+XLXI_160/XLXN_6.T := XLXI_160/XLXN_39;
+   XLXI_160/XLXN_6.CLK  =  clock;	// GCK
+    XLXI_160/XLXN_6.AR = XLXI_160/XLXN_59;
+
+XLXI_160/XLXN_65.T := XLXI_160/XLXN_64 * !nCS * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * !XLXI_160/XLXN_65
+	# XLXI_160/XLXN_64 * !nCS * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * !XLXI_160/XLXN_31;
+   XLXI_160/XLXN_65.CLK  =  clock;	// GCK
+    XLXI_160/XLXN_65.AR = XLXI_160/XLXN_59;
+
+XLXI_160/XLXN_31.T := XLXI_160/XLXN_64 * !nCS * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * XLXI_160/XLXN_65 * !XLXI_160/XLXN_31;
+   XLXI_160/XLXN_31.CLK  =  clock;	// GCK
+    XLXI_160/XLXN_31.AR = XLXI_160/XLXN_59;
+
+!data<0> =  !addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<8>
+	# !addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<0>
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !DCDCEN
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !ID0;
+    data<0>.OE = N_PZ_595;
+// Fast Input Register
+XLXI_160/ld<0> := data<0>.PIN;
+   XLXI_160/ld<0>.CLK  =  clock;	// GCK
+    XLXI_160/ld<0>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<0>.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+N_PZ_595 = !addr<3> * !addr<2> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# addr<2> * addr<1> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd;
+
+!data<1> =  !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<9>
+	# !addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<1>
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !ID1;
+    data<1>.OE = N_PZ_595;
+// Fast Input Register
+XLXI_160/ld<1> := data<1>.PIN;
+   XLXI_160/ld<1>.CLK  =  clock;	// GCK
+    XLXI_160/ld<1>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<1>.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+!data<2> =  !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# !addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<10>
+	# !addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<2>
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !ID2;
+    data<2>.OE = N_PZ_595;
+// Fast Input Register
+XLXI_160/ld<2> := data<2>.PIN;
+   XLXI_160/ld<2>.CLK  =  clock;	// GCK
+    XLXI_160/ld<2>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<2>.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+!data<3> =  !addr<1> * N_PZ_622
+	# addr<3> * N_PZ_622 * !XLXI_163/count<11>
+	# !addr<3> * addr<0> * N_PZ_595 * 
+	!XLXI_163/count<3>;
+    data<3>.OE = N_PZ_595;
+// Fast Input Register
+XLXI_160/ld<3> := data<3>.PIN;
+   XLXI_160/ld<3>.CLK  =  clock;	// GCK
+    XLXI_160/ld<3>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<3>.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+!data<4> =  !addr<3> * !addr<2> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# !addr<3> * addr<2> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_163/count<4>
+	# !addr<3> * addr<1> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_66_XLXN_633
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<12>;
+    data<4>.OE = N_PZ_622;
+// Fast Input Register
+XLXI_160/ld<4> := data<4>.PIN;
+   XLXI_160/ld<4>.CLK  =  clock;	// GCK
+    XLXI_160/ld<4>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<4>.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+N_PZ_622 = N_PZ_595
+	# !addr<3> * addr<1> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd;
+
+!data<5> =  !addr<3> * !addr<2> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# !addr<3> * addr<2> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_163/count<5>
+	# !addr<3> * addr<1> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_66_StartTimer
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<13>;
+    data<5>.OE = N_PZ_622;
+// Fast Input Register
+XLXI_160/ld<5> := data<5>.PIN;
+   XLXI_160/ld<5>.CLK  =  clock;	// GCK
+    XLXI_160/ld<5>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<5>.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+!data<6> =  !addr<3> * !addr<2> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# !addr<3> * addr<2> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_163/count<6>
+	# !addr<3> * addr<1> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_66_XLXN_176
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<14>;
+    data<6>.OE = N_PZ_622;
+// Fast Input Register
+XLXI_160/ld<6> := data<6>.PIN;
+   XLXI_160/ld<6>.CLK  =  clock;	// GCK
+    XLXI_160/ld<6>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<6>.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+!data<7> =  !addr<3> * !addr<2> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<15>
+	# !addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<7>;
+    data<7>.OE = N_PZ_595;
+// Fast Input Register
+XLXI_160/ld<7> := data<7>.PIN;
+   XLXI_160/ld<7>.CLK  =  clock;	// GCK
+    XLXI_160/ld<7>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<7>.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+!MUX0 := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    MUX0.CLK = !(addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!MUX1 := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    MUX1.CLK = !(addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!MUX2 := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    MUX2.CLK = !(addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+!MUX3 := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    MUX3.CLK = !(addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+SCLK.T := !nCS * !XLXI_160/XLXN_39;
+   SCLK.CLK  =  clock;	// GCK
+    SCLK.AR = XLXI_160/XLXN_59;
+
+!SDMUX := !data<7>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    SDMUX.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+TRIGGER := Vcc;
+    TRIGGER.CLK = !(!trig * !AuxReset);
+    TRIGGER.AR = N_PZ_612;
+
+N_PZ_612 = !XLXI_10/XLXN_14 * XLXI_10/XLXN_33
+	# XLXI_10/XLXN_33 * !XLXI_10/XLXN_15;
+
+XLXI_10/XLXN_14.T := TRIGGER;
+   XLXI_10/XLXN_14.CLK  =  clock;	// GCK
+    XLXI_10/XLXN_14.AR = N_PZ_612;
+
+XLXI_10/XLXN_33.T := XLXI_10/XLXN_14 * TRIGGER * XLXI_10/XLXN_15;
+   XLXI_10/XLXN_33.CLK  =  clock;	// GCK
+    XLXI_10/XLXN_33.AR = N_PZ_612;
+
+XLXI_10/XLXN_15.T := XLXI_10/XLXN_14 * TRIGGER;
+   XLXI_10/XLXN_15.CLK  =  clock;	// GCK
+    XLXI_10/XLXN_15.AR = N_PZ_612;
+
+attn.T := Vcc;
+    attn.CLK = AuxReset;
+
+!XLXI_163/count<0> := !N_PZ_543
+	# addr<2> * addr<1> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_163/count<0>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<0>.CLK  =  clock;	// GCK
+
+N_PZ_543 = !XLXI_163/count<0>
+	# addr<2> * addr<1> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# XLXI_163/count<0> * XLXI_163/count<12> * 
+	XLXI_163/count<8> * XLXI_163/count<6> * XLXI_163/count<4> * 
+	XLXI_163/count<1> * XLXI_163/count<2> * XLXI_163/count<3> * 
+	XLXI_163/count<5> * XLXI_163/count<7> * XLXI_163/count<9> * 
+	XLXI_163/count<10> * XLXI_163/count<11> * XLXI_163/count<13> * 
+	XLXI_163/count<14> * XLXI_163/count<15>;
+
+!XLXI_163/count<12> := N_PZ_660
+	# !XLXI_163/count<12> * !XLXI_163/count<8>
+	# !XLXI_163/count<12> * !XLXI_163/count<6>
+	# !XLXI_163/count<12> * !N_PZ_692
+	# !XLXI_163/count<12> * !XLXI_163/count<7>
+	# !XLXI_163/count<12> * !XLXI_163/count<9>
+	# !XLXI_163/count<12> * !XLXI_163/count<10>
+	# !XLXI_163/count<12> * !XLXI_163/count<11>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<12>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<8> := !XLXI_163/count<8> * !XLXI_163/count<6>
+	# !XLXI_163/count<8> * !N_PZ_692
+	# !XLXI_163/count<8> * !XLXI_163/count<7>
+	# XLXI_163/count<8> * XLXI_163/count<6> * N_PZ_692 * 
+	XLXI_163/count<7>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<8>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<6> := XLXI_163/count<6> * N_PZ_692
+	# !XLXI_163/count<6> * !N_PZ_692
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<6>.CLK  =  clock;	// GCK
+
+N_PZ_692 = !N_PZ_543 * XLXI_163/count<4> * XLXI_163/count<1> * 
+	XLXI_163/count<2> * XLXI_163/count<3> * XLXI_163/count<5>;
+
+!XLXI_163/count<4> := N_PZ_543 * !XLXI_163/count<4>
+	# !XLXI_163/count<4> * !XLXI_163/count<1>
+	# !XLXI_163/count<4> * !XLXI_163/count<2>
+	# !XLXI_163/count<4> * !XLXI_163/count<3>
+	# !N_PZ_543 * XLXI_163/count<4> * XLXI_163/count<1> * 
+	XLXI_163/count<2> * XLXI_163/count<3>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<4>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<1> := N_PZ_543 * !XLXI_163/count<1>
+	# !N_PZ_543 * XLXI_163/count<1>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<1>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<2> := N_PZ_543 * !XLXI_163/count<2>
+	# !XLXI_163/count<1> * !XLXI_163/count<2>
+	# !N_PZ_543 * XLXI_163/count<1> * XLXI_163/count<2>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<2>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<3> := N_PZ_543 * !XLXI_163/count<3>
+	# !XLXI_163/count<1> * !XLXI_163/count<3>
+	# !XLXI_163/count<2> * !XLXI_163/count<3>
+	# !N_PZ_543 * XLXI_163/count<1> * XLXI_163/count<2> * 
+	XLXI_163/count<3>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<3>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<5> := N_PZ_692
+	# N_PZ_543 * !XLXI_163/count<5>
+	# !XLXI_163/count<4> * !XLXI_163/count<5>
+	# !XLXI_163/count<1> * !XLXI_163/count<5>
+	# !XLXI_163/count<2> * !XLXI_163/count<5>
+	# !XLXI_163/count<3> * !XLXI_163/count<5>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<5>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<7> := !XLXI_163/count<6> * !XLXI_163/count<7>
+	# !N_PZ_692 * !XLXI_163/count<7>
+	# XLXI_163/count<6> * N_PZ_692 * XLXI_163/count<7>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<7>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<9> := !XLXI_163/count<8> * !XLXI_163/count<9>
+	# !XLXI_163/count<6> * !XLXI_163/count<9>
+	# !N_PZ_692 * !XLXI_163/count<9>
+	# !XLXI_163/count<7> * !XLXI_163/count<9>
+	# XLXI_163/count<8> * XLXI_163/count<6> * N_PZ_692 * 
+	XLXI_163/count<7> * XLXI_163/count<9>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<9>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<10> := !XLXI_163/count<8> * !XLXI_163/count<10>
+	# !XLXI_163/count<6> * !XLXI_163/count<10>
+	# !N_PZ_692 * !XLXI_163/count<10>
+	# !XLXI_163/count<7> * !XLXI_163/count<10>
+	# !XLXI_163/count<9> * !XLXI_163/count<10>
+	# XLXI_163/count<8> * XLXI_163/count<6> * N_PZ_692 * 
+	XLXI_163/count<7> * XLXI_163/count<9> * XLXI_163/count<10>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<10>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<11> := !XLXI_163/count<8> * !XLXI_163/count<11>
+	# !XLXI_163/count<6> * !XLXI_163/count<11>
+	# !N_PZ_692 * !XLXI_163/count<11>
+	# !XLXI_163/count<7> * !XLXI_163/count<11>
+	# !XLXI_163/count<9> * !XLXI_163/count<11>
+	# !XLXI_163/count<10> * !XLXI_163/count<11>
+	# XLXI_163/count<8> * XLXI_163/count<6> * N_PZ_692 * 
+	XLXI_163/count<7> * XLXI_163/count<9> * XLXI_163/count<10> * 
+	XLXI_163/count<11>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<11>.CLK  =  clock;	// GCK
+
+N_PZ_660 = XLXI_163/count<12> * XLXI_163/count<8> * 
+	XLXI_163/count<6> * N_PZ_692 * XLXI_163/count<7> * XLXI_163/count<9> * 
+	XLXI_163/count<10> * XLXI_163/count<11>;
+
+!XLXI_163/count<13> := N_PZ_660 * XLXI_163/count<13>
+	# !N_PZ_660 * !XLXI_163/count<13>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<13>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<14> := !N_PZ_660 * !XLXI_163/count<14>
+	# !XLXI_163/count<13> * !XLXI_163/count<14>
+	# N_PZ_660 * XLXI_163/count<13> * 
+	XLXI_163/count<14>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<14>.CLK  =  clock;	// GCK
+
+!XLXI_163/count<15> := !N_PZ_660 * !XLXI_163/count<15>
+	# !XLXI_163/count<13> * !XLXI_163/count<15>
+	# !XLXI_163/count<14> * !XLXI_163/count<15>
+	# N_PZ_660 * XLXI_163/count<13> * 
+	XLXI_163/count<14> * XLXI_163/count<15>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<15>.CLK  =  clock;	// GCK
+
+XLXI_66_XLXN_633.T := !XLXI_66_XLXN_633 * XLXI_66_XLXN_655;
+    XLXI_66_XLXN_633.CLK = OneW.PIN;
+    XLXI_66_XLXN_633.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+XLXI_66_XLXN_655 := XLXI_66_XLXN_655 * !XLXI_66_XLXN_675
+	# !XLXI_66_XLXI_1/q<0> * XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15>;
+   XLXI_66_XLXN_655.CLK  =  clock;	// GCK
+    XLXI_66_XLXN_655.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+XLXI_66_XLXI_1/q<0>.T := XLXI_66_StartTimer;
+   XLXI_66_XLXI_1/q<0>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<0>.AR = XLXI_66_StartTimer;
+
+XLXI_66_StartTimer.T := !XLXI_66_StartTimer * XLXI_66_ARM_STATE_MACHINE;
+   XLXI_66_StartTimer.CLK  =  clock;	// GCK
+    XLXI_66_StartTimer.AR = XLXI_66_assert_timer_stop;
+
+XLXI_66_ARM_STATE_MACHINE := data<3>.PIN;
+    XLXI_66_ARM_STATE_MACHINE.CLK = !(!addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+    XLXI_66_ARM_STATE_MACHINE.AR = XLXI_66_assert_timer_stop;
+
+XLXI_66_assert_timer_stop := XLXI_66_XLXN_675
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_CMD0 * 
+	!XLXI_66_XLXI_1/q<4> * !XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * 
+	!XLXI_66_XLXI_1/q<3> * !XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * 
+	!XLXI_66_XLXI_1/q<6> * !XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * !XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * 
+	!XLXI_66_XLXI_1/q<13> * !XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15>
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	!XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * !XLXI_66_CMD1
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	!XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * !XLXI_66_CMD2;
+   XLXI_66_assert_timer_stop.CLK  =  clock;	// GCK
+
+XLXI_66_CMD0 := data<0>.PIN;
+    XLXI_66_CMD0.CLK = !(!addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+    XLXI_66_CMD0.AR = XLXI_66_assert_timer_stop;
+
+XLXI_66_XLXI_1/q<4>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * XLXI_66_XLXI_1/q<3>;
+   XLXI_66_XLXI_1/q<4>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<4>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<1>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer;
+   XLXI_66_XLXI_1/q<1>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<1>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<2>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<1>;
+   XLXI_66_XLXI_1/q<2>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<2>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<3>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2>;
+   XLXI_66_XLXI_1/q<3>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<3>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<8>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<5> * XLXI_66_XLXI_1/q<6> * 
+	XLXI_66_XLXI_1/q<7>;
+   XLXI_66_XLXI_1/q<8>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<8>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<5>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3>;
+   XLXI_66_XLXI_1/q<5>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<5>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<6>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<5>;
+   XLXI_66_XLXI_1/q<6>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<6>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<7>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<5> * XLXI_66_XLXI_1/q<6>;
+   XLXI_66_XLXI_1/q<7>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<7>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<12>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<9> * 
+	XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11>;
+   XLXI_66_XLXI_1/q<12>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<12>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<9>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7>;
+   XLXI_66_XLXI_1/q<9>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<9>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<10>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<9>;
+   XLXI_66_XLXI_1/q<10>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<10>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<11>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<9> * 
+	XLXI_66_XLXI_1/q<10>;
+   XLXI_66_XLXI_1/q<11>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<11>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<13>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11>;
+   XLXI_66_XLXI_1/q<13>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<13>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<14>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * 
+	XLXI_66_XLXI_1/q<13>;
+   XLXI_66_XLXI_1/q<14>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<14>.AR = XLXI_66_StartTimer;
+
+XLXI_66_XLXI_1/q<15>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * 
+	XLXI_66_XLXI_1/q<13> * XLXI_66_XLXI_1/q<14>;
+   XLXI_66_XLXI_1/q<15>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<15>.AR = XLXI_66_StartTimer;
+
+XLXI_66_CMD1 := data<1>.PIN;
+    XLXI_66_CMD1.CLK = !(!addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+    XLXI_66_CMD1.AR = XLXI_66_assert_timer_stop;
+
+XLXI_66_CMD2 := data<2>.PIN;
+    XLXI_66_CMD2.CLK = !(!addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+    XLXI_66_CMD2.AR = XLXI_66_assert_timer_stop;
+
+XLXI_66_XLXN_675 = !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15>;
+
+OneW =  Gnd;
+    OneW.OE = XLXI_66_assert_0;
+// Input Register
+XLXI_66_XLXN_176 := OneW.PIN;
+    XLXI_66_XLXN_176.CLK = XLXI_66_sample;
+    XLXI_66_XLXN_176.AR = !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+XLXI_66_sample := !XLXI_66_XLXI_1/q<0> * XLXI_66_CMD0 * 
+	XLXI_66_XLXI_1/q<4> * !XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * 
+	!XLXI_66_XLXI_1/q<6> * !XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * 
+	!XLXI_66_XLXI_1/q<9> * !XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * 
+	!XLXI_66_XLXI_1/q<13> * !XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * 
+	XLXI_66_CMD1 * !XLXI_66_CMD2
+	# !XLXI_66_XLXI_1/q<0> * XLXI_66_CMD0 * 
+	XLXI_66_XLXI_1/q<4> * !XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * !XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * !XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * 
+	XLXI_66_XLXI_1/q<13> * !XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * 
+	XLXI_66_CMD1 * XLXI_66_CMD2;
+   XLXI_66_sample.CLK  =  clock;	// GCK
+
+XLXI_66_assert_0 := Vcc;
+    XLXI_66_assert_0.CLK = XLXI_66_StartTimer;
+    XLXI_66_assert_0.AR = XLXI_66_release_1w;
+
+XLXI_66_release_1w := XLXI_66_XLXN_675
+	# !XLXI_66_CMD0 * !XLXI_66_CMD1
+	# !XLXI_66_CMD0 * XLXI_66_CMD2
+	# !XLXI_66_CMD1 * XLXI_66_CMD2
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_CMD0 * 
+	XLXI_66_XLXI_1/q<4> * !XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * !XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * 
+	!XLXI_66_XLXI_1/q<9> * XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * 
+	!XLXI_66_XLXI_1/q<13> * !XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15>
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * !XLXI_66_XLXI_1/q<9> * 
+	XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * XLXI_66_CMD2
+	# !XLXI_66_XLXI_1/q<0> * XLXI_66_CMD0 * 
+	XLXI_66_XLXI_1/q<4> * !XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * !XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * !XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * 
+	!XLXI_66_XLXI_1/q<9> * !XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * 
+	!XLXI_66_XLXI_1/q<13> * !XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * 
+	!XLXI_66_CMD2;
+   XLXI_66_release_1w.CLK  =  clock;	// GCK
+
+
+
+Legend:  <signame>.COMB = combinational node mapped to the same physical macrocell
+                          as the FastInput "signal" (not logically related)
+****************************  Device Pin Out ****************************
+
+Device : XCR3256XL-10-TQ144
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 MOSI                             73 VCC                           
+  2 SCLK                             74 L<11>                         
+  3 GND                              75 WPU                           
+  4 TDI                              76 VCC                           
+  5 nCS                              77 DCDCON                        
+  6 WPU                              78 DCDCEN                        
+  7 WPU                              79 AuxReset                      
+  8 WPU                              80 WPU                           
+  9 WPU                              81 TRIGGER                       
+ 10 WPU                              82 trig                          
+ 11 WPU                              83 WPU                           
+ 12 WPU                              84 WPU                           
+ 13 PE                               85 GND                           
+ 14 WPU                              86 SDMUX                         
+ 15 WPU                              87 MUX3                          
+ 16 WPU                              88 MUX2                          
+ 17 GND                              89 TCK                           
+ 18 WPU                              90 ENMUXF                        
+ 19 WPU                              91 WPU                           
+ 20 TMS                              92 ENMUXC                        
+ 21 WPU                              93 ENMUXB                        
+ 22 WPU                              94 ENMUXA                        
+ 23 WPU                              95 VCC                           
+ 24 VCC                              96 WPU                           
+ 25 DP<0>                            97 MUX1                          
+ 26 DP<1>                            98 MUX0                          
+ 27 DP<2>                            99 data<7>                       
+ 28 DP<3>                           100 data<6>                       
+ 29 DP<4>                           101 data<5>                       
+ 30 DP<5>                           102 data<4>                       
+ 31 DP<6>                           103 data<3>                       
+ 32 DP<7>                           104 TDO                           
+ 33 GND                             105 GND                           
+ 34 LE_DP                           106 data<2>                       
+ 35 WPU                             107 data<1>                       
+ 36 WPU                             108 data<0>                       
+ 37 WPU                             109 addr<0>                       
+ 38 WPU                             110 addr<1>                       
+ 39 WPU                             111 addr<2>                       
+ 40 WPU                             112 addr<3>                       
+ 41 WPU                             113 addr<4>                       
+ 42 OneW                            114 addr<5>                       
+ 43 WPU                             115 VCC                           
+ 44 WPU                             116 ID0                           
+ 45 WPU                             117 ID1                           
+ 46 WPU                             118 ID2                           
+ 47 WPU                             119 WPU                           
+ 48 WPU                             120 WPU                           
+ 49 WPU                             121 WPU                           
+ 50 VCC                             122 WPU                           
+ 51 VCC                             123 VCC                           
+ 52 GND                             124 GND                           
+ 53 WPU                             125 TIE                           
+ 54 WPU                             126 nwr                           
+ 55 WPU                             127 nrd                           
+ 56 WPU                             128 clock                         
+ 57 GND                             129 GND                           
+ 58 VCC                             130 VCC                           
+ 59 GND                             131 WPU                           
+ 60 L<3>                            132 WPU                           
+ 61 L<0>                            133 WPU                           
+ 62 L<1>                            134 WPU                           
+ 63 L<2>                            135 GND                           
+ 64 GND                             136 WPU                           
+ 65 L<4>                            137 WPU                           
+ 66 L<5>                            138 WPU                           
+ 67 L<6>                            139 attn                          
+ 68 L<7>                            140 WPU                           
+ 69 L<8>                            141 WPU                           
+ 70 L<9>                            142 WPU                           
+ 71 L<10>                           143 WPU                           
+ 72 WPU                             144 VCC                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+          PE  = Port Enable pin
+         WPU  = Unused with Internal Weak Pull Up
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xcr3256xl-10-TQ144
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Set Unused I/O Pin Termination              : PULLUP
+Set Input-Only Termination                  : FLOAT
+Set Universal Control Term Optimization     : OFF
+Enable Foldback NANDs                       : OFF
+Reserve ISP Pins                            : ON
+Enable Input Registers                      : ON
+Function Block Fan-in Limit                 : 38
+Input Limit                                 : 32
+Pterm Limit                                 : 28
