@@ -1,9 +1,0 @@
-vhdl work trig_x.vhf
-vhdl work timer_1w.vhf
-vhdl work process_1w.vhf
-vhdl work addr_d.vhf
-vhdl work register_o.vhf
-vhdl work process_norm.vhf
-vhdl work djw_spi.vhf
-vhdl work tick.vhf
-vhdl work flasher.vhf

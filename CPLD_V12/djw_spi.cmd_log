@@ -1,2 +1,0 @@
-sch2vhdl -family xpla3 -flat -suppress -w djw_spi.sch djw_spi.vhf
-sch2vhdl -family xpla3 -flat -suppress -w djw_spi.sch djw_spi.vhf
