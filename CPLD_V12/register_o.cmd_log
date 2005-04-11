@@ -1,0 +1,2 @@
+sch2vhdl -family xpla3 -flat -suppress -w register_o.sch register_o.vhf
+sch2vhdl -family xpla3 -flat -suppress -w register_o.sch register_o.vhf

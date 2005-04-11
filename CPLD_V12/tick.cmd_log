@@ -1,0 +1,2 @@
+sch2vhdl -family xpla3 -flat -suppress -w tick.sch tick.vhf
+sch2vhdl -family xpla3 -flat -suppress -w tick.sch tick.vhf
