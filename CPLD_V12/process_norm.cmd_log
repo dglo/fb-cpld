@@ -1,0 +1,2 @@
+sch2vhdl -family xpla3 -flat -suppress -w process_norm.sch process_norm.vhf
+sch2vhdl -family xpla3 -flat -suppress -w process_norm.sch process_norm.vhf

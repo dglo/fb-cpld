@@ -1,0 +1,1 @@
+var XilinxD="file:///C:/DocsForDan/CPLD\/chipviewer/lib/download.htm";

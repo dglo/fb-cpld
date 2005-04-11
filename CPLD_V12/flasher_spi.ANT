@@ -1,0 +1,32 @@
+-- C:\DOCSFORDAN\ICECUBE\A_REALFLASHERPRODUCTION\FLASHERPY05\CPLDV12
+-- VHDL Annotation Test Bench created by
+-- HDL Bencher 6.1i
+-- Thu Apr 07 10:28:06 2005
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY flasher_spi IS
+END flasher_spi;
+
+ARCHITECTURE testbench_arch OF flasher_spi IS
+-- If you get a compiler error on the following line,
+-- from the menu do Options->Configuration select VHDL 87
+FILE RESULTS: TEXT OPEN WRITE_MODE IS "c:\docsfordan\icecube\a_realflasherproduction\flasherpy05\cpldv12\flasher_spi.ano";
+	COMPONENT 
+		PORT (
+		);
+	END COMPONENT;
+
+
+BEGIN
+	UUT : 
+	PORT MAP (
+	);
+
+	PROCESS -- Annotate outputs process
+		VARIABLE TX_TIME : INTEGER :=0;
+
+	BEGIN
+		CHECK_LOOP : LOOP

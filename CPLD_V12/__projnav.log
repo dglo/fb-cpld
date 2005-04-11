@@ -1,0 +1,1743 @@
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+ERROR: 
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/addr_d.vhf in Library work.
+Entity <D4_16E_MXILINX_addr_d> (Architecture <BEHAVIORAL>) compiled.
+Entity <addr_d> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf in Library work.
+Entity <FD_MXILINX_register_o> (Architecture <BEHAVIORAL>) compiled.
+Entity <FDR_MXILINX_register_o> (Architecture <BEHAVIORAL>) compiled.
+Entity <FDRE_MXILINX_register_o> (Architecture <BEHAVIORAL>) compiled.
+Entity <FD4RE_MXILINX_register_o> (Architecture <BEHAVIORAL>) compiled.
+Entity <FD8RE_MXILINX_register_o> (Architecture <BEHAVIORAL>) compiled.
+Entity <register_o> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf in Library work.
+Entity <FTCE_MXILINX_timer_1w> (Architecture <BEHAVIORAL>) compiled.
+Entity <CB16CE_MXILINX_timer_1w> (Architecture <BEHAVIORAL>) compiled.
+Entity <timer_1w> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/trig_x.vhf in Library work.
+Entity <FTCE_MXILINX_trig_x> (Architecture <BEHAVIORAL>) compiled.
+Entity <FDC_MXILINX_trig_x> (Architecture <BEHAVIORAL>) compiled.
+Entity <trig_x> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf in Library work.
+Entity <OR8_MXILINX_process_1w> (Architecture <BEHAVIORAL>) compiled.
+Entity <FD_MXILINX_process_1w> (Architecture <BEHAVIORAL>) compiled.
+Entity <FD4CE_MXILINX_process_1w> (Architecture <BEHAVIORAL>) compiled.
+Entity <FDC_MXILINX_process_1w> (Architecture <BEHAVIORAL>) compiled.
+Entity <process_1w> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_norm.vhf in Library work.
+Entity <BUFE8_MXILINX_process_norm> (Architecture <BEHAVIORAL>) compiled.
+Entity <process_norm> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf in Library work.
+Entity <D2_4E_MXILINX_djw_spi> (Architecture <BEHAVIORAL>) compiled.
+Entity <FD_MXILINX_djw_spi> (Architecture <BEHAVIORAL>) compiled.
+Entity <FTCE_MXILINX_djw_spi> (Architecture <BEHAVIORAL>) compiled.
+Entity <CB4CE_MXILINX_djw_spi> (Architecture <BEHAVIORAL>) compiled.
+Entity <M2_1E_MXILINX_djw_spi> (Architecture <BEHAVIORAL>) compiled.
+Entity <M2_1_MXILINX_djw_spi> (Architecture <BEHAVIORAL>) compiled.
+Entity <M8_1E_MXILINX_djw_spi> (Architecture <BEHAVIORAL>) compiled.
+Entity <FD8CE_MXILINX_djw_spi> (Architecture <BEHAVIORAL>) compiled.
+Entity <djw_spi> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf in Library work.
+Entity <FD_MXILINX_tick> (Architecture <BEHAVIORAL>) compiled.
+Entity <FDRE_MXILINX_tick> (Architecture <BEHAVIORAL>) compiled.
+Entity <FTRSE_MXILINX_tick> (Architecture <BEHAVIORAL>) compiled.
+Entity <CB16RE_MXILINX_tick> (Architecture <BEHAVIORAL>) compiled.
+Entity <BUF8_MXILINX_tick> (Architecture <BEHAVIORAL>) compiled.
+Entity <tick> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf in Library work.
+Entity <BUFE8_MXILINX_flasher> (Architecture <BEHAVIORAL>) compiled.
+Entity <FD_MXILINX_flasher> (Architecture <BEHAVIORAL>) compiled.
+Entity <FDC_MXILINX_flasher> (Architecture <BEHAVIORAL>) compiled.
+Entity <flasher> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <flasher> (Architecture <BEHAVIORAL>).
+    Set user-defined property "HU_SET =  XLXI_142_1" for instance <XLXI_142> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_145_2" for instance <XLXI_145> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_149_0" for instance <XLXI_149> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_161_3" for instance <XLXI_161> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_166_4" for instance <XLXI_166> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_168_5" for instance <XLXI_168> in unit <flasher>.
+Entity <flasher> analyzed. Unit <flasher> generated.
+
+Analyzing Entity <trig_x> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <trig_x>.
+    Set user-defined property "HU_SET =  XLXI_2_1" for instance <XLXI_2> in unit <trig_x>.
+    Set user-defined property "HU_SET =  XLXI_3_2" for instance <XLXI_3> in unit <trig_x>.
+    Set user-defined property "HU_SET =  XLXI_4_3" for instance <XLXI_4> in unit <trig_x>.
+Entity <trig_x> analyzed. Unit <trig_x> generated.
+
+Analyzing Entity <FDC_MXILINX_trig_x> (Architecture <behavioral>).
+Entity <FDC_MXILINX_trig_x> analyzed. Unit <FDC_MXILINX_trig_x> generated.
+
+Analyzing Entity <FTCE_MXILINX_trig_x> (Architecture <behavioral>).
+Entity <FTCE_MXILINX_trig_x> analyzed. Unit <FTCE_MXILINX_trig_x> generated.
+
+Analyzing Entity <process_1w> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_3_4" for instance <XLXI_3> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_35_0" for instance <XLXI_35> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_46_1" for instance <XLXI_46> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_68_5" for instance <XLXI_68> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_69_2" for instance <XLXI_69> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_70_3" for instance <XLXI_70> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_73_6" for instance <XLXI_73> in unit <process_1w>.
+Entity <process_1w> analyzed. Unit <process_1w> generated.
+
+Analyzing Entity <timer_1w> (Architecture <behavioral>).
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf line 382: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_timer_1w'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf line 382: Unconnected output port 'TC' of component 'CB16CE_MXILINX_timer_1w'.
+    Set user-defined property "HU_SET =  XLXI_1_16" for instance <XLXI_1> in unit <timer_1w>.
+Entity <timer_1w> analyzed. Unit <timer_1w> generated.
+
+Analyzing Entity <CB16CE_MXILINX_timer_1w> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  Q0_1" for instance <Q0> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q1_0" for instance <Q1> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q2_3" for instance <Q2> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q3_2" for instance <Q3> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q4_7" for instance <Q4> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q5_6" for instance <Q5> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q6_5" for instance <Q6> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q7_4" for instance <Q7> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q8_8" for instance <Q8> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q9_9" for instance <Q9> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q10_10" for instance <Q10> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q11_11" for instance <Q11> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q12_12" for instance <Q12> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q13_13" for instance <Q13> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q14_14" for instance <Q14> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q15_15" for instance <Q15> in unit <CB16CE_MXILINX_timer_1w>.
+Entity <CB16CE_MXILINX_timer_1w> analyzed. Unit <CB16CE_MXILINX_timer_1w> generated.
+
+Analyzing Entity <FTCE_MXILINX_timer_1w> (Architecture <behavioral>).
+Entity <FTCE_MXILINX_timer_1w> analyzed. Unit <FTCE_MXILINX_timer_1w> generated.
+
+Analyzing Entity <FD4CE_MXILINX_process_1w> (Architecture <behavioral>).
+Entity <FD4CE_MXILINX_process_1w> analyzed. Unit <FD4CE_MXILINX_process_1w> generated.
+
+Analyzing Entity <FDC_MXILINX_process_1w> (Architecture <behavioral>).
+Entity <FDC_MXILINX_process_1w> analyzed. Unit <FDC_MXILINX_process_1w> generated.
+
+Analyzing Entity <FD_MXILINX_process_1w> (Architecture <behavioral>).
+Entity <FD_MXILINX_process_1w> analyzed. Unit <FD_MXILINX_process_1w> generated.
+
+Analyzing Entity <OR8_MXILINX_process_1w> (Architecture <behavioral>).
+Entity <OR8_MXILINX_process_1w> analyzed. Unit <OR8_MXILINX_process_1w> generated.
+
+Analyzing Entity <process_norm> (Architecture <behavioral>).
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_norm.vhf line 266: Unconnected output port 'sel_mode_select' of component 'addr_d'.
+    Set user-defined property "HU_SET =  XLXI_9_0" for instance <XLXI_9> in unit <process_norm>.
+    Set user-defined property "HU_SET =  XLXI_10_2" for instance <XLXI_10> in unit <process_norm>.
+    Set user-defined property "HU_SET =  XLXI_46_1" for instance <XLXI_46> in unit <process_norm>.
+Entity <process_norm> analyzed. Unit <process_norm> generated.
+
+Analyzing Entity <addr_d> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <addr_d>.
+Entity <addr_d> analyzed. Unit <addr_d> generated.
+
+Analyzing Entity <D4_16E_MXILINX_addr_d> (Architecture <behavioral>).
+Entity <D4_16E_MXILINX_addr_d> analyzed. Unit <D4_16E_MXILINX_addr_d> generated.
+
+Analyzing Entity <register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_3_16" for instance <XLXI_3> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_4_15" for instance <XLXI_4> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_5_17" for instance <XLXI_5> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_6_18" for instance <XLXI_6> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_15_14" for instance <XLXI_15> in unit <register_o>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 421: Unconnected output port 'Q2' of component 'FD4RE_MXILINX_register_o'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 421: Unconnected output port 'Q3' of component 'FD4RE_MXILINX_register_o'.
+    Set user-defined property "HU_SET =  XLXI_16_19" for instance <XLXI_16> in unit <register_o>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 426: Unconnected output port 'Q3' of component 'FD4RE_MXILINX_register_o'.
+    Set user-defined property "HU_SET =  XLXI_112_20" for instance <XLXI_112> in unit <register_o>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 431: Unconnected output port 'Q2' of component 'FD4RE_MXILINX_register_o'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 431: Unconnected output port 'Q3' of component 'FD4RE_MXILINX_register_o'.
+    Set user-defined property "HU_SET =  XLXI_113_21" for instance <XLXI_113> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_152_22" for instance <XLXI_152> in unit <register_o>.
+Entity <register_o> analyzed. Unit <register_o> generated.
+
+Analyzing Entity <FD4RE_MXILINX_register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U0_4" for instance <U0> in unit <FD4RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  U1_3" for instance <U1> in unit <FD4RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  U2_2" for instance <U2> in unit <FD4RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  U3_5" for instance <U3> in unit <FD4RE_MXILINX_register_o>.
+Entity <FD4RE_MXILINX_register_o> analyzed. Unit <FD4RE_MXILINX_register_o> generated.
+
+Analyzing Entity <FDRE_MXILINX_register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_36_42_1" for instance <I_36_42> in unit <FDRE_MXILINX_register_o>.
+    Set user-defined property "RLOC =  R0C0" for instance <I_36_42> in unit <FDRE_MXILINX_register_o>.
+Entity <FDRE_MXILINX_register_o> analyzed. Unit <FDRE_MXILINX_register_o> generated.
+
+Analyzing Entity <FD_MXILINX_register_o> (Architecture <behavioral>).
+Entity <FD_MXILINX_register_o> analyzed. Unit <FD_MXILINX_register_o> generated.
+
+Analyzing Entity <FD8RE_MXILINX_register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  Q0_10" for instance <Q0> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q1_11" for instance <Q1> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q2_7" for instance <Q2> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q3_12" for instance <Q3> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q4_9" for instance <Q4> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q5_13" for instance <Q5> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q6_8" for instance <Q6> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q7_6" for instance <Q7> in unit <FD8RE_MXILINX_register_o>.
+Entity <FD8RE_MXILINX_register_o> analyzed. Unit <FD8RE_MXILINX_register_o> generated.
+
+Analyzing Entity <FDR_MXILINX_register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U0_0" for instance <U0> in unit <FDR_MXILINX_register_o>.
+Entity <FDR_MXILINX_register_o> analyzed. Unit <FDR_MXILINX_register_o> generated.
+
+Analyzing Entity <BUFE8_MXILINX_process_norm> (Architecture <behavioral>).
+Entity <BUFE8_MXILINX_process_norm> analyzed. Unit <BUFE8_MXILINX_process_norm> generated.
+
+Analyzing Entity <FDC_MXILINX_flasher> (Architecture <behavioral>).
+Entity <FDC_MXILINX_flasher> analyzed. Unit <FDC_MXILINX_flasher> generated.
+
+Analyzing Entity <FD_MXILINX_flasher> (Architecture <behavioral>).
+Entity <FD_MXILINX_flasher> analyzed. Unit <FD_MXILINX_flasher> generated.
+
+Analyzing Entity <djw_spi> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_11" for instance <XLXI_1> in unit <djw_spi>.
+    Set user-defined property "HU_SET =  XLXI_2_12" for instance <XLXI_2> in unit <djw_spi>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf line 721: Unconnected output port 'CEO' of component 'CB4CE_MXILINX_djw_spi'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf line 721: Unconnected output port 'Q3' of component 'CB4CE_MXILINX_djw_spi'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf line 721: Unconnected output port 'TC' of component 'CB4CE_MXILINX_djw_spi'.
+    Set user-defined property "HU_SET =  XLXI_3_13" for instance <XLXI_3> in unit <djw_spi>.
+    Set user-defined property "HU_SET =  XLXI_9_14" for instance <XLXI_9> in unit <djw_spi>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf line 746: Unconnected output port 'D3' of component 'D2_4E_MXILINX_djw_spi'.
+    Set user-defined property "HU_SET =  XLXI_11_15" for instance <XLXI_11> in unit <djw_spi>.
+Entity <djw_spi> analyzed. Unit <djw_spi> generated.
+
+Analyzing Entity <FD8CE_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <FD8CE_MXILINX_djw_spi> analyzed. Unit <FD8CE_MXILINX_djw_spi> generated.
+
+Analyzing Entity <M8_1E_MXILINX_djw_spi> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U1_10" for instance <U1> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U2_9" for instance <U2> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U3_8" for instance <U3> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U4_7" for instance <U4> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U5_5" for instance <U5> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U6_4" for instance <U6> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U7_6" for instance <U7> in unit <M8_1E_MXILINX_djw_spi>.
+Entity <M8_1E_MXILINX_djw_spi> analyzed. Unit <M8_1E_MXILINX_djw_spi> generated.
+
+Analyzing Entity <M2_1E_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <M2_1E_MXILINX_djw_spi> analyzed. Unit <M2_1E_MXILINX_djw_spi> generated.
+
+Analyzing Entity <M2_1_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <M2_1_MXILINX_djw_spi> analyzed. Unit <M2_1_MXILINX_djw_spi> generated.
+
+Analyzing Entity <CB4CE_MXILINX_djw_spi> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U0_0" for instance <U0> in unit <CB4CE_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U1_1" for instance <U1> in unit <CB4CE_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U2_2" for instance <U2> in unit <CB4CE_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U3_3" for instance <U3> in unit <CB4CE_MXILINX_djw_spi>.
+Entity <CB4CE_MXILINX_djw_spi> analyzed. Unit <CB4CE_MXILINX_djw_spi> generated.
+
+Analyzing Entity <FTCE_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <FTCE_MXILINX_djw_spi> analyzed. Unit <FTCE_MXILINX_djw_spi> generated.
+
+Analyzing Entity <FD_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <FD_MXILINX_djw_spi> analyzed. Unit <FD_MXILINX_djw_spi> generated.
+
+Analyzing Entity <D2_4E_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <D2_4E_MXILINX_djw_spi> analyzed. Unit <D2_4E_MXILINX_djw_spi> generated.
+
+Analyzing Entity <tick> (Architecture <behavioral>).
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf line 526: Unconnected output port 'CEO' of component 'CB16RE_MXILINX_tick'.
+    Set user-defined property "HU_SET =  XLXI_1_20" for instance <XLXI_1> in unit <tick>.
+    Set user-defined property "HU_SET =  XLXI_3_18" for instance <XLXI_3> in unit <tick>.
+    Set user-defined property "HU_SET =  XLXI_4_19" for instance <XLXI_4> in unit <tick>.
+Entity <tick> analyzed. Unit <tick> generated.
+
+Analyzing Entity <CB16RE_MXILINX_tick> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  Q0_17" for instance <Q0> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q1_16" for instance <Q1> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q2_15" for instance <Q2> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q3_14" for instance <Q3> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q4_13" for instance <Q4> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q5_12" for instance <Q5> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q6_11" for instance <Q6> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q7_10" for instance <Q7> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q8_2" for instance <Q8> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q9_3" for instance <Q9> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q10_4" for instance <Q10> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q11_5" for instance <Q11> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q12_6" for instance <Q12> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q13_7" for instance <Q13> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q14_8" for instance <Q14> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q15_9" for instance <Q15> in unit <CB16RE_MXILINX_tick>.
+Entity <CB16RE_MXILINX_tick> analyzed. Unit <CB16RE_MXILINX_tick> generated.
+
+Analyzing Entity <FTRSE_MXILINX_tick> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_36_35_1" for instance <I_36_35> in unit <FTRSE_MXILINX_tick>.
+Entity <FTRSE_MXILINX_tick> analyzed. Unit <FTRSE_MXILINX_tick> generated.
+
+Analyzing Entity <FDRE_MXILINX_tick> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_36_42_0" for instance <I_36_42> in unit <FDRE_MXILINX_tick>.
+    Set user-defined property "RLOC =  R0C0" for instance <I_36_42> in unit <FDRE_MXILINX_tick>.
+Entity <FDRE_MXILINX_tick> analyzed. Unit <FDRE_MXILINX_tick> generated.
+
+Analyzing Entity <FD_MXILINX_tick> (Architecture <behavioral>).
+Entity <FD_MXILINX_tick> analyzed. Unit <FD_MXILINX_tick> generated.
+
+Analyzing Entity <BUF8_MXILINX_tick> (Architecture <behavioral>).
+Entity <BUF8_MXILINX_tick> analyzed. Unit <BUF8_MXILINX_tick> generated.
+
+Analyzing Entity <BUFE8_MXILINX_flasher> (Architecture <behavioral>).
+Entity <BUFE8_MXILINX_flasher> analyzed. Unit <BUFE8_MXILINX_flasher> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FD_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <FD_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <FDRE_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <FDRE_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <FTRSE_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <BUF8_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <BUF8_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <CB16RE_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <CB16RE_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <FTCE_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <M2_1_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <M2_1E_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <D2_4E_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <D2_4E_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <FD_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <FD_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <CB4CE_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <CB4CE_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <M8_1E_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <FD8CE_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <FD8CE_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <FD_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FD_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <FDRE_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FDRE_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <FDR_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FDR_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <FD8RE_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FD8RE_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <FD4RE_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FD4RE_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <D4_16E_MXILINX_addr_d>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/addr_d.vhf.
+Unit <D4_16E_MXILINX_addr_d> synthesized.
+
+
+Synthesizing Unit <BUFE8_MXILINX_process_norm>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_norm.vhf.
+Unit <BUFE8_MXILINX_process_norm> synthesized.
+
+
+Synthesizing Unit <register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <register_o> synthesized.
+
+
+Synthesizing Unit <addr_d>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/addr_d.vhf.
+Unit <addr_d> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_timer_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf.
+Unit <FTCE_MXILINX_timer_1w> synthesized.
+
+
+Synthesizing Unit <CB16CE_MXILINX_timer_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf.
+Unit <CB16CE_MXILINX_timer_1w> synthesized.
+
+
+Synthesizing Unit <OR8_MXILINX_process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <OR8_MXILINX_process_1w> synthesized.
+
+
+Synthesizing Unit <FD_MXILINX_process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <FD_MXILINX_process_1w> synthesized.
+
+
+Synthesizing Unit <FDC_MXILINX_process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <FDC_MXILINX_process_1w> synthesized.
+
+
+Synthesizing Unit <FD4CE_MXILINX_process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <FD4CE_MXILINX_process_1w> synthesized.
+
+
+Synthesizing Unit <timer_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf.
+Unit <timer_1w> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_trig_x>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/trig_x.vhf.
+Unit <FTCE_MXILINX_trig_x> synthesized.
+
+
+Synthesizing Unit <FDC_MXILINX_trig_x>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/trig_x.vhf.
+Unit <FDC_MXILINX_trig_x> synthesized.
+
+
+Synthesizing Unit <BUFE8_MXILINX_flasher>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf.
+Unit <BUFE8_MXILINX_flasher> synthesized.
+
+
+Synthesizing Unit <tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <tick> synthesized.
+
+
+Synthesizing Unit <djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <djw_spi> synthesized.
+
+
+Synthesizing Unit <FD_MXILINX_flasher>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf.
+Unit <FD_MXILINX_flasher> synthesized.
+
+
+Synthesizing Unit <FDC_MXILINX_flasher>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf.
+Unit <FDC_MXILINX_flasher> synthesized.
+
+
+Synthesizing Unit <process_norm>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_norm.vhf.
+Unit <process_norm> synthesized.
+
+
+Synthesizing Unit <process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <process_1w> synthesized.
+
+
+Synthesizing Unit <trig_x>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/trig_x.vhf.
+Unit <trig_x> synthesized.
+
+
+Synthesizing Unit <flasher>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf.
+Unit <flasher> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1348 - Unit BUFE8_MXILINX_flasher is merged (output interface has tristates)
+WARNING:Xst:1348 - Unit BUFE8_MXILINX_process_norm is merged (output interface has tristates)
+WARNING:Xst:1348 - Unit process_norm is merged (output interface has tristates)
+WARNING:Xst:1348 - Unit process_1w is merged (output interface has tristates)
+
+Optimizing unit <flasher> ...
+
+Optimizing unit <FDC_MXILINX_flasher> ...
+
+Optimizing unit <FD_MXILINX_flasher> ...
+
+Optimizing unit <FDC_MXILINX_trig_x> ...
+
+Optimizing unit <FTCE_MXILINX_trig_x> ...
+
+Optimizing unit <FD4CE_MXILINX_process_1w> ...
+
+Optimizing unit <FDC_MXILINX_process_1w> ...
+
+Optimizing unit <FD_MXILINX_process_1w> ...
+
+Optimizing unit <OR8_MXILINX_process_1w> ...
+
+Optimizing unit <FTCE_MXILINX_timer_1w> ...
+
+Optimizing unit <D4_16E_MXILINX_addr_d> ...
+
+Optimizing unit <FD_MXILINX_register_o> ...
+
+Optimizing unit <FD8CE_MXILINX_djw_spi> ...
+
+Optimizing unit <FD_MXILINX_djw_spi> ...
+
+Optimizing unit <D2_4E_MXILINX_djw_spi> ...
+
+Optimizing unit <M2_1E_MXILINX_djw_spi> ...
+
+Optimizing unit <M2_1_MXILINX_djw_spi> ...
+
+Optimizing unit <FTCE_MXILINX_djw_spi> ...
+
+Optimizing unit <BUF8_MXILINX_tick> ...
+
+Optimizing unit <FD_MXILINX_tick> ...
+
+Optimizing unit <trig_x> ...
+
+Optimizing unit <CB16CE_MXILINX_timer_1w> ...
+
+Optimizing unit <addr_d> ...
+
+Optimizing unit <FDR_MXILINX_register_o> ...
+
+Optimizing unit <FDRE_MXILINX_register_o> ...
+
+Optimizing unit <M8_1E_MXILINX_djw_spi> ...
+
+Optimizing unit <CB4CE_MXILINX_djw_spi> ...
+
+Optimizing unit <FDRE_MXILINX_tick> ...
+
+Optimizing unit <djw_spi> ...
+
+Optimizing unit <timer_1w> ...
+
+Optimizing unit <FD4RE_MXILINX_register_o> ...
+
+Optimizing unit <FD8RE_MXILINX_register_o> ...
+
+Optimizing unit <FTRSE_MXILINX_tick> ...
+
+Optimizing unit <register_o> ...
+
+Optimizing unit <CB16RE_MXILINX_tick> ...
+
+Optimizing unit <tick> ...
+Completed process "Synthesize".
+
+
+
+Started process "Translate".
+
+Extracting independent architecture files...
+Release 6.1.03i - ngdbuild G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -uc flasher.ucf -p xpla3 flasher.ngc flasher.ngd
+
+Reading NGO file
+"C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.ngc"
+...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "flasher.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:454 - logical net 'XLXI_163/XLXI_1/CEO' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_160/XLXI_3/CEO' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_160/XLXI_11/D3' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_66_XLXI_1/XLXI_1/CEO' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_67_XLXI_1/sel_mode_select' has no load
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Total memory usage is 36556 kilobytes
+
+Writing NGD file "flasher.ngd" ...
+
+Writing NGDBUILD log file "flasher.bld"...
+
+NGDBUILD done.
+Completed process "Translate".
+
+
+
+Started process "Fit".
+
+Release 6.1.03i - CPLD Optimizer/Partitioner G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA5' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA5' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA5' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+Considering device XCR3256XL-10-TQ144.
+Re-checking device resources ...
+...
+Synthesizing and Optimizing...
+...................................................................................................
+...o
+.......
+Fitting...
+........
+...o
+
+
+Design flasher has been optimized and fit into device XCR3256XL-10-TQ144.
+Completed process "Fit".
+
+
+
+Started process "Generate Programming File".
+
+Release 6.1.03i - Programming File Generator G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+Completed process "Generate Programming File".
+
+
+
+Started process "Generate Timing".
+
+Release 6.1.03i - Timing Report Generator G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+Path tracing ...............
+The number of paths traced: 2075.
+
+..........
+The number of paths traced: 4151.
+
+Generating TA GUI report ...
+Generating detailed paths report ...
+
+Generating asynchronous checking report ...
+c:\docsfordan\icecube\a_realflasherproduction\flasherpy05\cpldv12/flasher_html/t
+im/timing_report.htm has been created.
+c:\docsfordan\icecube\a_realflasherproduction\flasherpy05\cpldv12/flasher_html/t
+im/timing_report.htm has been created.
+Completed process "Generate Timing".
+
+
+
+Started process "Generate HTML report".
+
+Release 6.1.03i - CPLD HTML Report Processor G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+Started process "View VHDL Functional Model".
+
+Release 6.1.03i - sch2vhdl G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+DRC Check completed: No Error found.
+Vhdl netlist file generated.
+Completed process "View VHDL Functional Model".
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/addr_d.vhf in Library work.
+Entity <d4_16e_mxilinx_addr_d> (Architecture <behavioral>) compiled.
+Entity <addr_d> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf in Library work.
+Entity <fd_mxilinx_register_o> (Architecture <behavioral>) compiled.
+Entity <fdr_mxilinx_register_o> (Architecture <behavioral>) compiled.
+Entity <fdre_mxilinx_register_o> (Architecture <behavioral>) compiled.
+Entity <fd4re_mxilinx_register_o> (Architecture <behavioral>) compiled.
+Entity <fd8re_mxilinx_register_o> (Architecture <behavioral>) compiled.
+Entity <register_o> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf in Library work.
+Entity <ftce_mxilinx_timer_1w> (Architecture <behavioral>) compiled.
+Entity <cb16ce_mxilinx_timer_1w> (Architecture <behavioral>) compiled.
+Entity <timer_1w> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/trig_x.vhf in Library work.
+Entity <ftce_mxilinx_trig_x> (Architecture <behavioral>) compiled.
+Entity <fdc_mxilinx_trig_x> (Architecture <behavioral>) compiled.
+Entity <trig_x> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf in Library work.
+Entity <or8_mxilinx_process_1w> (Architecture <behavioral>) compiled.
+Entity <fd_mxilinx_process_1w> (Architecture <behavioral>) compiled.
+Entity <fd4ce_mxilinx_process_1w> (Architecture <behavioral>) compiled.
+Entity <fdc_mxilinx_process_1w> (Architecture <behavioral>) compiled.
+Entity <process_1w> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_norm.vhf in Library work.
+Entity <bufe8_mxilinx_process_norm> (Architecture <behavioral>) compiled.
+Entity <process_norm> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf in Library work.
+Entity <d2_4e_mxilinx_djw_spi> (Architecture <behavioral>) compiled.
+Entity <fd_mxilinx_djw_spi> (Architecture <behavioral>) compiled.
+Entity <ftce_mxilinx_djw_spi> (Architecture <behavioral>) compiled.
+Entity <cb4ce_mxilinx_djw_spi> (Architecture <behavioral>) compiled.
+Entity <m2_1e_mxilinx_djw_spi> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_djw_spi> (Architecture <behavioral>) compiled.
+Entity <m8_1e_mxilinx_djw_spi> (Architecture <behavioral>) compiled.
+Entity <fd8ce_mxilinx_djw_spi> (Architecture <behavioral>) compiled.
+Entity <djw_spi> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf in Library work.
+Entity <fd_mxilinx_tick> (Architecture <behavioral>) compiled.
+Entity <fdre_mxilinx_tick> (Architecture <behavioral>) compiled.
+Entity <ftrse_mxilinx_tick> (Architecture <behavioral>) compiled.
+Entity <cb16re_mxilinx_tick> (Architecture <behavioral>) compiled.
+Entity <buf8_mxilinx_tick> (Architecture <behavioral>) compiled.
+Entity <tick> (Architecture <behavioral>) compiled.
+Compiling vhdl file C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf in Library work.
+Entity <bufe8_mxilinx_flasher> (Architecture <behavioral>) compiled.
+Entity <fd_mxilinx_flasher> (Architecture <behavioral>) compiled.
+Entity <fdc_mxilinx_flasher> (Architecture <behavioral>) compiled.
+Entity <flasher> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <flasher> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_142_1" for instance <XLXI_142> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_145_2" for instance <XLXI_145> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_149_0" for instance <XLXI_149> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_161_3" for instance <XLXI_161> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_166_4" for instance <XLXI_166> in unit <flasher>.
+    Set user-defined property "HU_SET =  XLXI_168_5" for instance <XLXI_168> in unit <flasher>.
+Entity <flasher> analyzed. Unit <flasher> generated.
+
+Analyzing Entity <trig_x> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <trig_x>.
+    Set user-defined property "HU_SET =  XLXI_2_1" for instance <XLXI_2> in unit <trig_x>.
+    Set user-defined property "HU_SET =  XLXI_3_2" for instance <XLXI_3> in unit <trig_x>.
+    Set user-defined property "HU_SET =  XLXI_4_3" for instance <XLXI_4> in unit <trig_x>.
+Entity <trig_x> analyzed. Unit <trig_x> generated.
+
+Analyzing Entity <FDC_MXILINX_trig_x> (Architecture <behavioral>).
+Entity <FDC_MXILINX_trig_x> analyzed. Unit <FDC_MXILINX_trig_x> generated.
+
+Analyzing Entity <FTCE_MXILINX_trig_x> (Architecture <behavioral>).
+Entity <FTCE_MXILINX_trig_x> analyzed. Unit <FTCE_MXILINX_trig_x> generated.
+
+Analyzing Entity <process_1w> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_3_4" for instance <XLXI_3> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_35_0" for instance <XLXI_35> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_46_1" for instance <XLXI_46> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_68_5" for instance <XLXI_68> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_69_2" for instance <XLXI_69> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_70_3" for instance <XLXI_70> in unit <process_1w>.
+    Set user-defined property "HU_SET =  XLXI_73_6" for instance <XLXI_73> in unit <process_1w>.
+Entity <process_1w> analyzed. Unit <process_1w> generated.
+
+Analyzing Entity <timer_1w> (Architecture <behavioral>).
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf line 382: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_timer_1w'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf line 382: Unconnected output port 'TC' of component 'CB16CE_MXILINX_timer_1w'.
+    Set user-defined property "HU_SET =  XLXI_1_16" for instance <XLXI_1> in unit <timer_1w>.
+Entity <timer_1w> analyzed. Unit <timer_1w> generated.
+
+Analyzing Entity <CB16CE_MXILINX_timer_1w> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  Q0_1" for instance <Q0> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q1_0" for instance <Q1> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q2_3" for instance <Q2> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q3_2" for instance <Q3> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q4_7" for instance <Q4> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q5_6" for instance <Q5> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q6_5" for instance <Q6> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q7_4" for instance <Q7> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q8_8" for instance <Q8> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q9_9" for instance <Q9> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q10_10" for instance <Q10> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q11_11" for instance <Q11> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q12_12" for instance <Q12> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q13_13" for instance <Q13> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q14_14" for instance <Q14> in unit <CB16CE_MXILINX_timer_1w>.
+    Set user-defined property "HU_SET =  Q15_15" for instance <Q15> in unit <CB16CE_MXILINX_timer_1w>.
+Entity <CB16CE_MXILINX_timer_1w> analyzed. Unit <CB16CE_MXILINX_timer_1w> generated.
+
+Analyzing Entity <FTCE_MXILINX_timer_1w> (Architecture <behavioral>).
+Entity <FTCE_MXILINX_timer_1w> analyzed. Unit <FTCE_MXILINX_timer_1w> generated.
+
+Analyzing Entity <FD4CE_MXILINX_process_1w> (Architecture <behavioral>).
+Entity <FD4CE_MXILINX_process_1w> analyzed. Unit <FD4CE_MXILINX_process_1w> generated.
+
+Analyzing Entity <FDC_MXILINX_process_1w> (Architecture <behavioral>).
+Entity <FDC_MXILINX_process_1w> analyzed. Unit <FDC_MXILINX_process_1w> generated.
+
+Analyzing Entity <FD_MXILINX_process_1w> (Architecture <behavioral>).
+Entity <FD_MXILINX_process_1w> analyzed. Unit <FD_MXILINX_process_1w> generated.
+
+Analyzing Entity <OR8_MXILINX_process_1w> (Architecture <behavioral>).
+Entity <OR8_MXILINX_process_1w> analyzed. Unit <OR8_MXILINX_process_1w> generated.
+
+Analyzing Entity <process_norm> (Architecture <behavioral>).
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_norm.vhf line 266: Unconnected output port 'sel_mode_select' of component 'addr_d'.
+    Set user-defined property "HU_SET =  XLXI_9_0" for instance <XLXI_9> in unit <process_norm>.
+    Set user-defined property "HU_SET =  XLXI_10_2" for instance <XLXI_10> in unit <process_norm>.
+    Set user-defined property "HU_SET =  XLXI_46_1" for instance <XLXI_46> in unit <process_norm>.
+Entity <process_norm> analyzed. Unit <process_norm> generated.
+
+Analyzing Entity <addr_d> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <addr_d>.
+Entity <addr_d> analyzed. Unit <addr_d> generated.
+
+Analyzing Entity <D4_16E_MXILINX_addr_d> (Architecture <behavioral>).
+Entity <D4_16E_MXILINX_addr_d> analyzed. Unit <D4_16E_MXILINX_addr_d> generated.
+
+Analyzing Entity <register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_3_16" for instance <XLXI_3> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_4_15" for instance <XLXI_4> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_5_17" for instance <XLXI_5> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_6_18" for instance <XLXI_6> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_15_14" for instance <XLXI_15> in unit <register_o>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 421: Unconnected output port 'Q2' of component 'FD4RE_MXILINX_register_o'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 421: Unconnected output port 'Q3' of component 'FD4RE_MXILINX_register_o'.
+    Set user-defined property "HU_SET =  XLXI_16_19" for instance <XLXI_16> in unit <register_o>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 426: Unconnected output port 'Q3' of component 'FD4RE_MXILINX_register_o'.
+    Set user-defined property "HU_SET =  XLXI_112_20" for instance <XLXI_112> in unit <register_o>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 431: Unconnected output port 'Q2' of component 'FD4RE_MXILINX_register_o'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf line 431: Unconnected output port 'Q3' of component 'FD4RE_MXILINX_register_o'.
+    Set user-defined property "HU_SET =  XLXI_113_21" for instance <XLXI_113> in unit <register_o>.
+    Set user-defined property "HU_SET =  XLXI_152_22" for instance <XLXI_152> in unit <register_o>.
+Entity <register_o> analyzed. Unit <register_o> generated.
+
+Analyzing Entity <FD4RE_MXILINX_register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U0_4" for instance <U0> in unit <FD4RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  U1_3" for instance <U1> in unit <FD4RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  U2_2" for instance <U2> in unit <FD4RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  U3_5" for instance <U3> in unit <FD4RE_MXILINX_register_o>.
+Entity <FD4RE_MXILINX_register_o> analyzed. Unit <FD4RE_MXILINX_register_o> generated.
+
+Analyzing Entity <FDRE_MXILINX_register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_36_42_1" for instance <I_36_42> in unit <FDRE_MXILINX_register_o>.
+    Set user-defined property "RLOC =  R0C0" for instance <I_36_42> in unit <FDRE_MXILINX_register_o>.
+Entity <FDRE_MXILINX_register_o> analyzed. Unit <FDRE_MXILINX_register_o> generated.
+
+Analyzing Entity <FD_MXILINX_register_o> (Architecture <behavioral>).
+Entity <FD_MXILINX_register_o> analyzed. Unit <FD_MXILINX_register_o> generated.
+
+Analyzing Entity <FD8RE_MXILINX_register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  Q0_10" for instance <Q0> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q1_11" for instance <Q1> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q2_7" for instance <Q2> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q3_12" for instance <Q3> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q4_9" for instance <Q4> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q5_13" for instance <Q5> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q6_8" for instance <Q6> in unit <FD8RE_MXILINX_register_o>.
+    Set user-defined property "HU_SET =  Q7_6" for instance <Q7> in unit <FD8RE_MXILINX_register_o>.
+Entity <FD8RE_MXILINX_register_o> analyzed. Unit <FD8RE_MXILINX_register_o> generated.
+
+Analyzing Entity <FDR_MXILINX_register_o> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U0_0" for instance <U0> in unit <FDR_MXILINX_register_o>.
+Entity <FDR_MXILINX_register_o> analyzed. Unit <FDR_MXILINX_register_o> generated.
+
+Analyzing Entity <BUFE8_MXILINX_process_norm> (Architecture <behavioral>).
+Entity <BUFE8_MXILINX_process_norm> analyzed. Unit <BUFE8_MXILINX_process_norm> generated.
+
+Analyzing Entity <FDC_MXILINX_flasher> (Architecture <behavioral>).
+Entity <FDC_MXILINX_flasher> analyzed. Unit <FDC_MXILINX_flasher> generated.
+
+Analyzing Entity <FD_MXILINX_flasher> (Architecture <behavioral>).
+Entity <FD_MXILINX_flasher> analyzed. Unit <FD_MXILINX_flasher> generated.
+
+Analyzing Entity <djw_spi> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_11" for instance <XLXI_1> in unit <djw_spi>.
+    Set user-defined property "HU_SET =  XLXI_2_12" for instance <XLXI_2> in unit <djw_spi>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf line 721: Unconnected output port 'CEO' of component 'CB4CE_MXILINX_djw_spi'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf line 721: Unconnected output port 'Q3' of component 'CB4CE_MXILINX_djw_spi'.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf line 721: Unconnected output port 'TC' of component 'CB4CE_MXILINX_djw_spi'.
+    Set user-defined property "HU_SET =  XLXI_3_13" for instance <XLXI_3> in unit <djw_spi>.
+    Set user-defined property "HU_SET =  XLXI_9_14" for instance <XLXI_9> in unit <djw_spi>.
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf line 746: Unconnected output port 'D3' of component 'D2_4E_MXILINX_djw_spi'.
+    Set user-defined property "HU_SET =  XLXI_11_15" for instance <XLXI_11> in unit <djw_spi>.
+Entity <djw_spi> analyzed. Unit <djw_spi> generated.
+
+Analyzing Entity <FD8CE_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <FD8CE_MXILINX_djw_spi> analyzed. Unit <FD8CE_MXILINX_djw_spi> generated.
+
+Analyzing Entity <M8_1E_MXILINX_djw_spi> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U1_10" for instance <U1> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U2_9" for instance <U2> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U3_8" for instance <U3> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U4_7" for instance <U4> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U5_5" for instance <U5> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U6_4" for instance <U6> in unit <M8_1E_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U7_6" for instance <U7> in unit <M8_1E_MXILINX_djw_spi>.
+Entity <M8_1E_MXILINX_djw_spi> analyzed. Unit <M8_1E_MXILINX_djw_spi> generated.
+
+Analyzing Entity <M2_1E_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <M2_1E_MXILINX_djw_spi> analyzed. Unit <M2_1E_MXILINX_djw_spi> generated.
+
+Analyzing Entity <M2_1_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <M2_1_MXILINX_djw_spi> analyzed. Unit <M2_1_MXILINX_djw_spi> generated.
+
+Analyzing Entity <CB4CE_MXILINX_djw_spi> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U0_0" for instance <U0> in unit <CB4CE_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U1_1" for instance <U1> in unit <CB4CE_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U2_2" for instance <U2> in unit <CB4CE_MXILINX_djw_spi>.
+    Set user-defined property "HU_SET =  U3_3" for instance <U3> in unit <CB4CE_MXILINX_djw_spi>.
+Entity <CB4CE_MXILINX_djw_spi> analyzed. Unit <CB4CE_MXILINX_djw_spi> generated.
+
+Analyzing Entity <FTCE_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <FTCE_MXILINX_djw_spi> analyzed. Unit <FTCE_MXILINX_djw_spi> generated.
+
+Analyzing Entity <FD_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <FD_MXILINX_djw_spi> analyzed. Unit <FD_MXILINX_djw_spi> generated.
+
+Analyzing Entity <D2_4E_MXILINX_djw_spi> (Architecture <behavioral>).
+Entity <D2_4E_MXILINX_djw_spi> analyzed. Unit <D2_4E_MXILINX_djw_spi> generated.
+
+Analyzing Entity <tick> (Architecture <behavioral>).
+WARNING:Xst:753 - C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf line 526: Unconnected output port 'CEO' of component 'CB16RE_MXILINX_tick'.
+    Set user-defined property "HU_SET =  XLXI_1_20" for instance <XLXI_1> in unit <tick>.
+    Set user-defined property "HU_SET =  XLXI_3_18" for instance <XLXI_3> in unit <tick>.
+    Set user-defined property "HU_SET =  XLXI_4_19" for instance <XLXI_4> in unit <tick>.
+Entity <tick> analyzed. Unit <tick> generated.
+
+Analyzing Entity <CB16RE_MXILINX_tick> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  Q0_17" for instance <Q0> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q1_16" for instance <Q1> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q2_15" for instance <Q2> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q3_14" for instance <Q3> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q4_13" for instance <Q4> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q5_12" for instance <Q5> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q6_11" for instance <Q6> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q7_10" for instance <Q7> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q8_2" for instance <Q8> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q9_3" for instance <Q9> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q10_4" for instance <Q10> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q11_5" for instance <Q11> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q12_6" for instance <Q12> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q13_7" for instance <Q13> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q14_8" for instance <Q14> in unit <CB16RE_MXILINX_tick>.
+    Set user-defined property "HU_SET =  Q15_9" for instance <Q15> in unit <CB16RE_MXILINX_tick>.
+Entity <CB16RE_MXILINX_tick> analyzed. Unit <CB16RE_MXILINX_tick> generated.
+
+Analyzing Entity <FTRSE_MXILINX_tick> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_36_35_1" for instance <I_36_35> in unit <FTRSE_MXILINX_tick>.
+Entity <FTRSE_MXILINX_tick> analyzed. Unit <FTRSE_MXILINX_tick> generated.
+
+Analyzing Entity <FDRE_MXILINX_tick> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_36_42_0" for instance <I_36_42> in unit <FDRE_MXILINX_tick>.
+    Set user-defined property "RLOC =  R0C0" for instance <I_36_42> in unit <FDRE_MXILINX_tick>.
+Entity <FDRE_MXILINX_tick> analyzed. Unit <FDRE_MXILINX_tick> generated.
+
+Analyzing Entity <FD_MXILINX_tick> (Architecture <behavioral>).
+Entity <FD_MXILINX_tick> analyzed. Unit <FD_MXILINX_tick> generated.
+
+Analyzing Entity <BUF8_MXILINX_tick> (Architecture <behavioral>).
+Entity <BUF8_MXILINX_tick> analyzed. Unit <BUF8_MXILINX_tick> generated.
+
+Analyzing Entity <BUFE8_MXILINX_flasher> (Architecture <behavioral>).
+Entity <BUFE8_MXILINX_flasher> analyzed. Unit <BUFE8_MXILINX_flasher> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FD_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <FD_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <FDRE_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <FDRE_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <FTRSE_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <BUF8_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <BUF8_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <CB16RE_MXILINX_tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <CB16RE_MXILINX_tick> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <FTCE_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <M2_1_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <M2_1E_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <D2_4E_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <D2_4E_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <FD_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <FD_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <CB4CE_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <CB4CE_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <M8_1E_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <FD8CE_MXILINX_djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <FD8CE_MXILINX_djw_spi> synthesized.
+
+
+Synthesizing Unit <FD_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FD_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <FDRE_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FDRE_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <FDR_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FDR_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <FD8RE_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FD8RE_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <FD4RE_MXILINX_register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <FD4RE_MXILINX_register_o> synthesized.
+
+
+Synthesizing Unit <D4_16E_MXILINX_addr_d>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/addr_d.vhf.
+Unit <D4_16E_MXILINX_addr_d> synthesized.
+
+
+Synthesizing Unit <BUFE8_MXILINX_process_norm>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_norm.vhf.
+Unit <BUFE8_MXILINX_process_norm> synthesized.
+
+
+Synthesizing Unit <register_o>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/register_o.vhf.
+Unit <register_o> synthesized.
+
+
+Synthesizing Unit <addr_d>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/addr_d.vhf.
+Unit <addr_d> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_timer_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf.
+Unit <FTCE_MXILINX_timer_1w> synthesized.
+
+
+Synthesizing Unit <CB16CE_MXILINX_timer_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf.
+Unit <CB16CE_MXILINX_timer_1w> synthesized.
+
+
+Synthesizing Unit <OR8_MXILINX_process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <OR8_MXILINX_process_1w> synthesized.
+
+
+Synthesizing Unit <FD_MXILINX_process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <FD_MXILINX_process_1w> synthesized.
+
+
+Synthesizing Unit <FDC_MXILINX_process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <FDC_MXILINX_process_1w> synthesized.
+
+
+Synthesizing Unit <FD4CE_MXILINX_process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <FD4CE_MXILINX_process_1w> synthesized.
+
+
+Synthesizing Unit <timer_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/timer_1w.vhf.
+Unit <timer_1w> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_trig_x>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/trig_x.vhf.
+Unit <FTCE_MXILINX_trig_x> synthesized.
+
+
+Synthesizing Unit <FDC_MXILINX_trig_x>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/trig_x.vhf.
+Unit <FDC_MXILINX_trig_x> synthesized.
+
+
+Synthesizing Unit <BUFE8_MXILINX_flasher>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf.
+Unit <BUFE8_MXILINX_flasher> synthesized.
+
+
+Synthesizing Unit <tick>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/tick.vhf.
+Unit <tick> synthesized.
+
+
+Synthesizing Unit <djw_spi>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/djw_spi.vhf.
+Unit <djw_spi> synthesized.
+
+
+Synthesizing Unit <FD_MXILINX_flasher>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf.
+Unit <FD_MXILINX_flasher> synthesized.
+
+
+Synthesizing Unit <FDC_MXILINX_flasher>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf.
+Unit <FDC_MXILINX_flasher> synthesized.
+
+
+Synthesizing Unit <process_norm>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_norm.vhf.
+Unit <process_norm> synthesized.
+
+
+Synthesizing Unit <process_1w>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/process_1w.vhf.
+Unit <process_1w> synthesized.
+
+
+Synthesizing Unit <trig_x>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/trig_x.vhf.
+Unit <trig_x> synthesized.
+
+
+Synthesizing Unit <flasher>.
+    Related source file is C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.vhf.
+Unit <flasher> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1348 - Unit BUFE8_MXILINX_flasher is merged (output interface has tristates)
+WARNING:Xst:1348 - Unit BUFE8_MXILINX_process_norm is merged (output interface has tristates)
+WARNING:Xst:1348 - Unit process_norm is merged (output interface has tristates)
+WARNING:Xst:1348 - Unit process_1w is merged (output interface has tristates)
+
+Optimizing unit <flasher> ...
+
+Optimizing unit <FDC_MXILINX_flasher> ...
+
+Optimizing unit <FD_MXILINX_flasher> ...
+
+Optimizing unit <FDC_MXILINX_trig_x> ...
+
+Optimizing unit <FTCE_MXILINX_trig_x> ...
+
+Optimizing unit <FD4CE_MXILINX_process_1w> ...
+
+Optimizing unit <FDC_MXILINX_process_1w> ...
+
+Optimizing unit <FD_MXILINX_process_1w> ...
+
+Optimizing unit <OR8_MXILINX_process_1w> ...
+
+Optimizing unit <FTCE_MXILINX_timer_1w> ...
+
+Optimizing unit <D4_16E_MXILINX_addr_d> ...
+
+Optimizing unit <FD_MXILINX_register_o> ...
+
+Optimizing unit <FD8CE_MXILINX_djw_spi> ...
+
+Optimizing unit <FD_MXILINX_djw_spi> ...
+
+Optimizing unit <D2_4E_MXILINX_djw_spi> ...
+
+Optimizing unit <M2_1E_MXILINX_djw_spi> ...
+
+Optimizing unit <M2_1_MXILINX_djw_spi> ...
+
+Optimizing unit <FTCE_MXILINX_djw_spi> ...
+
+Optimizing unit <BUF8_MXILINX_tick> ...
+
+Optimizing unit <FD_MXILINX_tick> ...
+
+Optimizing unit <trig_x> ...
+
+Optimizing unit <CB16CE_MXILINX_timer_1w> ...
+
+Optimizing unit <addr_d> ...
+
+Optimizing unit <FDR_MXILINX_register_o> ...
+
+Optimizing unit <FDRE_MXILINX_register_o> ...
+
+Optimizing unit <M8_1E_MXILINX_djw_spi> ...
+
+Optimizing unit <CB4CE_MXILINX_djw_spi> ...
+
+Optimizing unit <FDRE_MXILINX_tick> ...
+
+Optimizing unit <djw_spi> ...
+
+Optimizing unit <timer_1w> ...
+
+Optimizing unit <FD4RE_MXILINX_register_o> ...
+
+Optimizing unit <FD8RE_MXILINX_register_o> ...
+
+Optimizing unit <FTRSE_MXILINX_tick> ...
+
+Optimizing unit <register_o> ...
+
+Optimizing unit <CB16RE_MXILINX_tick> ...
+
+Optimizing unit <tick> ...
+Completed process "Synthesize".
+
+
+
+Started process "Translate".
+
+Release 6.1.03i - ngdbuild G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -uc flasher.ucf -p xpla3 flasher.ngc flasher.ngd
+
+Reading NGO file
+"C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.ngc"
+...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "flasher.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:454 - logical net 'XLXI_163/XLXI_1/CEO' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_160/XLXI_3/CEO' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_160/XLXI_11/D3' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_66_XLXI_1/XLXI_1/CEO' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_67_XLXI_1/sel_mode_select' has no load
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Total memory usage is 36556 kilobytes
+
+Writing NGD file "flasher.ngd" ...
+
+Writing NGDBUILD log file "flasher.bld"...
+
+NGDBUILD done.
+Completed process "Translate".
+
+
+
+Started process "Fit".
+
+Release 6.1.03i - CPLD Optimizer/Partitioner G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA5' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA5' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA5' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA4' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA0' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA1' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_0_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_1_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_2_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_3_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_4_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_5_IOBUFE\$WA3' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_6_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+WARNING:Cpld:987 - An internal tristate buffer 'data_7_IOBUFE\$WA2' is detected.
+    The logic is being translated to a mux implementation.
+Considering device XCR3256XL-10-TQ144.
+Re-checking device resources ...
+...
+Synthesizing and Optimizing...
+...................................................................................................
+...o
+.......
+Fitting...
+........
+...o
+
+
+Design flasher has been optimized and fit into device XCR3256XL-10-TQ144.
+Completed process "Fit".
+
+
+
+Started process "Generate Programming File".
+
+Release 6.1.03i - Programming File Generator G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+Completed process "Generate Programming File".
+
+
+
+Started process "Generate Timing".
+
+Release 6.1.03i - Timing Report Generator G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+Path tracing ...............
+The number of paths traced: 2075.
+
+..........
+The number of paths traced: 4151.
+
+Generating TA GUI report ...
+Generating detailed paths report ...
+
+Generating asynchronous checking report ...
+c:\docsfordan\icecube\a_realflasherproduction\flasherpy05\cpldv12/flasher_html/t
+im/timing_report.htm has been created.
+c:\docsfordan\icecube\a_realflasherproduction\flasherpy05\cpldv12/flasher_html/t
+im/timing_report.htm has been created.
+Completed process "Generate Timing".
+
+
+
+Started process "Generate HTML report".
+
+Release 6.1.03i - CPLD HTML Report Processor G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+
+
