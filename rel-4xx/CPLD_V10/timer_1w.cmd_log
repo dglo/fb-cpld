@@ -1,1 +1,0 @@
-sch2vhdl -family xpla3 -flat -suppress -w timer_1w.sch timer_1w.vhf

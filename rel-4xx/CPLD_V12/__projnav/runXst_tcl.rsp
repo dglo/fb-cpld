@@ -1,1 +1,0 @@
-set allSynthModules {trig_x.MOD timer_1w.MOD process_1w.MOD addr_d.MOD register_o.MOD process_norm.MOD djw_spi.MOD tick.MOD flasher.MOD}
