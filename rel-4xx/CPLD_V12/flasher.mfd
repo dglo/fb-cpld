@@ -1,0 +1,1704 @@
+MDF Database:  version 1.0
+MDF_INFO | flasher | XCR3256XL-10-TQ144
+MACROCELL | 6 | 4 | DCDCEN_MC
+ATTRIBUTES | 2290352898 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 10 | data<0>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 158 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DCDCEN := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DCDCEN.CLK = !(!addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 4 | 15 | XLXN_390_MC
+ATTRIBUTES | 2189460224 | 0
+OUTPUTMC | 51 | 4 | 0 | 6 | 4 | 6 | 11 | 13 | 11 | 13 | 13 | 13 | 14 | 13 | 15 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 11 | 2 | 3 | 2 | 4 | 2 | 11 | 2 | 14 | 5 | 11 | 7 | 13 | 6 | 14 | 5 | 12 | 5 | 13 | 5 | 4 | 5 | 15 | 7 | 0 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 11 | 15 | 13 | 2 | 8 | 1 | 12 | 2 | 0 | 2 | 1 | 4 | 2 | 4 | 3 | 4 | 4 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 9
+INPUTS | 0
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXN_390 := Vcc;
+   XLXN_390.CLK  =  !nwr;	// GCK
+    XLXN_390.AR = lkdsfj;
+GLOBALS | 1 | 2 | nwr
+
+MACROCELL | 4 | 12 | lkdsfj_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 50 | 6 | 4 | 6 | 11 | 13 | 11 | 13 | 13 | 13 | 14 | 13 | 15 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 11 | 2 | 3 | 2 | 4 | 2 | 11 | 2 | 14 | 5 | 11 | 7 | 13 | 6 | 14 | 5 | 12 | 5 | 13 | 5 | 4 | 5 | 15 | 7 | 0 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 11 | 15 | 13 | 2 | 8 | 1 | 12 | 2 | 0 | 2 | 1 | 4 | 2 | 4 | 3 | 4 | 4 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 9
+INPUTS | 1 | XLXN_387
+INPUTMC | 1 | 4 | 0
+EQ | 2 | 
+   lkdsfj := XLXN_387;
+   lkdsfj.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 4 | 0 | XLXN_387_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 51 | 4 | 12 | 6 | 4 | 6 | 11 | 13 | 11 | 13 | 13 | 13 | 14 | 13 | 15 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 11 | 2 | 3 | 2 | 4 | 2 | 11 | 2 | 14 | 5 | 11 | 7 | 13 | 6 | 14 | 5 | 12 | 5 | 13 | 5 | 4 | 5 | 15 | 7 | 0 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 11 | 15 | 13 | 2 | 8 | 1 | 12 | 2 | 0 | 2 | 1 | 4 | 2 | 4 | 3 | 4 | 4 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 9
+INPUTS | 1 | XLXN_390
+INPUTMC | 1 | 4 | 15
+EQ | 2 | 
+   XLXN_387 := XLXN_390;
+   XLXN_387.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 6 | 11 | DCDCON_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<1>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 157 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DCDCON := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DCDCON.CLK = !(!addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 13 | 11 | DP<0>_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 10 | data<0>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 158 | 166 | 163 | 162 | 161 | 168 | 167
+UCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DP<0> := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<0>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 13 | 13 | DP<1>_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 10 | data<1>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 157 | 166 | 163 | 162 | 161 | 168 | 167
+UCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DP<1> := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<1>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 13 | 14 | DP<2>_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 10 | data<2>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 155 | 166 | 163 | 162 | 161 | 168 | 167
+UCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DP<2> := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<2>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 13 | 15 | DP<3>_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 10 | data<3>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 151 | 166 | 163 | 162 | 161 | 168 | 167
+UCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DP<3> := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<3>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 15 | 2 | DP<4>_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 10 | data<4>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 150 | 166 | 163 | 162 | 161 | 168 | 167
+UCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DP<4> := !data<4>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<4>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 15 | 3 | DP<5>_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 10 | data<5>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 149 | 166 | 163 | 162 | 161 | 168 | 167
+UCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DP<5> := !data<5>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<5>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 15 | 4 | DP<6>_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 10 | data<6>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 148 | 166 | 163 | 162 | 161 | 168 | 167
+UCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DP<6> := !data<6>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<6>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 15 | 11 | DP<7>_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 10 | data<7>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 147 | 166 | 163 | 162 | 161 | 168 | 167
+UCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !DP<7> := !data<7>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    DP<7>.CLK = !(addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 2 | 3 | ENMUXA_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<2>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 155 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !ENMUXA := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    ENMUXA.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 2 | 4 | ENMUXB_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<3>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 151 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !ENMUXB := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    ENMUXB.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 2 | 11 | ENMUXC_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<4>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 150 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !ENMUXC := !data<4>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    ENMUXC.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 2 | 14 | ENMUXF_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<6>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 148 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !ENMUXF := !data<6>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    ENMUXF.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 5 | 11 | L<0>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<0>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 158 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<0> := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<0>.CLK = !(addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 7 | 13 | L<10>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<2>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 155 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<10> := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<10>.CLK = !(addr<3> * !addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 6 | 14 | L<11>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<3>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 151 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<11> := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<11>.CLK = !(addr<3> * !addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 5 | 12 | L<1>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<1>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 157 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<1> := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<1>.CLK = !(addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 5 | 13 | L<2>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<2>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 155 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<2> := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<2>.CLK = !(addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 5 | 4 | L<3>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<3>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 151 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<3> := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<3>.CLK = !(addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 5 | 15 | L<4>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<0>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 158 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<4> := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<4>.CLK = !(addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 7 | 0 | L<5>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<1>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 157 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<5> := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<5>.CLK = !(addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 7 | 1 | L<6>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<2>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 155 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<6> := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<6>.CLK = !(addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 7 | 2 | L<7>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<3>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 151 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<7> := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<7>.CLK = !(addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 7 | 3 | L<8>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<0>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 158 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<8> := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<8>.CLK = !(addr<3> * !addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 7 | 11 | L<9>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<1>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 157 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !L<9> := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    L<9>.CLK = !(addr<3> * !addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 15 | 13 | LE_DP_MC
+ATTRIBUTES | 159646470 | 0
+INPUTS | 10 | data<1>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 157 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 2 | 1 | Internal_Name | 2 | Internal_Name
+EQ | 5 | 
+   LE_DP := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    LE_DP.CLK = !(addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 8 | 1 | MOSI_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 11 | XLXI_160/XLXN_64  | XLXI_160/XLXN_65  | XLXI_160/XLXN_31  | XLXI_160/ld<0>  | XLXI_160/ld<4>  | XLXI_160/ld<2>  | XLXI_160/ld<6>  | XLXI_160/ld<1>  | XLXI_160/ld<5>  | XLXI_160/ld<3>  | XLXI_160/ld<7>
+INPUTMC | 11 | 4 | 13 | 4 | 14 | 2 | 2 | 1 | 1 | 0 | 4 | 0 | 0 | 0 | 12 | 1 | 0 | 0 | 11 | 0 | 3 | 0 | 13
+EQ | 16 | 
+   !MOSI = XLXI_160/XLXN_64 * XLXI_160/XLXN_65 * 
+	XLXI_160/XLXN_31 * !XLXI_160/ld<0>
+	# XLXI_160/XLXN_64 * XLXI_160/XLXN_65 * 
+	!XLXI_160/XLXN_31 * !XLXI_160/ld<4>
+	# XLXI_160/XLXN_64 * !XLXI_160/XLXN_65 * 
+	XLXI_160/XLXN_31 * !XLXI_160/ld<2>
+	# XLXI_160/XLXN_64 * !XLXI_160/XLXN_65 * 
+	!XLXI_160/XLXN_31 * !XLXI_160/ld<6>
+	# !XLXI_160/XLXN_64 * XLXI_160/XLXN_65 * 
+	XLXI_160/XLXN_31 * !XLXI_160/ld<1>
+	# !XLXI_160/XLXN_64 * XLXI_160/XLXN_65 * 
+	!XLXI_160/XLXN_31 * !XLXI_160/ld<5>
+	# !XLXI_160/XLXN_64 * !XLXI_160/XLXN_65 * 
+	XLXI_160/XLXN_31 * !XLXI_160/ld<3>
+	# !XLXI_160/XLXN_64 * !XLXI_160/XLXN_65 * 
+	!XLXI_160/XLXN_31 * !XLXI_160/ld<7>;
+
+MACROCELL | 4 | 13 | XLXI_160/XLXN_64_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 6 | 2 | 2 | 4 | 14 | 4 | 1 | 9 | 2 | 4 | 13 | 8 | 1
+INPUTS | 6 | nCS  | XLXI_160/XLXN_39  | XLXI_160/XLXN_6  | XLXI_160/XLXN_64  | XLXI_160/XLXN_65  | XLXI_160/XLXN_31
+INPUTMC | 6 | 9 | 2 | 2 | 5 | 2 | 13 | 4 | 13 | 4 | 14 | 2 | 2
+LCT | 1 | 4 | Internal_Name
+EQ | 5 | 
+   XLXI_160/XLXN_64.T := !nCS * !XLXI_160/XLXN_39 * !XLXI_160/XLXN_6
+	$ XLXI_160/XLXN_64 * !nCS * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * XLXI_160/XLXN_65 * XLXI_160/XLXN_31;
+   XLXI_160/XLXN_64.CLK  =  clock;	// GCK
+   !XLXI_160/XLXN_64.AR = !XLXI_160/XLXN_36 * !XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 9 | 2 | nCS_MC
+ATTRIBUTES | 2168750854 | 0
+OUTPUTMC | 5 | 2 | 2 | 4 | 14 | 9 | 2 | 4 | 13 | 8 | 0
+INPUTS | 6 | XLXI_160/XLXN_64  | nCS  | XLXI_160/XLXN_39  | XLXI_160/XLXN_6  | XLXI_160/XLXN_65  | XLXI_160/XLXN_31
+INPUTMC | 6 | 4 | 13 | 9 | 2 | 2 | 5 | 2 | 13 | 4 | 14 | 2 | 2
+LCT | 1 | 1 | Internal_Name
+EQ | 4 | 
+   nCS.T := !XLXI_160/XLXN_64 * nCS * XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * !XLXI_160/XLXN_65 * !XLXI_160/XLXN_31;
+   nCS.CLK  =  clock;	// GCK
+   !nCS.AP = !XLXI_160/XLXN_36 * !XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 2 | 5 | XLXI_160/XLXN_39_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 7 | 2 | 13 | 2 | 2 | 4 | 14 | 4 | 1 | 9 | 2 | 4 | 13 | 8 | 0
+INPUTS | 1 | XLXI_160/XLXN_2
+INPUTMC | 1 | 2 | 8
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_160/XLXN_39.T := XLXI_160/XLXN_2;
+   XLXI_160/XLXN_39.CLK  =  clock;	// GCK
+   !XLXI_160/XLXN_39.AR = !XLXI_160/XLXN_36 * !XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 2 | 8 | XLXI_160/XLXN_2_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 2 | 2 | 8 | 2 | 5
+INPUTS | 10 | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387  | XLXI_160/XLXN_2
+INPUTMC | 4 | 4 | 15 | 4 | 12 | 4 | 0 | 2 | 8
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 4 | Internal_Name
+EQ | 5 | 
+   XLXI_160/XLXN_2.T := !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387 * 
+	!XLXI_160/XLXN_2;
+   XLXI_160/XLXN_2.CLK  =  clock;	// GCK
+   !XLXI_160/XLXN_2.AR = !XLXI_160/XLXN_36 * !XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 4 | 1 | XLXI_160/XLXN_36_MC
+ATTRIBUTES | 2155905792 | 0
+INPUTS | 5 | XLXI_160/XLXN_64  | XLXI_160/XLXN_39  | XLXI_160/XLXN_6  | XLXI_160/XLXN_65  | XLXI_160/XLXN_31
+INPUTMC | 5 | 4 | 13 | 2 | 5 | 2 | 13 | 4 | 14 | 2 | 2
+EQ | 3 | 
+   XLXI_160/XLXN_36 := XLXI_160/XLXN_64 * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * XLXI_160/XLXN_65 * XLXI_160/XLXN_31;
+   XLXI_160/XLXN_36.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 2 | 13 | XLXI_160/XLXN_6_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 5 | 2 | 2 | 4 | 14 | 4 | 1 | 9 | 2 | 4 | 13
+INPUTS | 1 | XLXI_160/XLXN_39
+INPUTMC | 1 | 2 | 5
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_160/XLXN_6.T := XLXI_160/XLXN_39;
+   XLXI_160/XLXN_6.CLK  =  clock;	// GCK
+   !XLXI_160/XLXN_6.AR = !XLXI_160/XLXN_36 * !XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 4 | 14 | XLXI_160/XLXN_65_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 6 | 2 | 2 | 4 | 14 | 4 | 1 | 9 | 2 | 4 | 13 | 8 | 1
+INPUTS | 6 | XLXI_160/XLXN_64  | nCS  | XLXI_160/XLXN_39  | XLXI_160/XLXN_6  | XLXI_160/XLXN_65  | XLXI_160/XLXN_31
+INPUTMC | 6 | 4 | 13 | 9 | 2 | 2 | 5 | 2 | 13 | 4 | 14 | 2 | 2
+LCT | 1 | 4 | Internal_Name
+EQ | 6 | 
+   XLXI_160/XLXN_65.T := XLXI_160/XLXN_64 * !nCS * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * !XLXI_160/XLXN_65
+	# XLXI_160/XLXN_64 * !nCS * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * !XLXI_160/XLXN_31;
+   XLXI_160/XLXN_65.CLK  =  clock;	// GCK
+   !XLXI_160/XLXN_65.AR = !XLXI_160/XLXN_36 * !XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 2 | 2 | XLXI_160/XLXN_31_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 6 | 2 | 2 | 4 | 14 | 4 | 1 | 9 | 2 | 4 | 13 | 8 | 1
+INPUTS | 6 | XLXI_160/XLXN_64  | nCS  | XLXI_160/XLXN_39  | XLXI_160/XLXN_6  | XLXI_160/XLXN_65  | XLXI_160/XLXN_31
+INPUTMC | 6 | 4 | 13 | 9 | 2 | 2 | 5 | 2 | 13 | 4 | 14 | 2 | 2
+LCT | 1 | 4 | Internal_Name
+EQ | 4 | 
+   XLXI_160/XLXN_31.T := XLXI_160/XLXN_64 * !nCS * !XLXI_160/XLXN_39 * 
+	!XLXI_160/XLXN_6 * XLXI_160/XLXN_65 * !XLXI_160/XLXN_31;
+   XLXI_160/XLXN_31.CLK  =  clock;	// GCK
+   !XLXI_160/XLXN_31.AR = !XLXI_160/XLXN_36 * !XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 1 | 12 | XLXN_431_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 5 | 10 | 5 | 9
+INPUTS | 13 | ID2  | ID1  | PWR_RESET  | ID0  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 10 | 173 | 171 | 176 | 170 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 5 | 
+   XLXN_431 = ID2 * !ID1 * PWR_RESET
+	# ID2 * PWR_RESET * !ID0
+	# !ID2 * ID1 * PWR_RESET * ID0
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+
+MACROCELL | 1 | 1 | XLXI_160/ld<0>_MC
+ATTRIBUTES | 3531916034 | 6
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 11 | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | nrd  | XLXI_163/count<8>  | XLXI_163/count<0>  | DCDCEN  | ID0
+INPUTMC | 3 | 1 | 5 | 0 | 9 | 6 | 4
+INPUTP | 8 | 166 | 163 | 162 | 161 | 168 | 167 | 186 | 170
+LCT | 2 | 4 | Internal_Name | 3 | Internal_Name
+UCT | 1 | 5 | Internal_Name
+EQ | 17 | 
+   !data<0> =  !addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<8>
+	# !addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<0>
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !DCDCEN
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !ID0 * !nrd;
+    data<0>.OE = N_PZ_601;
+// Fast Input Register
+XLXI_160/ld<0> := data<0>.PIN;
+   XLXI_160/ld<0>.CLK  =  clock;	// GCK
+    XLXI_160/ld<0>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<0>.AR = XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 8 | N_PZ_601_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 2 | 6 | 0 | 3
+INPUTS | 7 | addr<3>  | addr<2>  | addr<0>  | addr<5>  | addr<4>  | nrd  | addr<1>
+INPUTP | 7 | 166 | 163 | 161 | 168 | 167 | 186 | 162
+EQ | 6 | 
+   N_PZ_601 = !addr<3> * !addr<2> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# addr<2> * addr<1> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd;
+
+MACROCELL | 1 | 0 | XLXI_160/ld<1>_MC
+ATTRIBUTES | 3531916034 | 6
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 10 | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | nrd  | XLXI_163/count<9>  | XLXI_163/count<1>  | ID1
+INPUTMC | 2 | 1 | 9 | 1 | 13
+INPUTP | 8 | 166 | 163 | 162 | 161 | 168 | 167 | 186 | 171
+LCT | 2 | 4 | Internal_Name | 3 | Internal_Name
+UCT | 1 | 5 | Internal_Name
+EQ | 17 | 
+   !data<1> =  !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# !addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<9>
+	# !addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<1>
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !ID1 * !nrd;
+    data<1>.OE = N_PZ_601;
+// Fast Input Register
+XLXI_160/ld<1> := data<1>.PIN;
+   XLXI_160/ld<1>.CLK  =  clock;	// GCK
+    XLXI_160/ld<1>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<1>.AR = XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 0 | XLXI_160/ld<2>_MC
+ATTRIBUTES | 3531916034 | 6
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 10 | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | nrd  | XLXI_163/count<10>  | XLXI_163/count<2>  | ID2
+INPUTMC | 2 | 1 | 8 | 1 | 10
+INPUTP | 8 | 166 | 163 | 162 | 161 | 168 | 167 | 186 | 173
+LCT | 2 | 4 | Internal_Name | 3 | Internal_Name
+UCT | 1 | 5 | Internal_Name
+EQ | 15 | 
+   !data<2> =  !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<10>
+	# !addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<2>
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !ID2 * !nrd;
+    data<2>.OE = N_PZ_601;
+// Fast Input Register
+XLXI_160/ld<2> := data<2>.PIN;
+   XLXI_160/ld<2>.CLK  =  clock;	// GCK
+    XLXI_160/ld<2>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<2>.AR = XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 3 | XLXI_160/ld<3>_MC
+ATTRIBUTES | 3531916034 | 6
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 7 | addr<1>  | N_PZ_626  | addr<3>  | XLXI_163/count<11>  | addr<0>  | N_PZ_601  | XLXI_163/count<3>
+INPUTMC | 4 | 2 | 6 | 1 | 7 | 0 | 8 | 0 | 10
+INPUTP | 3 | 162 | 166 | 161
+LCT | 2 | 4 | Internal_Name | 3 | Internal_Name
+UCT | 1 | 5 | Internal_Name
+EQ | 11 | 
+   !data<3> =  !addr<1> * N_PZ_626
+	# addr<3> * N_PZ_626 * !XLXI_163/count<11>
+	# !addr<3> * addr<0> * N_PZ_601 * 
+	!XLXI_163/count<3>;
+    data<3>.OE = N_PZ_601;
+// Fast Input Register
+XLXI_160/ld<3> := data<3>.PIN;
+   XLXI_160/ld<3>.CLK  =  clock;	// GCK
+    XLXI_160/ld<3>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<3>.AR = XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 4 | XLXI_160/ld<4>_MC
+ATTRIBUTES | 3599008514 | 6
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 10 | addr<3>  | addr<2>  | addr<0>  | addr<5>  | addr<4>  | nrd  | addr<1>  | XLXI_163/count<4>  | XLXI_66_XLXN_633  | XLXI_163/count<12>
+INPUTMC | 3 | 0 | 14 | 4 | 11 | 1 | 6
+INPUTP | 7 | 166 | 163 | 161 | 168 | 167 | 186 | 162
+LCT | 3 | 4 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 17 | 
+   !data<4> =  !addr<3> * !addr<2> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# !addr<3> * addr<2> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_163/count<4>
+	# !addr<3> * addr<1> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_66_XLXN_633
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<12>;
+    data<4>.OE = N_PZ_626;
+// Fast Input Register
+XLXI_160/ld<4> := data<4>.PIN;
+   XLXI_160/ld<4>.CLK  =  clock;	// GCK
+    XLXI_160/ld<4>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<4>.AR = XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 2 | 6 | N_PZ_626_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 7 | N_PZ_601  | addr<3>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | nrd
+INPUTMC | 1 | 0 | 8
+INPUTP | 6 | 166 | 162 | 161 | 168 | 167 | 186
+EQ | 3 | 
+   N_PZ_626 = N_PZ_601
+	# !addr<3> * addr<1> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd;
+
+MACROCELL | 0 | 11 | XLXI_160/ld<5>_MC
+ATTRIBUTES | 3599008514 | 6
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 10 | addr<3>  | addr<2>  | addr<0>  | addr<5>  | addr<4>  | nrd  | addr<1>  | XLXI_163/count<5>  | XLXI_66_StartTimer  | XLXI_163/count<13>
+INPUTMC | 3 | 0 | 15 | 4 | 6 | 1 | 15
+INPUTP | 7 | 166 | 163 | 161 | 168 | 167 | 186 | 162
+LCT | 3 | 4 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 17 | 
+   !data<5> =  !addr<3> * !addr<2> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# !addr<3> * addr<2> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_163/count<5>
+	# !addr<3> * addr<1> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_66_StartTimer
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<13>;
+    data<5>.OE = N_PZ_626;
+// Fast Input Register
+XLXI_160/ld<5> := data<5>.PIN;
+   XLXI_160/ld<5>.CLK  =  clock;	// GCK
+    XLXI_160/ld<5>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<5>.AR = XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 12 | XLXI_160/ld<6>_MC
+ATTRIBUTES | 3599008514 | 6
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 10 | addr<3>  | addr<2>  | addr<0>  | addr<5>  | addr<4>  | nrd  | addr<1>  | XLXI_163/count<6>  | XLXI_66_XLXN_176  | XLXI_163/count<14>
+INPUTMC | 3 | 1 | 2 | 14 | 2 | 1 | 14
+INPUTP | 7 | 166 | 163 | 161 | 168 | 167 | 186 | 162
+LCT | 3 | 4 | Internal_Name | 3 | Internal_Name | 5 | Internal_Name
+EQ | 17 | 
+   !data<6> =  !addr<3> * !addr<2> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# !addr<3> * addr<2> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_163/count<6>
+	# !addr<3> * addr<1> * !addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_66_XLXN_176
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<14>;
+    data<6>.OE = N_PZ_626;
+// Fast Input Register
+XLXI_160/ld<6> := data<6>.PIN;
+   XLXI_160/ld<6>.CLK  =  clock;	// GCK
+    XLXI_160/ld<6>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<6>.AR = XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 13 | XLXI_160/ld<7>_MC
+ATTRIBUTES | 3531916034 | 6
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 13 | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | nrd  | XLXI_163/count<15>  | XLXI_163/count<7>  | PWR_RESET  | ID2  | ID1  | ID0
+INPUTMC | 2 | 2 | 7 | 1 | 3
+INPUTP | 11 | 166 | 163 | 162 | 161 | 168 | 167 | 186 | 176 | 173 | 171 | 170
+LCT | 2 | 4 | Internal_Name | 3 | Internal_Name
+UCT | 1 | 5 | Internal_Name
+EQ | 23 | 
+   !data<7> =  !addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# !addr<3> * !addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !nrd
+	# addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<15>
+	# !addr<3> * addr<2> * addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * !nrd * !XLXI_163/count<7>
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !PWR_RESET * !nrd
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !ID2 * !ID1 * !nrd
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * !ID2 * !ID0 * !nrd
+	# !addr<3> * !addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * ID2 * ID1 * ID0 * !nrd;
+    data<7>.OE = N_PZ_601;
+// Fast Input Register
+XLXI_160/ld<7> := data<7>.PIN;
+   XLXI_160/ld<7>.CLK  =  clock;	// GCK
+    XLXI_160/ld<7>.CE = !addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    XLXI_160/ld<7>.AR = XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 2 | 0 | MUX0_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<0>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 158 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !MUX0 := !data<0>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    MUX0.CLK = !(addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 2 | 1 | MUX1_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<1>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 157 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !MUX1 := !data<1>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    MUX1.CLK = !(addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 4 | 2 | MUX2_MC
+ATTRIBUTES | 8651554 | 0
+INPUTS | 10 | data<2>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 155 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 5 | 
+   !MUX2 := !data<2>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    MUX2.CLK = !(addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 4 | 3 | MUX3_MC
+ATTRIBUTES | 8651554 | 0
+INPUTS | 10 | data<3>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 151 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 5 | 
+   !MUX3 := !data<3>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    MUX3.CLK = !(addr<3> * addr<2> * !addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 8 | 0 | SCLK_MC
+ATTRIBUTES | 38044418 | 0
+INPUTS | 2 | nCS  | XLXI_160/XLXN_39
+INPUTMC | 2 | 9 | 2 | 2 | 5
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   SCLK.T := !nCS * !XLXI_160/XLXN_39;
+   SCLK.CLK  =  clock;	// GCK
+   !SCLK.AR = !XLXI_160/XLXN_36 * !XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 4 | 4 | SDMUX_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 10 | data<7>.PIN  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 147 | 166 | 163 | 162 | 161 | 168 | 167
+LCT | 1 | 2 | Internal_Name
+EQ | 5 | 
+   !SDMUX := !data<7>.PIN
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+    SDMUX.CLK = !(addr<3> * addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+
+MACROCELL | 6 | 0 | TRIGGER_MC
+ATTRIBUTES | 2323907330 | 0
+OUTPUTMC | 3 | 4 | 10 | 4 | 9 | 4 | 8
+INPUTS | 0
+LCT | 2 | 4 | Internal_Name | 2 | Internal_Name
+EQ | 3 | 
+   TRIGGER := Vcc;
+    TRIGGER.CLK = !(!trig * !AuxReset);
+    TRIGGER.AR = N_PZ_608;
+
+MACROCELL | 4 | 7 | N_PZ_608_MC
+ATTRIBUTES | 536871680 | 0
+INPUTS | 3 | XLXI_10/XLXN_14  | XLXI_10/XLXN_33  | XLXI_10/XLXN_15
+INPUTMC | 3 | 4 | 10 | 4 | 8 | 4 | 9
+EQ | 2 | 
+   N_PZ_608 = !XLXI_10/XLXN_14 * XLXI_10/XLXN_33
+	# XLXI_10/XLXN_33 * !XLXI_10/XLXN_15;
+
+MACROCELL | 4 | 10 | XLXI_10/XLXN_14_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 3 | 4 | 9 | 4 | 8 | 4 | 7
+INPUTS | 1 | TRIGGER
+INPUTMC | 1 | 6 | 0
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_10/XLXN_14.T := TRIGGER;
+   XLXI_10/XLXN_14.CLK  =  clock;	// GCK
+    XLXI_10/XLXN_14.AR = N_PZ_608;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 4 | 8 | XLXI_10/XLXN_33_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 1 | 4 | 7
+INPUTS | 3 | XLXI_10/XLXN_14  | TRIGGER  | XLXI_10/XLXN_15
+INPUTMC | 3 | 4 | 10 | 6 | 0 | 4 | 9
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_10/XLXN_33.T := XLXI_10/XLXN_14 * TRIGGER * XLXI_10/XLXN_15;
+   XLXI_10/XLXN_33.CLK  =  clock;	// GCK
+    XLXI_10/XLXN_33.AR = N_PZ_608;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 4 | 9 | XLXI_10/XLXN_15_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 2 | 4 | 8 | 4 | 7
+INPUTS | 2 | XLXI_10/XLXN_14  | TRIGGER
+INPUTMC | 2 | 4 | 10 | 6 | 0
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_10/XLXN_15.T := XLXI_10/XLXN_14 * TRIGGER;
+   XLXI_10/XLXN_15.CLK  =  clock;	// GCK
+    XLXI_10/XLXN_15.AR = N_PZ_608;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 8 | 15 | attn_MC
+ATTRIBUTES | 138674946 | 0
+INPUTS | 0
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   attn.T := Vcc;
+    attn.CLK = AuxReset;
+
+MACROCELL | 0 | 9 | XLXI_163/count<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 3 | 0 | 2 | 0 | 9 | 1 | 1
+INPUTS | 12 | N_PZ_543  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | nrd  | XLXI_163/count<0>  | addr<3>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 5 | 0 | 2 | 0 | 9 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 7 | 163 | 162 | 161 | 168 | 167 | 186 | 166
+EQ | 6 | 
+   !XLXI_163/count<0> := !N_PZ_543
+	# addr<2> * addr<1> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd * !XLXI_163/count<0>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<0>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 2 | N_PZ_543_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 7 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 6 | 12 | 0 | 9
+INPUTS | 22 | XLXI_163/count<0>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | nrd  | XLXI_163/count<12>  | XLXI_163/count<9>  | XLXI_163/count<8>  | XLXI_163/count<6>  | XLXI_163/count<4>  | XLXI_163/count<1>  | XLXI_163/count<2>  | XLXI_163/count<3>  | XLXI_163/count<5>  | XLXI_163/count<7>  | XLXI_163/count<10>  | XLXI_163/count<11>  | XLXI_163/count<13>  | XLXI_163/count<14>  | XLXI_163/count<15>
+INPUTMC | 16 | 0 | 9 | 1 | 6 | 1 | 9 | 1 | 5 | 1 | 2 | 0 | 14 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 15 | 1 | 3 | 1 | 8 | 1 | 7 | 1 | 15 | 1 | 14 | 2 | 7
+INPUTP | 6 | 163 | 162 | 161 | 168 | 167 | 186
+EQ | 9 | 
+   N_PZ_543 = !XLXI_163/count<0>
+	# addr<2> * addr<1> * addr<0> * !addr<5> * 
+	!addr<4> * !nrd
+	# XLXI_163/count<0> * XLXI_163/count<12> * 
+	XLXI_163/count<9> * XLXI_163/count<8> * XLXI_163/count<6> * 
+	XLXI_163/count<4> * XLXI_163/count<1> * XLXI_163/count<2> * 
+	XLXI_163/count<3> * XLXI_163/count<5> * XLXI_163/count<7> * 
+	XLXI_163/count<10> * XLXI_163/count<11> * XLXI_163/count<13> * 
+	XLXI_163/count<14> * XLXI_163/count<15>;
+
+MACROCELL | 1 | 6 | XLXI_163/count<12>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 4 | 6 | 15 | 1 | 6 | 0 | 2 | 0 | 4
+INPUTS | 15 | N_PZ_667  | XLXI_163/count<12>  | XLXI_163/count<9>  | N_PZ_701  | XLXI_163/count<10>  | XLXI_163/count<11>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 9 | 6 | 15 | 1 | 6 | 1 | 9 | 5 | 7 | 1 | 8 | 1 | 7 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 8 | 
+   !XLXI_163/count<12> := N_PZ_667
+	# !XLXI_163/count<12> * !XLXI_163/count<9>
+	# !XLXI_163/count<12> * !N_PZ_701
+	# !XLXI_163/count<12> * !XLXI_163/count<10>
+	# !XLXI_163/count<12> * !XLXI_163/count<11>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<12>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 1 | 9 | XLXI_163/count<9>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 7 | 1 | 9 | 1 | 8 | 1 | 7 | 6 | 15 | 1 | 6 | 0 | 2 | 1 | 0
+INPUTS | 11 | XLXI_163/count<9>  | N_PZ_701  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 5 | 1 | 9 | 5 | 7 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 5 | 
+   !XLXI_163/count<9> := XLXI_163/count<9> * N_PZ_701
+	# !XLXI_163/count<9> * !N_PZ_701
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<9>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 5 | 7 | N_PZ_701_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 6 | 15 | 1 | 6
+INPUTS | 4 | XLXI_163/count<8>  | XLXI_163/count<6>  | N_PZ_702  | XLXI_163/count<7>
+INPUTMC | 4 | 1 | 5 | 1 | 2 | 6 | 12 | 1 | 3
+EQ | 2 | 
+   N_PZ_701 = XLXI_163/count<8> * XLXI_163/count<6> * N_PZ_702 * 
+	XLXI_163/count<7>;
+
+MACROCELL | 1 | 5 | XLXI_163/count<8>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 4 | 1 | 5 | 5 | 7 | 0 | 2 | 1 | 1
+INPUTS | 14 | N_PZ_701  | XLXI_163/count<8>  | XLXI_163/count<6>  | N_PZ_702  | XLXI_163/count<7>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 8 | 5 | 7 | 1 | 5 | 1 | 2 | 6 | 12 | 1 | 3 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 7 | 
+   !XLXI_163/count<8> := N_PZ_701
+	# !XLXI_163/count<8> * !XLXI_163/count<6>
+	# !XLXI_163/count<8> * !N_PZ_702
+	# !XLXI_163/count<8> * !XLXI_163/count<7>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<8>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 1 | 2 | XLXI_163/count<6>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 6 | 1 | 2 | 1 | 3 | 1 | 5 | 5 | 7 | 0 | 2 | 0 | 12
+INPUTS | 11 | XLXI_163/count<6>  | N_PZ_702  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 5 | 1 | 2 | 6 | 12 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 5 | 
+   !XLXI_163/count<6> := XLXI_163/count<6> * N_PZ_702
+	# !XLXI_163/count<6> * !N_PZ_702
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<6>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 6 | 12 | N_PZ_702_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 5 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 5 | 7
+INPUTS | 6 | N_PZ_543  | XLXI_163/count<4>  | XLXI_163/count<1>  | XLXI_163/count<2>  | XLXI_163/count<3>  | XLXI_163/count<5>
+INPUTMC | 6 | 0 | 2 | 0 | 14 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 15
+EQ | 2 | 
+   N_PZ_702 = !N_PZ_543 * XLXI_163/count<4> * XLXI_163/count<1> * 
+	XLXI_163/count<2> * XLXI_163/count<3> * XLXI_163/count<5>;
+
+MACROCELL | 0 | 14 | XLXI_163/count<4>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 14 | 0 | 15 | 6 | 12 | 0 | 2 | 0 | 4
+INPUTS | 14 | N_PZ_543  | XLXI_163/count<4>  | XLXI_163/count<1>  | XLXI_163/count<2>  | XLXI_163/count<3>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 8 | 0 | 2 | 0 | 14 | 1 | 13 | 1 | 10 | 0 | 10 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 9 | 
+   !XLXI_163/count<4> := N_PZ_543 * !XLXI_163/count<4>
+	# !XLXI_163/count<4> * !XLXI_163/count<1>
+	# !XLXI_163/count<4> * !XLXI_163/count<2>
+	# !XLXI_163/count<4> * !XLXI_163/count<3>
+	# !N_PZ_543 * XLXI_163/count<4> * XLXI_163/count<1> * 
+	XLXI_163/count<2> * XLXI_163/count<3>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<4>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 1 | 13 | XLXI_163/count<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 6 | 12 | 0 | 2 | 1 | 0
+INPUTS | 11 | N_PZ_543  | XLXI_163/count<1>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 5 | 0 | 2 | 1 | 13 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 5 | 
+   !XLXI_163/count<1> := N_PZ_543 * !XLXI_163/count<1>
+	# !N_PZ_543 * XLXI_163/count<1>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<1>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 1 | 10 | XLXI_163/count<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 7 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 6 | 12 | 0 | 2 | 0 | 0
+INPUTS | 12 | N_PZ_543  | XLXI_163/count<2>  | XLXI_163/count<1>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 6 | 0 | 2 | 1 | 10 | 1 | 13 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 6 | 
+   !XLXI_163/count<2> := N_PZ_543 * !XLXI_163/count<2>
+	# !XLXI_163/count<1> * !XLXI_163/count<2>
+	# !N_PZ_543 * XLXI_163/count<1> * XLXI_163/count<2>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<2>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 10 | XLXI_163/count<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 6 | 0 | 10 | 0 | 14 | 0 | 15 | 6 | 12 | 0 | 2 | 0 | 3
+INPUTS | 13 | N_PZ_543  | XLXI_163/count<3>  | XLXI_163/count<1>  | XLXI_163/count<2>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 7 | 0 | 2 | 0 | 10 | 1 | 13 | 1 | 10 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 8 | 
+   !XLXI_163/count<3> := N_PZ_543 * !XLXI_163/count<3>
+	# !XLXI_163/count<1> * !XLXI_163/count<3>
+	# !XLXI_163/count<2> * !XLXI_163/count<3>
+	# !N_PZ_543 * XLXI_163/count<1> * XLXI_163/count<2> * 
+	XLXI_163/count<3>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<3>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 0 | 15 | XLXI_163/count<5>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 4 | 0 | 15 | 6 | 12 | 0 | 2 | 0 | 11
+INPUTS | 16 | N_PZ_702  | N_PZ_543  | XLXI_163/count<5>  | XLXI_163/count<4>  | XLXI_163/count<1>  | XLXI_163/count<2>  | XLXI_163/count<3>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 10 | 6 | 12 | 0 | 2 | 0 | 15 | 0 | 14 | 1 | 13 | 1 | 10 | 0 | 10 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 9 | 
+   !XLXI_163/count<5> := N_PZ_702
+	# N_PZ_543 * !XLXI_163/count<5>
+	# !XLXI_163/count<4> * !XLXI_163/count<5>
+	# !XLXI_163/count<1> * !XLXI_163/count<5>
+	# !XLXI_163/count<2> * !XLXI_163/count<5>
+	# !XLXI_163/count<3> * !XLXI_163/count<5>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<5>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 1 | 3 | XLXI_163/count<7>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 3 | 1 | 5 | 5 | 7 | 0 | 2 | 0 | 13
+INPUTS | 12 | XLXI_163/count<6>  | XLXI_163/count<7>  | N_PZ_702  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 6 | 1 | 2 | 1 | 3 | 6 | 12 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 6 | 
+   !XLXI_163/count<7> := !XLXI_163/count<6> * !XLXI_163/count<7>
+	# !N_PZ_702 * !XLXI_163/count<7>
+	# XLXI_163/count<6> * N_PZ_702 * XLXI_163/count<7>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<7>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 1 | 8 | XLXI_163/count<10>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 6 | 1 | 8 | 1 | 7 | 6 | 15 | 1 | 6 | 0 | 2 | 0 | 0
+INPUTS | 12 | XLXI_163/count<9>  | XLXI_163/count<10>  | N_PZ_701  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 6 | 1 | 9 | 1 | 8 | 5 | 7 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 7 | 
+   !XLXI_163/count<10> := !XLXI_163/count<9> * !XLXI_163/count<10>
+	# !N_PZ_701 * !XLXI_163/count<10>
+	# XLXI_163/count<9> * N_PZ_701 * 
+	XLXI_163/count<10>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<10>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 1 | 7 | XLXI_163/count<11>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 7 | 6 | 15 | 1 | 6 | 0 | 2 | 0 | 3
+INPUTS | 13 | XLXI_163/count<9>  | XLXI_163/count<11>  | N_PZ_701  | XLXI_163/count<10>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 7 | 1 | 9 | 1 | 7 | 5 | 7 | 1 | 8 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 8 | 
+   !XLXI_163/count<11> := !XLXI_163/count<9> * !XLXI_163/count<11>
+	# !N_PZ_701 * !XLXI_163/count<11>
+	# !XLXI_163/count<10> * !XLXI_163/count<11>
+	# XLXI_163/count<9> * N_PZ_701 * 
+	XLXI_163/count<10> * XLXI_163/count<11>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<11>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 6 | 15 | N_PZ_667_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7
+INPUTS | 5 | XLXI_163/count<12>  | XLXI_163/count<9>  | N_PZ_701  | XLXI_163/count<10>  | XLXI_163/count<11>
+INPUTMC | 5 | 1 | 6 | 1 | 9 | 5 | 7 | 1 | 8 | 1 | 7
+EQ | 2 | 
+   N_PZ_667 = XLXI_163/count<12> * XLXI_163/count<9> * 
+	N_PZ_701 * XLXI_163/count<10> * XLXI_163/count<11>;
+
+MACROCELL | 1 | 15 | XLXI_163/count<13>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 2 | 0 | 11
+INPUTS | 11 | N_PZ_667  | XLXI_163/count<13>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 5 | 6 | 15 | 1 | 15 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 5 | 
+   !XLXI_163/count<13> := N_PZ_667 * XLXI_163/count<13>
+	# !N_PZ_667 * !XLXI_163/count<13>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<13>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 1 | 14 | XLXI_163/count<14>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 4 | 1 | 14 | 2 | 7 | 0 | 2 | 0 | 12
+INPUTS | 12 | N_PZ_667  | XLXI_163/count<14>  | XLXI_163/count<13>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 6 | 6 | 15 | 1 | 14 | 1 | 15 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 7 | 
+   !XLXI_163/count<14> := !N_PZ_667 * !XLXI_163/count<14>
+	# !XLXI_163/count<13> * !XLXI_163/count<14>
+	# N_PZ_667 * XLXI_163/count<13> * 
+	XLXI_163/count<14>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<14>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 2 | 7 | XLXI_163/count<15>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 3 | 2 | 7 | 0 | 2 | 0 | 13
+INPUTS | 13 | N_PZ_667  | XLXI_163/count<15>  | XLXI_163/count<13>  | XLXI_163/count<14>  | addr<3>  | addr<2>  | addr<1>  | addr<0>  | addr<5>  | addr<4>  | XLXN_390  | lkdsfj  | XLXN_387
+INPUTMC | 7 | 6 | 15 | 2 | 7 | 1 | 15 | 1 | 14 | 4 | 15 | 4 | 12 | 4 | 0
+INPUTP | 6 | 166 | 163 | 162 | 161 | 168 | 167
+EQ | 8 | 
+   !XLXI_163/count<15> := !N_PZ_667 * !XLXI_163/count<15>
+	# !XLXI_163/count<13> * !XLXI_163/count<15>
+	# !XLXI_163/count<14> * !XLXI_163/count<15>
+	# N_PZ_667 * XLXI_163/count<13> * 
+	XLXI_163/count<14> * XLXI_163/count<15>
+	# !addr<3> * !addr<2> * !addr<1> * addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387;
+   XLXI_163/count<15>.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 4 | 11 | XLXI_66_XLXN_633_MC
+ATTRIBUTES | 2185233184 | 0
+OUTPUTMC | 2 | 4 | 11 | 0 | 4
+INPUTS | 3 | XLXI_66_XLXN_633  | XLXI_66_XLXN_655  | OneW.PIN
+INPUTMC | 2 | 4 | 11 | 5 | 14
+INPUTP | 1 | 61
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_66_XLXN_633.T := !XLXI_66_XLXN_633 * XLXI_66_XLXN_655;
+    XLXI_66_XLXN_633.CLK = OneW.PIN;
+    XLXI_66_XLXN_633.AR = XLXN_431;
+
+MACROCELL | 5 | 14 | XLXI_66_XLXN_655_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 2 | 5 | 14 | 4 | 11
+INPUTS | 17 | XLXI_66_XLXN_655  | XLXI_66_XLXI_1/q<0>  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<12>  | XLXI_66_XLXI_1/q<9>  | XLXI_66_XLXI_1/q<10>  | XLXI_66_XLXI_1/q<11>  | XLXI_66_XLXI_1/q<13>  | XLXI_66_XLXI_1/q<14>  | XLXI_66_XLXI_1/q<15>
+INPUTMC | 17 | 5 | 14 | 3 | 14 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 4 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 2 | 3 | 1 | 3 | 0
+LCT | 1 | 4 | Internal_Name
+EQ | 14 | 
+   XLXI_66_XLXN_655.T := XLXI_66_XLXN_655 * !XLXI_66_XLXI_1/q<0> * 
+	!XLXI_66_XLXI_1/q<4> * !XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * 
+	!XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * 
+	!XLXI_66_XLXI_1/q<6> * !XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * !XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * 
+	!XLXI_66_XLXI_1/q<13> * XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15>
+	# !XLXI_66_XLXN_655 * !XLXI_66_XLXI_1/q<0> * 
+	XLXI_66_XLXI_1/q<4> * !XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * 
+	!XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * 
+	!XLXI_66_XLXI_1/q<6> * !XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * 
+	XLXI_66_XLXI_1/q<13> * !XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15>;
+   XLXI_66_XLXN_655.CLK  =  clock;	// GCK
+    XLXI_66_XLXN_655.AR = XLXN_431;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 14 | XLXI_66_XLXI_1/q<0>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 19 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 7 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 1 | XLXI_66_StartTimer
+INPUTMC | 1 | 4 | 6
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_66_XLXI_1/q<0>.T := XLXI_66_StartTimer;
+   XLXI_66_XLXI_1/q<0>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<0>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 4 | 6 | XLXI_66_StartTimer_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 19 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 7 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 4 | 6 | 3 | 14 | 0 | 11 | 4 | 5
+INPUTS | 2 | XLXI_66_StartTimer  | XLXI_66_ARM_STATE_MACHINE
+INPUTMC | 2 | 4 | 6 | 2 | 15
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_66_StartTimer.T := !XLXI_66_StartTimer * XLXI_66_ARM_STATE_MACHINE;
+   XLXI_66_StartTimer.CLK  =  clock;	// GCK
+    XLXI_66_StartTimer.AR = XLXI_66_assert_timer_stop;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 2 | 15 | XLXI_66_ARM_STATE_MACHINE_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 1 | 4 | 6
+INPUTS | 1 | data<3>.PIN
+INPUTP | 1 | 151
+LCT | 2 | 4 | Internal_Name | 2 | Internal_Name
+EQ | 4 | 
+   XLXI_66_ARM_STATE_MACHINE := data<3>.PIN;
+    XLXI_66_ARM_STATE_MACHINE.CLK = !(!addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+    XLXI_66_ARM_STATE_MACHINE.AR = XLXI_66_assert_timer_stop;
+
+MACROCELL | 5 | 10 | XLXI_66_assert_timer_stop_MC
+ATTRIBUTES | 2155905792 | 0
+INPUTS | 20 | XLXN_431  | XLXI_66_XLXI_1/q<0>  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<12>  | XLXI_66_XLXI_1/q<9>  | XLXI_66_XLXI_1/q<10>  | XLXI_66_XLXI_1/q<11>  | XLXI_66_XLXI_1/q<13>  | XLXI_66_XLXI_1/q<14>  | XLXI_66_XLXI_1/q<15>  | XLXI_66_CMD0  | XLXI_66_CMD1  | XLXI_66_CMD2
+INPUTMC | 20 | 1 | 12 | 3 | 14 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 4 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 2 | 3 | 1 | 3 | 0 | 2 | 12 | 2 | 10 | 2 | 9
+EQ | 26 | 
+   XLXI_66_assert_timer_stop := XLXN_431
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15>
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	!XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * !XLXI_66_CMD0
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	!XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * !XLXI_66_CMD1
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	!XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * !XLXI_66_CMD2;
+   XLXI_66_assert_timer_stop.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 7 | XLXI_66_XLXI_1/q<4>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 5 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>
+INPUTMC | 5 | 3 | 14 | 4 | 6 | 3 | 10 | 3 | 9 | 3 | 8
+LCT | 1 | 4 | Internal_Name
+EQ | 4 | 
+   XLXI_66_XLXI_1/q<4>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * XLXI_66_XLXI_1/q<3>;
+   XLXI_66_XLXI_1/q<4>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<4>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 10 | XLXI_66_XLXI_1/q<1>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 18 | 3 | 9 | 3 | 8 | 3 | 7 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 2 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer
+INPUTMC | 2 | 3 | 14 | 4 | 6
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_66_XLXI_1/q<1>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer;
+   XLXI_66_XLXI_1/q<1>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<1>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 9 | XLXI_66_XLXI_1/q<2>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 17 | 3 | 8 | 3 | 7 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 3 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<1>
+INPUTMC | 3 | 3 | 14 | 4 | 6 | 3 | 10
+LCT | 1 | 4 | Internal_Name
+EQ | 4 | 
+   XLXI_66_XLXI_1/q<2>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<1>;
+   XLXI_66_XLXI_1/q<2>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<2>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 8 | XLXI_66_XLXI_1/q<3>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 16 | 3 | 7 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 4 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>
+INPUTMC | 4 | 3 | 14 | 4 | 6 | 3 | 10 | 3 | 9
+LCT | 1 | 4 | Internal_Name
+EQ | 4 | 
+   XLXI_66_XLXI_1/q<3>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2>;
+   XLXI_66_XLXI_1/q<3>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<3>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 15 | XLXI_66_XLXI_1/q<8>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 11 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 9 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>
+INPUTMC | 9 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 6 | 3 | 5 | 3 | 3
+LCT | 1 | 4 | Internal_Name
+EQ | 6 | 
+   XLXI_66_XLXI_1/q<8>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<5> * XLXI_66_XLXI_1/q<6> * 
+	XLXI_66_XLXI_1/q<7>;
+   XLXI_66_XLXI_1/q<8>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<8>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 6 | XLXI_66_XLXI_1/q<5>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 14 | 3 | 5 | 3 | 3 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 6 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>
+INPUTMC | 6 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8
+LCT | 1 | 4 | Internal_Name
+EQ | 5 | 
+   XLXI_66_XLXI_1/q<5>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3>;
+   XLXI_66_XLXI_1/q<5>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<5>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 5 | XLXI_66_XLXI_1/q<6>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 13 | 3 | 3 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 7 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<5>
+INPUTMC | 7 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 6
+LCT | 1 | 4 | Internal_Name
+EQ | 5 | 
+   XLXI_66_XLXI_1/q<6>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<5>;
+   XLXI_66_XLXI_1/q<6>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<6>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 3 | XLXI_66_XLXI_1/q<7>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 12 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 8 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>
+INPUTMC | 8 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 6 | 3 | 5
+LCT | 1 | 4 | Internal_Name
+EQ | 5 | 
+   XLXI_66_XLXI_1/q<7>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<5> * XLXI_66_XLXI_1/q<6>;
+   XLXI_66_XLXI_1/q<7>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<7>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 4 | XLXI_66_XLXI_1/q<12>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 7 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 13 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<9>  | XLXI_66_XLXI_1/q<10>  | XLXI_66_XLXI_1/q<11>
+INPUTMC | 13 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 13 | 3 | 12 | 3 | 11
+LCT | 1 | 4 | Internal_Name
+EQ | 7 | 
+   XLXI_66_XLXI_1/q<12>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<9> * 
+	XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11>;
+   XLXI_66_XLXI_1/q<12>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<12>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 13 | XLXI_66_XLXI_1/q<9>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 10 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 10 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>
+INPUTMC | 10 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3
+LCT | 1 | 4 | Internal_Name
+EQ | 6 | 
+   XLXI_66_XLXI_1/q<9>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7>;
+   XLXI_66_XLXI_1/q<9>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<9>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 12 | XLXI_66_XLXI_1/q<10>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 9 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 11 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<9>
+INPUTMC | 11 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 13
+LCT | 1 | 4 | Internal_Name
+EQ | 6 | 
+   XLXI_66_XLXI_1/q<10>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<9>;
+   XLXI_66_XLXI_1/q<10>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<10>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 11 | XLXI_66_XLXI_1/q<11>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 8 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 12 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<9>  | XLXI_66_XLXI_1/q<10>
+INPUTMC | 12 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 13 | 3 | 12
+LCT | 1 | 4 | Internal_Name
+EQ | 7 | 
+   XLXI_66_XLXI_1/q<11>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<9> * 
+	XLXI_66_XLXI_1/q<10>;
+   XLXI_66_XLXI_1/q<11>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<11>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 2 | XLXI_66_XLXI_1/q<13>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 6 | 3 | 1 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 14 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<12>  | XLXI_66_XLXI_1/q<9>  | XLXI_66_XLXI_1/q<10>  | XLXI_66_XLXI_1/q<11>
+INPUTMC | 14 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 4 | 3 | 13 | 3 | 12 | 3 | 11
+LCT | 1 | 4 | Internal_Name
+EQ | 7 | 
+   XLXI_66_XLXI_1/q<13>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11>;
+   XLXI_66_XLXI_1/q<13>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<13>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 1 | XLXI_66_XLXI_1/q<14>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 5 | 3 | 0 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 15 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<12>  | XLXI_66_XLXI_1/q<9>  | XLXI_66_XLXI_1/q<10>  | XLXI_66_XLXI_1/q<11>  | XLXI_66_XLXI_1/q<13>
+INPUTMC | 15 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 4 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 2
+LCT | 1 | 4 | Internal_Name
+EQ | 8 | 
+   XLXI_66_XLXI_1/q<14>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * 
+	XLXI_66_XLXI_1/q<13>;
+   XLXI_66_XLXI_1/q<14>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<14>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 3 | 0 | XLXI_66_XLXI_1/q<15>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 4 | 5 | 10 | 5 | 14 | 5 | 8 | 5 | 9
+INPUTS | 16 | XLXI_66_XLXI_1/q<0>  | XLXI_66_StartTimer  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<12>  | XLXI_66_XLXI_1/q<9>  | XLXI_66_XLXI_1/q<10>  | XLXI_66_XLXI_1/q<11>  | XLXI_66_XLXI_1/q<13>  | XLXI_66_XLXI_1/q<14>
+INPUTMC | 16 | 3 | 14 | 4 | 6 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 4 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 2 | 3 | 1
+LCT | 1 | 4 | Internal_Name
+EQ | 8 | 
+   XLXI_66_XLXI_1/q<15>.T := XLXI_66_XLXI_1/q<0> * XLXI_66_StartTimer * 
+	XLXI_66_XLXI_1/q<4> * XLXI_66_XLXI_1/q<1> * XLXI_66_XLXI_1/q<2> * 
+	XLXI_66_XLXI_1/q<3> * XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * 
+	XLXI_66_XLXI_1/q<6> * XLXI_66_XLXI_1/q<7> * XLXI_66_XLXI_1/q<12> * 
+	XLXI_66_XLXI_1/q<9> * XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * 
+	XLXI_66_XLXI_1/q<13> * XLXI_66_XLXI_1/q<14>;
+   XLXI_66_XLXI_1/q<15>.CLK  =  clock;	// GCK
+   !XLXI_66_XLXI_1/q<15>.AR = XLXI_66_StartTimer;
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 2 | 12 | XLXI_66_CMD0_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 3 | 5 | 10 | 5 | 8 | 5 | 9
+INPUTS | 1 | data<0>.PIN
+INPUTP | 1 | 158
+LCT | 2 | 4 | Internal_Name | 2 | Internal_Name
+EQ | 4 | 
+   XLXI_66_CMD0 := data<0>.PIN;
+    XLXI_66_CMD0.CLK = !(!addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+    XLXI_66_CMD0.AR = XLXI_66_assert_timer_stop;
+
+MACROCELL | 2 | 10 | XLXI_66_CMD1_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 3 | 5 | 10 | 5 | 8 | 5 | 9
+INPUTS | 1 | data<1>.PIN
+INPUTP | 1 | 157
+LCT | 2 | 4 | Internal_Name | 2 | Internal_Name
+EQ | 4 | 
+   XLXI_66_CMD1 := data<1>.PIN;
+    XLXI_66_CMD1.CLK = !(!addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+    XLXI_66_CMD1.AR = XLXI_66_assert_timer_stop;
+
+MACROCELL | 2 | 9 | XLXI_66_CMD2_MC
+ATTRIBUTES | 2323645184 | 0
+OUTPUTMC | 3 | 5 | 10 | 5 | 8 | 5 | 9
+INPUTS | 1 | data<2>.PIN
+INPUTP | 1 | 155
+LCT | 2 | 4 | Internal_Name | 2 | Internal_Name
+EQ | 4 | 
+   XLXI_66_CMD2 := data<2>.PIN;
+    XLXI_66_CMD2.CLK = !(!addr<3> * addr<2> * addr<1> * !addr<0> * 
+	!addr<5> * !addr<4> * XLXN_390 * !lkdsfj * XLXN_387);
+    XLXI_66_CMD2.AR = XLXI_66_assert_timer_stop;
+
+MACROCELL | 14 | 2 | XLXI_66_XLXN_176_MC
+ATTRIBUTES | 3464758018 | 6
+OUTPUTMC | 1 | 0 | 12
+INPUTS | 0
+LCT | 3 | 4 | Internal_Name | 2 | Internal_Name | 5 | Internal_Name
+EQ | 6 | 
+   OneW =  Gnd;
+    OneW.OE = XLXI_66_assert_0;
+// Input Register
+XLXI_66_XLXN_176 := OneW.PIN;
+    XLXI_66_XLXN_176.CLK = XLXI_66_sample;
+    XLXI_66_XLXN_176.AR = XLXN_431;
+
+MACROCELL | 5 | 8 | XLXI_66_sample_MC
+ATTRIBUTES | 2155905792 | 0
+INPUTS | 19 | XLXI_66_XLXI_1/q<0>  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<12>  | XLXI_66_XLXI_1/q<9>  | XLXI_66_XLXI_1/q<10>  | XLXI_66_XLXI_1/q<11>  | XLXI_66_XLXI_1/q<13>  | XLXI_66_XLXI_1/q<14>  | XLXI_66_XLXI_1/q<15>  | XLXI_66_CMD0  | XLXI_66_CMD1  | XLXI_66_CMD2
+INPUTMC | 19 | 3 | 14 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 4 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 2 | 3 | 1 | 3 | 0 | 2 | 12 | 2 | 10 | 2 | 9
+EQ | 15 | 
+   XLXI_66_sample := !XLXI_66_XLXI_1/q<0> * XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * XLXI_66_XLXI_1/q<3> * 
+	XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * !XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * XLXI_66_CMD0 * 
+	XLXI_66_CMD1 * !XLXI_66_CMD2
+	# !XLXI_66_XLXI_1/q<0> * XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * XLXI_66_XLXI_1/q<3> * 
+	!XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * XLXI_66_XLXI_1/q<6> * 
+	XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * XLXI_66_CMD0 * 
+	XLXI_66_CMD1 * XLXI_66_CMD2;
+   XLXI_66_sample.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+MACROCELL | 4 | 5 | XLXI_66_assert_0_MC
+ATTRIBUTES | 2189427488 | 0
+INPUTS | 1 | XLXI_66_StartTimer
+INPUTMC | 1 | 4 | 6
+LCT | 1 | 4 | Internal_Name
+EQ | 3 | 
+   XLXI_66_assert_0 := Vcc;
+    XLXI_66_assert_0.CLK = XLXI_66_StartTimer;
+    XLXI_66_assert_0.AR = XLXI_66_release_1w;
+
+MACROCELL | 5 | 9 | XLXI_66_release_1w_MC
+ATTRIBUTES | 2155905792 | 0
+INPUTS | 20 | XLXN_431  | XLXI_66_CMD0  | XLXI_66_CMD1  | XLXI_66_CMD2  | XLXI_66_XLXI_1/q<0>  | XLXI_66_XLXI_1/q<4>  | XLXI_66_XLXI_1/q<1>  | XLXI_66_XLXI_1/q<2>  | XLXI_66_XLXI_1/q<3>  | XLXI_66_XLXI_1/q<8>  | XLXI_66_XLXI_1/q<5>  | XLXI_66_XLXI_1/q<6>  | XLXI_66_XLXI_1/q<7>  | XLXI_66_XLXI_1/q<12>  | XLXI_66_XLXI_1/q<9>  | XLXI_66_XLXI_1/q<10>  | XLXI_66_XLXI_1/q<11>  | XLXI_66_XLXI_1/q<13>  | XLXI_66_XLXI_1/q<14>  | XLXI_66_XLXI_1/q<15>
+INPUTMC | 20 | 1 | 12 | 2 | 12 | 2 | 10 | 2 | 9 | 3 | 14 | 3 | 7 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 15 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 4 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 2 | 3 | 1 | 3 | 0
+EQ | 30 | 
+   XLXI_66_release_1w := XLXN_431
+	# !XLXI_66_CMD0 * !XLXI_66_CMD1
+	# !XLXI_66_CMD0 * XLXI_66_CMD2
+	# !XLXI_66_CMD1 * XLXI_66_CMD2
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15>
+	# !XLXI_66_XLXI_1/q<0> * XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * XLXI_66_XLXI_1/q<3> * 
+	XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * !XLXI_66_XLXI_1/q<9> * 
+	XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * !XLXI_66_CMD0
+	# !XLXI_66_XLXI_1/q<0> * !XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * !XLXI_66_XLXI_1/q<3> * 
+	XLXI_66_XLXI_1/q<8> * !XLXI_66_XLXI_1/q<5> * !XLXI_66_XLXI_1/q<6> * 
+	XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * !XLXI_66_XLXI_1/q<9> * 
+	XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * XLXI_66_CMD2
+	# !XLXI_66_XLXI_1/q<0> * XLXI_66_XLXI_1/q<4> * 
+	!XLXI_66_XLXI_1/q<1> * !XLXI_66_XLXI_1/q<2> * XLXI_66_XLXI_1/q<3> * 
+	!XLXI_66_XLXI_1/q<8> * XLXI_66_XLXI_1/q<5> * XLXI_66_XLXI_1/q<6> * 
+	!XLXI_66_XLXI_1/q<7> * !XLXI_66_XLXI_1/q<12> * !XLXI_66_XLXI_1/q<9> * 
+	!XLXI_66_XLXI_1/q<10> * !XLXI_66_XLXI_1/q<11> * !XLXI_66_XLXI_1/q<13> * 
+	!XLXI_66_XLXI_1/q<14> * !XLXI_66_XLXI_1/q<15> * XLXI_66_CMD0 * 
+	!XLXI_66_CMD2;
+   XLXI_66_release_1w.CLK  =  clock;	// GCK
+GLOBALS | 1 | 2 | clock
+
+PIN | AuxReset | 64 | 0 | N/A | 115 | 0
+PIN | addr<3> | 64 | 0 | N/A | 166 | 60 | 6 | 4 | 6 | 11 | 13 | 11 | 13 | 13 | 13 | 14 | 13 | 15 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 11 | 2 | 3 | 2 | 4 | 2 | 11 | 2 | 14 | 5 | 11 | 7 | 13 | 6 | 14 | 5 | 12 | 5 | 13 | 5 | 4 | 5 | 15 | 7 | 0 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 11 | 15 | 13 | 2 | 8 | 1 | 12 | 0 | 8 | 2 | 6 | 2 | 0 | 2 | 1 | 4 | 2 | 4 | 3 | 4 | 4 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 9 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 3 | 0 | 4 | 0 | 11 | 0 | 12 | 0 | 13
+PIN | addr<2> | 64 | 0 | N/A | 163 | 59 | 6 | 4 | 6 | 11 | 13 | 11 | 13 | 13 | 13 | 14 | 13 | 15 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 11 | 2 | 3 | 2 | 4 | 2 | 11 | 2 | 14 | 5 | 11 | 7 | 13 | 6 | 14 | 5 | 12 | 5 | 13 | 5 | 4 | 5 | 15 | 7 | 0 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 11 | 15 | 13 | 2 | 8 | 1 | 12 | 0 | 8 | 2 | 0 | 2 | 1 | 4 | 2 | 4 | 3 | 4 | 4 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 2 | 0 | 9 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | 0 | 11 | 0 | 12 | 0 | 13
+PIN | addr<1> | 64 | 0 | N/A | 162 | 61 | 6 | 4 | 6 | 11 | 13 | 11 | 13 | 13 | 13 | 14 | 13 | 15 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 11 | 2 | 3 | 2 | 4 | 2 | 11 | 2 | 14 | 5 | 11 | 7 | 13 | 6 | 14 | 5 | 12 | 5 | 13 | 5 | 4 | 5 | 15 | 7 | 0 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 11 | 15 | 13 | 2 | 8 | 1 | 12 | 0 | 8 | 2 | 6 | 2 | 0 | 2 | 1 | 4 | 2 | 4 | 3 | 4 | 4 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 2 | 0 | 9 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 3 | 0 | 4 | 0 | 11 | 0 | 12 | 0 | 13
+PIN | addr<0> | 64 | 0 | N/A | 161 | 61 | 6 | 4 | 6 | 11 | 13 | 11 | 13 | 13 | 13 | 14 | 13 | 15 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 11 | 2 | 3 | 2 | 4 | 2 | 11 | 2 | 14 | 5 | 11 | 7 | 13 | 6 | 14 | 5 | 12 | 5 | 13 | 5 | 4 | 5 | 15 | 7 | 0 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 11 | 15 | 13 | 2 | 8 | 1 | 12 | 0 | 8 | 2 | 6 | 2 | 0 | 2 | 1 | 4 | 2 | 4 | 3 | 4 | 4 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 2 | 0 | 9 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 3 | 0 | 4 | 0 | 11 | 0 | 12 | 0 | 13
+PIN | addr<5> | 64 | 0 | N/A | 168 | 60 | 6 | 4 | 6 | 11 | 13 | 11 | 13 | 13 | 13 | 14 | 13 | 15 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 11 | 2 | 3 | 2 | 4 | 2 | 11 | 2 | 14 | 5 | 11 | 7 | 13 | 6 | 14 | 5 | 12 | 5 | 13 | 5 | 4 | 5 | 15 | 7 | 0 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 11 | 15 | 13 | 2 | 8 | 1 | 12 | 0 | 8 | 2 | 6 | 2 | 0 | 2 | 1 | 4 | 2 | 4 | 3 | 4 | 4 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 2 | 0 | 9 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | 0 | 11 | 0 | 12 | 0 | 13
+PIN | addr<4> | 64 | 0 | N/A | 167 | 60 | 6 | 4 | 6 | 11 | 13 | 11 | 13 | 13 | 13 | 14 | 13 | 15 | 15 | 2 | 15 | 3 | 15 | 4 | 15 | 11 | 2 | 3 | 2 | 4 | 2 | 11 | 2 | 14 | 5 | 11 | 7 | 13 | 6 | 14 | 5 | 12 | 5 | 13 | 5 | 4 | 5 | 15 | 7 | 0 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 11 | 15 | 13 | 2 | 8 | 1 | 12 | 0 | 8 | 2 | 6 | 2 | 0 | 2 | 1 | 4 | 2 | 4 | 3 | 4 | 4 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 2 | 0 | 9 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | 0 | 11 | 0 | 12 | 0 | 13
+PIN | nwr | 16384 | 0 | N/A | 185 | 1 | 4 | 15
+PIN | clock | 4096 | 0 | N/A | 187 | 59 | 4 | 0 | 4 | 12 | 2 | 8 | 2 | 13 | 2 | 2 | 4 | 14 | 4 | 1 | 2 | 5 | 9 | 2 | 4 | 13 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 3 | 0 | 4 | 0 | 11 | 0 | 12 | 0 | 13 | 8 | 0 | 4 | 10 | 4 | 9 | 4 | 8 | 1 | 13 | 1 | 10 | 0 | 10 | 0 | 14 | 0 | 15 | 1 | 2 | 1 | 3 | 1 | 5 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 15 | 1 | 14 | 2 | 7 | 0 | 9 | 3 | 10 | 3 | 9 | 3 | 8 | 3 | 7 | 3 | 6 | 3 | 5 | 3 | 3 | 3 | 15 | 3 | 13 | 3 | 12 | 3 | 11 | 3 | 4 | 3 | 2 | 3 | 1 | 3 | 0 | 5 | 10 | 4 | 6 | 3 | 14 | 5 | 14 | 5 | 8 | 5 | 9
+PIN | ID0 | 64 | 0 | N/A | 170 | 3 | 1 | 12 | 1 | 1 | 0 | 13
+PIN | ID1 | 64 | 0 | N/A | 171 | 3 | 1 | 12 | 1 | 0 | 0 | 13
+PIN | ID2 | 64 | 0 | N/A | 173 | 3 | 1 | 12 | 0 | 0 | 0 | 13
+PIN | xPUP_0 | 64 | 0 | N/A | 211 | 0
+PIN | PWR_RESET | 64 | 0 | N/A | 176 | 2 | 1 | 12 | 0 | 13
+PIN | nrd | 64 | 0 | N/A | 186 | 11 | 0 | 8 | 2 | 6 | 0 | 2 | 0 | 9 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 4 | 0 | 11 | 0 | 12 | 0 | 13
+PIN | trig | 64 | 0 | N/A | 121 | 0
+PIN | DCDCEN | 536871040 | 0 | N/A | 114
+PIN | DCDCON | 536871040 | 0 | N/A | 113
+PIN | DP<0> | 536871040 | 0 | N/A | 35
+PIN | DP<1> | 536871040 | 0 | N/A | 37
+PIN | DP<2> | 536871040 | 0 | N/A | 38
+PIN | DP<3> | 536871040 | 0 | N/A | 39
+PIN | DP<4> | 536871040 | 0 | N/A | 43
+PIN | DP<5> | 536871040 | 0 | N/A | 44
+PIN | DP<6> | 536871040 | 0 | N/A | 45
+PIN | DP<7> | 536871040 | 0 | N/A | 46
+PIN | ENMUXA | 536871040 | 0 | N/A | 139
+PIN | ENMUXB | 536871040 | 0 | N/A | 138
+PIN | ENMUXC | 536871040 | 0 | N/A | 137
+PIN | ENMUXF | 536871040 | 0 | N/A | 133
+PIN | L<0> | 536871040 | 0 | N/A | 88
+PIN | L<10> | 536871040 | 0 | N/A | 103
+PIN | L<11> | 536871040 | 0 | N/A | 109
+PIN | L<1> | 536871040 | 0 | N/A | 89
+PIN | L<2> | 536871040 | 0 | N/A | 91
+PIN | L<3> | 536871040 | 0 | N/A | 87
+PIN | L<4> | 536871040 | 0 | N/A | 94
+PIN | L<5> | 536871040 | 0 | N/A | 95
+PIN | L<6> | 536871040 | 0 | N/A | 96
+PIN | L<7> | 536871040 | 0 | N/A | 98
+PIN | L<8> | 536871040 | 0 | N/A | 99
+PIN | L<9> | 536871040 | 0 | N/A | 101
+PIN | LE_DP | 536871040 | 0 | N/A | 49
+PIN | MOSI | 536871040 | 0 | N/A | 1
+PIN | MUX0 | 536871040 | 0 | N/A | 143
+PIN | MUX1 | 536871040 | 0 | N/A | 142
+PIN | MUX2 | 536871040 | 0 | N/A | 129
+PIN | MUX3 | 536871040 | 0 | N/A | 128
+PIN | SCLK | 536871040 | 0 | N/A | 2
+PIN | SDMUX | 536871040 | 0 | N/A | 126
+PIN | TRIGGER | 536871040 | 0 | N/A | 119
+PIN | attn | 536871040 | 0 | N/A | 201
+PIN | nCS | 536871040 | 0 | N/A | 7
+PIN | data<0> | 536870976 | 0 | N/A | 158 | 8 | 6 | 4 | 13 | 11 | 5 | 11 | 5 | 15 | 7 | 3 | 2 | 0 | 2 | 12 | 1 | 1
+PIN | data<1> | 536870976 | 0 | N/A | 157 | 9 | 6 | 11 | 13 | 13 | 5 | 12 | 7 | 0 | 7 | 11 | 15 | 13 | 2 | 1 | 2 | 10 | 1 | 0
+PIN | data<2> | 536870976 | 0 | N/A | 155 | 8 | 13 | 14 | 2 | 3 | 7 | 13 | 5 | 13 | 7 | 1 | 4 | 2 | 2 | 9 | 0 | 0
+PIN | data<3> | 536870976 | 0 | N/A | 151 | 8 | 13 | 15 | 2 | 4 | 6 | 14 | 5 | 4 | 7 | 2 | 4 | 3 | 2 | 15 | 0 | 3
+PIN | data<4> | 536870976 | 0 | N/A | 150 | 3 | 15 | 2 | 2 | 11 | 0 | 4
+PIN | data<5> | 536870976 | 0 | N/A | 149 | 2 | 15 | 3 | 0 | 11
+PIN | data<6> | 536870976 | 0 | N/A | 148 | 3 | 15 | 4 | 2 | 14 | 0 | 12
+PIN | data<7> | 536870976 | 0 | N/A | 147 | 3 | 15 | 11 | 4 | 4 | 0 | 13
+PIN | OneW | 536870976 | 0 | N/A | 61 | 2 | 4 | 11 | 14 | 2

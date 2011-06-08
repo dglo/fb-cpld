@@ -1,0 +1,1 @@
+sch2vhdl -family xpla3 -flat -suppress -w trig_x.sch trig_x.vhf

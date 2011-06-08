@@ -1,0 +1,29 @@
+Release 6.1.03i - ngdbuild G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -uc flasher.ucf -p xpla3 flasher.ngc flasher.ngd
+
+Reading NGO file
+"C:/DocsForDan/IceCube/A_RealFlasherProduction/FlasherPY05/CPLDV12/flasher.ngc"
+...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "flasher.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:454 - logical net 'XLXI_163/XLXI_1/CEO' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_160/XLXI_3/CEO' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_160/XLXI_11/D3' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_66_XLXI_1/XLXI_1/CEO' has no load
+WARNING:NgdBuild:454 - logical net 'XLXI_67_XLXI_1/sel_mode_select' has no load
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Total memory usage is 36556 kilobytes
+
+Writing NGD file "flasher.ngd" ...
+
+Writing NGDBUILD log file "flasher.bld"...
